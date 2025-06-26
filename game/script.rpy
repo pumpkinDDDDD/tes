@@ -596,7 +596,7 @@ label start1:
         "He’s running about through the crowd carrying an empty bucket and as soon as he hands it over to someone else, another bucket filled with water is placed right in his hands causing him to rush back to the source of the fire. "
         show ym nsilent with move at left
         MC "(I knew he was nice but I never quite expected him to be heroic like this.)"
-        hide
+        hide ym
         "(Wait, I should be doing that too!)"
         "I swiftly rush near the line of people passing buckets to each other, offering my help."
         "Not long after, it seems the fire has died down. Despite the intensity of the night, I'm just glad it didn’t seem like the building sustained any major damages."
@@ -605,18 +605,29 @@ label start1:
 ###broooo  nyampe sini nihhhhh
         YM "[MC]! There you are! Are you okay?"
         MC "I should be asking you that, what happened?"
+        show ym nworry
         YM "I’m not sure, a fire broke out in one of the lower rooms"
         "I haven’t checked yet but I don't think my room caught fire, or at least I hope not."
+        show ym napologetic
         "I feel like we managed to put out the fire before it breached the other floors,  the damage shouldn’t be too severe, I think."
         MC "You think? That’s not very reassuring."
+        show ym nworry
         YM "I know.."
         "[MC], sorry but can I do something for a bit? Just for one minute, please?"
         MC "Okay?"
+        show ym nsmile:
+           parallel:
+               ease .5 zoom 1.75
+           parallel:
+               yalign 0.0
+               linear 0.0 yalign 0.0 xalign 0.5
         "*zoom"
         "After hearing my okay, he gives me a little smile before he rests his head on my shoulders. I can’t tell if he’s crying or not, but I decided not to intervene in his little moment."
+         show ym nworry
         "A few moments of silence pass between us before his hands start to wander and they grip the sleeve of my night wear, trembling slightly."
         "It’s almost surreal how he’s acting right now, he’s usually so..cheerful. I can feel my heart forming cracks at the edges, threatening to break completely at the sight of him like this."
         YM "[MC]..I’m scared."
+        show ym nwhine
         "Do you think… I'm gonna be okay living there? What if another fire breaks out in my room?"
             menu:
                 "I ..don’t know.":
@@ -626,43 +637,60 @@ label start1:
         
         YM "I just..feel scared now. Like my knees are about to give up on me anytime soon."
         MC "You were doing a great job helping put out the fire earlier?"
+        show ym nworry
         YM "I’m glad you think so but..."
         "[MC]. I don’t feel safe in there anYMore, can I.. live with you instead?"
         MC "Huh? Why?"
+        show ym nwhine
         YM "I don't think I can stay there for much longer, I just get reminded of all the smoke and fire that I saw. Besides, I'm sure they need to do some repairs."
         "Please [MC], at least just for a month? Let me stay with you.."
+         show ym nrhappy
         "I can help you with whatever housework you have? I can cook for you! "
         MC "Are you sure about this?"
+        show ym nsmile
         "Seeing me inquire more about his request must’ve made him feel a glimmer of hope that I might agree, because his eyes lit up immediately at my words."
+        show ym nhappy
         YM "Yes! I’m really sure. I’ll do anything so I can stay with you!"
+        show ym nsmile
         MC "Even if I make you walk around in a maid outfit?"
         "(I should not have said that, I guess that dream I had is influencing me)"
+        show ym nnormal
         YM "You want me in a maid outfit?"
             menu : 
                 "I’m just kidding, you don’t have to if it makes you uncomfortable?":
+                        show ym nrhappy
                         YM "No, I'll do it! "
                         "I’ll be the cutest maid you’ll ever see."
                         MC "(I was NOT expecting that)"
                 "Of course I do, who wouldn’t want a cute maid around?":
+                        show ym nsqueal
                         "He makes a noise that I could only describe as a combination of a strangled critter and high pitched squeak."
+                        show ym  nhappy
                         YM "You think I'm…cute?"
-        
+
+        show ym nsmile
         MC "Well, I do have one thing to say before we make the arrangement."
+        show ym nquestioning
         YM "What is it?"
         MC "Do you have another place to stay tonight? I’ll have to clear up my place for you to stay."
+        show ym nhappy
         YM "Now that you’ve agreed to house me for a month, I think I'll be fine just booking a hotel room for tonight.."
         MC "Are you sure? You didn’t look so well earlier, you okay alone?"
+        show ym nrhappy
         YM "I’m sure, I feel better thanks to you."
+        show ym napologetic
         "Besides, I'll have to pack up my things, won't I?"
         MC "Well, if you say so."
-        "Just give me a call if you need me, okay?"
+        MC "Just give me a call if you need me, okay?"
+        show ym nrhappy
         YM "I will!"
         
+        hide ym
         "And with that, he skips back over to the entrance of the slightly charred building, carefully looking around, presumably looking to grab a few of his things. By this point the crowds have dissipated, residents of my place have returned to their rooms while others went off somewhere else, perhaps a friend's place."
         "After one final wave, he disappears inside."
         MC "(Well, I guess I’ll be having a roommate starting tomorrow)"
         
-        "Scene class with fade"
+        scene class with fade
         MC "(I could barely sleep last night. Maybe that’s the wrong word, it’s more like I chose to stay up.)"
         "(Between my sudden impulse decision to house a man and me rushing to make the place look ‘presentable’, I ended up barely sleeping)"
         F "You okay? You.. almost look worse than yesterday."
@@ -682,6 +710,7 @@ label start1:
 label day1:   
     #TSM Maid day1
     if TSM_route >= 2: 
+        scene inside with fade
         MC "(Time for some last minute preparations!)"
         "(Do I have an extra blanket for him? Oh yea I do.)"
         "(Anndd, this cupboard should be enough for his things, or at least I hope they are)"
@@ -693,157 +722,249 @@ label day1:
         "*knock sfx"
         MC "Coming!"
         "When I opened the other, I came face to face with Rudy who’s carrying a huge box in his hands. His shoulders and arms are also occupied by bags that are filled with a variety of things, ranging from blankets, books, cooking utensils to what I can only assume is a portable stove."
+        show tsm nuhsure
         TSM "Uh, hi?"
+        show tsm nsilent
         MC "Hey, come on in! You can put your stuff over there. "
+        show tsm nnormal
         TSM "Okay."
-        "Scene inside with fade"
+        scene inside with fade
         MC "Do you think all your stuff would fit there? I can try clearing more room if it isn’t."
+        show tsm nnormal
         TSM "I think it should be enough. I don’t have a lot of stuff."
+        show tsm nsilent
         MC "Need me to help bring your other stuff up here?"
+        show tsm nnormal
         TSM "Nah, this is it."
         MC "(Legit? That’s barely anything)"
+        show tsm nuhsure
         TSM "Are you sure you’re cool with me here?"
         MC "Of course I am."
+        show tsm nsdquestioning
         TSM "Ookay..Just making sure."
+        show tsm nsilent
         "He turns his attention away from me and onto his belongings as his arms swiftly start unloading items from the giant box and all the bags."
+        show tsm nuhsure
         TSM "I put this here, right?"
+        show tsm nsilent
         MC "Yep"
         "He nods and gives me a short hum in response as he continues to silently unpack his things. Not wanting to bask in awkward silence, I decided to at least attempt some small talk with him."
         MC "So, got any questions about our arrangement?"
+        show tsm nnormal
         TSM "Let me think.."
         "Hmm.."
+        show tsm nsilent
         "He ponders the question for a bit as the contents of the box quickly dwindle down to nothing, eventually his hands make a sharp halt and all his movements pause as if trapped in time."
+        show tsm nsdquestioning
         "Um..I feel like I should've asked yesterday but..where do I sleep? I’m not..not.. Y’know.."
         MC "Not what?"
+        show tsm nsdbangy
         TSM "Are you really gonna make me say it?"
+        show tsm npout
         MC "Well if you don’t use your words I won’t get you."
+        show tsm sdbangy
         TSM "Urgh."
-        "I..I’m not sleeping with you right? There’s only one bed."
+        show tsm nsdquestioning
+        TSM "I..I’m not sleeping with you right? There’s only one bed."
             menu:
                 "You’re not? I even prepared space on my bed for you.":
+                        show tsm nbdeflecting
                         "He stares at me, mouth agape as if he can’t believe the obscenity that came out of my mouth."
                         TSM "You can’t be serious..!"
+                        show tsm nbsurprised
                         MC "What if I am, hmm?"
-                        "({I}Oh {/I} tormenting him like this is fun.)"
+                        MC "({I}Oh {/I} tormenting him like this is fun.)"
                         "I step closer to him, positioning our faces mere inches from each other as he backs away from me, slowly backing himself up against the door"
+                        show tsm nsdbangy
                         TSM "Stop messing with me.."
                         MC "What if I'm not? "
+                        show tsm nbsurprised
                         TSM "Hngh..!"
                         MC "(Maybe this is enough teasing, he seems like he might run out my room already and he hasn’t even been in here for 5 minutes)"
-                        "I’m sorry, you don’t have to if you don’t want to. I’m just teasing."
+                        MC "I’m sorry, you don’t have to if you don’t want to. I’m just teasing."
+                        show tsm nbangy
                         TSM "You..!"
+                        show tsm nsdquestioning
                         "He breathes a sigh of relief but his eyes are mixed with a tinge of disappointment."
+                        show tsm nsdnormal
                         TSM "Well, good."
                 "Of course not, I like my space.":
+                        show tsm nhappy
                         TSM "That’s good"
+        show tsm nsilent
         MC "I have a mattress for you to sleep on? Would that be fine with you?"
+        show tsm nhappy
         TSM "Yea."
+        show tsm nsilent
         MC "Anything else you wanna ask?"
+        show tsm nunsure
         TSM "Umm you mentioned housework, yea?"
         MC "Yep."
         TSM "What exactly do you want me to do here?"
         MC "Well, you can sweep the floors once every few days?"
+        show tsm nhuh
         TSM "Few days? Don’t you sweep it everyday?"
         MC "Umm, no?"
+        show tsm nnormal
         TSM "I’m not standing for that. Now that this is my place too, I'll sweep everyday."
+        show tsm nuhsure
         "How often do you clean the bathroom?"
+        show tsm nsilent
         MC "(Yikes, recently the answer has been ‘whenever I have time’. I have a feeling he’s not gonna like that answer)"
         "Once every 2 weeks?"
+        show tsm nnormal
         TSM "I’ll do it once a week."
+        show tsm nhappy
         "Also, I'm guessing you want me to cook? You usually start drooling whenever I bring out my lunch."
             menu:
                 "I do not!":
+                        show tsm nsmirk
                         TSM "You totally do, stop lying."
-                        "Is that a no then?"
+                        TSM "Is that a no then?"
                         MC "No, please do cook for me."
                 "Not my fault your food looks good.":
+                        show tsm nsmirk
                         TSM "Is that a yes?"
                         MC "Totally."
+        show tsm nsilent
         MC "Actually, there’s something else that you forgot to mention."
+        show tsm nuhsure
         TSM "What, you want me to mop the place too? I can do that."
+        show tsm nsilent
         MC "Appreciated but not that!"
+        show tsm nhuh
         TSM "Huh? What else?"
         "My lips curve into an evil grin, sensing my sudden shift he tenses up like a grumpy cat who’s about to get hugged."
+        show tsm nbangy
         TSM "I have a feeling I’m not gonna like this."
         MC "Don’t tell me you forgot the maid outfit?"
+        show tsm nsurprised
         TSM "(!!)"
+        show tsm nsdbangy
         "Tch, I was hoping you’d forget."
+        show tsm npout
         MC " Absolutely not! This is the most important part of the deal!"
-        "Here I have it ready for you! Try it on"
+        MC "Here I have it ready for you! Try it on"
+        show tsm ndeflecting
         TSM "Why do you have  a maid outfit ready just like that??! It’s not from an ex or something is it?"
+        show tsm npout
         MC "There’s something called express shipping, I bought it last night.  "
-        "Now don’t be shy and try it on! I’ll need to return if it's not your size."
+        MC "Now don’t be shy and try it on! I’ll need to return if it's not your size."
+        show tsm nangy
         TSM "Do I really have to?"
         MC "Yep, this is mandatory."
+        show tsm nsdangy
         TSM "Fine, give me the outfit."
+        hide tsm
         "Begrudgingly, he takes the fit and all its accessories from my hands and heads towards the bathroom to change."
         MC "Don’t forget the stockings!"
         TSM "Shut up!"
         "After shuffling around the bathroom for a bit, out came the beautiful maid from my dreams."
+        show tsm mbangy
         TSM "I’ve put it on."
+        show tsm mbpout
         "He fidgets with his hands nervously as my eyes are glued straight onto him, staring like he’s a delicious piece of steak. He tries to steal a glance to gauge my approval but quickly turns away."
+        show tsm mbangy
         TSM "So? Take a picture why don’tcha it’ll last longer."
+        show tsm mbpout
         MC "You look so cute!!"
+        show tsm mbdeflecting
         TSM "Huh? Cute?!"
+        show tsm mbsurprised
         MC "I knew this was the right one for you."
-        "Can you give me a twirl?"
+        MC "Can you give me a twirl?"
+        show tsm mangy
         TSM "I am NOT twirling for you!"
+        show tsm mbpout
         MC "Shame, but I really do mean it. You look great."
+        show tsm mbsdquestioning
         TSM "Stop lying."
         MC "I’m not..!"
+        show tsm mangy
         TSM "You are! There’s no way something this frilly would look good on me!"
         MC "How ‘bout {b}you{/b} stop lying? You look GREAT!"
+        show tsm mdeflecting
         TSM "Stop..!"
+        show tsm mstopit
         MC "Stunning, gorgeous, beautiful."
+        show tsm mangy
         TSM "No..!"
         MC "Eye catching, Jaw dropping, head turning."
+        show tsm mstopit
         TSM "H-hey..!"
         MC "Absolutely adorable yet very elegant, the-"
+        show tsm mbstopit
         TSM "‘Okay that’s enough!"
         MC "(!)"
         "*tumble sfx"
+        show tsm mbsurprised:
+           parallel:
+               ease .5 zoom 2.0
+           parallel:
+               yalign 0.0
+               linear 0.0 yalign 0.0 xalign 0.5
         "As he lunges towards me in an attempt to stop me from spouting words of praise, I lose my balance while trying to dodge and we both end up tumbling onto my bed."
         "I fell on top of him, bracing my hands against my bed so as to not crash right into him as he stared wide eyed at me, completely mortified about our current position."
+        show tsm mbsdquestioning
         TSM {size =-10}"shit..."{/size}
         "Y-ya mind getting off?"
+
         "Y..you’re kinda..y’know.."
             menu : 
                 "Sorry!":
                         "Quickly I got off of him, feeling a little bad that I flustered him to this degree."
                 "I mind":
+                        show tsm mbsurprised
                         "I give him a mischievous grin as I pin him further into the mattress, he looks away from me, desperately trying to hide his face in the sheets."
                         "Unfortunately for him, our current position doesn’t quite give him the range to do it so he ends up merely looking to the side, his expression still fully exposed to me."
+                        show tsm mbsdquestioning
                         TSM "W-what? Don’t look at me like that."
-                        "Just..get off already!"
+                        show tsm mbangy
+                        TSM "Just..get off already!"
+                        show tsm mbpout
                         MC "What if I don’t want to?"
-                        "Actually, here’s a deal. I’ll get off once you admit that you’re cute!"
-                        "TSM ‘That’s not fair!"
+                        MV"Actually, here’s a deal. I’ll get off once you admit that you’re cute!"
+                        show tsm deflecting
+                        TSM "That’s not fair!"
                         MC "It is though, just 2 words and you’re free."
+                        show tsm mbstopit
                         TSM "You..!"
+                        show tsm mbpout
                         MC "Just two words."
+                        show tsm mbangy
                         TSM "Fine, I-i’m c-cute."
                         MC "There we go! Good boy."
+                        show tsm mbsurprised
                         TSM "(!)"
                         "Finally, I stood up from our position, freeing him from my temporary prison."
         
+        hide tsm
         MC "(I think that’s enough excitement for today, I should stop now.)"
         "(I’ll just continue on with my assignments)"
         
-        "Scene insided with fade"
+        scene insided with fade
+        show tsm suhsure
         TSM "Hey, um aren’t you gonna sleep?"
+        show tsm ssilent
         MC "Huh?"
+        show tsm snormal
         TSM "It’s getting late, and well, I’m gonna sleep."
+        show tsm ssilent
         MC "(Oh shit, what time is it?)"
         "I glance at the clock only to find out that he was right, it is getting late."
         MC "Sorry, i’ll quiet down. Do you want to turn the lights off?"
+        show tsm suhsure
         TSM "Aren’t you still busy? Working in the dark hurts your eyes, y’know?"
         MC "I know, but isn’t it hard to fall asleep with the lights on?"
+        show tsm shappy
         TSM " s’fine, worry about yourself first.."
+        show tsm ssilent
         MC "(Man, he’s actually really nice. I’m starting to feel bad for potentially disturbing his sleep, maybe i’ll sleep in a bit. Just after I finish this one part)"
         "Okay then, Goodnight Rudy."
+        show tsm shappy
         TSM "yea, g’night.."
         
-        "Scene insiden with fade"
+        scene insiden with fade
         MC "(Alright, we’re done with the whole thing! I’ll be completely free tomorrow)"
         "(I know I said ‘just this one part’ but that’s always a lie)"
         "(Whatever, Time to sleep!)"
@@ -853,7 +974,7 @@ label day1:
     
     else:
     #YM Maid day 1
-        "Scene inside with fade"
+        scene inside with fade
         MC "(Is everything ready? I hope I have an extra blanket for him)"
         "(He seemed so startled yesterday, i’m hoping I don’t make him too uncomfortable)"
         "(Is this enough space for his things? I sure hope so)"
@@ -862,48 +983,72 @@ label day1:
         "*knock sfx"
         YM "[MC], i’m here!"
         MC "Coming!"
+        show ym nsmile
         MC "Heyy. You seem well, or at least better than yesterday."
+        show ym nhappy
         YM "How can I be scared if I'm staying with you?"
         MC "I don’t know, what if my place gets set on fire?"
+        show ym napologetic
         YM "[MC].. Don’t joke around like that.."
+        show ym nsmile
         MC "Sorry, come on in. You can put your stuff over there"
-        "Scene inside with fade"
-        "Need any help?"
+        scene inside with fade
+        MC "Need any help?"
+        show ym nrhappy
         YM "Sure!Thanks a lot."
-        "I’ll start by unpacking my clothes, where do I ..?"
+        show ym napologetic
+        YM "I’ll start by unpacking my clothes, where do I ..?"
         MC "Over there, I moved my clothes so you can use the other half of my wardrobe."
+        show ym nrhappy
         YM "Okayy!"
+        show ym nsmile
         "He cheerfully skips around to my closet, and starts pulling out some shirts, carefully categorizing them in his mind."
+        hide ym
         "While he does that, I'll just get his textbooks out of the box. That shouldn’t be too invasive for me to handle, right?"
         MC "(Ah, I have this textbook too, I should separate it from mine so I wouldn’t get mixed up)"
         "(What’s this one? I don’t think I have this class)"
         MC "(It’s kinda interesting seeing the differences in our fields of study)"
-        YM "[MC] i’m done!!"
+        show ym nrhappy
+        YM "[MC] I’m done!!"
         MC "That was quick."
+        show ym nhappy
         YM "Well, the sooner I finish unpacking, the sooner we can do something else right?"
-        "Actually, I have a question."
+        show ym nquestioning
+        YM "Actually, I have a question."
         MC "Ask away."
+        show ym nhappy
         YM "[MC]...There’s only one bed, are we sleeping together?"
             menu:
                 "Don’t worry, I've got a spare mattress. +dp":
+                        show ym nnormal
                         YM "Oh."
+                        show ym nsilent
                         MC "I have a spare blanket for you to use? I swear you won’t be cold at night."
+                        show ym nhappy
                         YM "Okay then, thanks."
                 "I don’t know. Do you want to?":
+                        show ym napologetic
                         YM "Can I…really?"
                         MC "(Oh shit, I was not expecting him to be this happy about it)"
-                        "(I was kinda joking, how do I defuse this?)."
-                        "Wouldn’t it be a bit cramped? "
+                        MC "(I was kinda joking, how do I defuse this?)."
+                        MC "Wouldn’t it be a bit cramped? "
+                        show ym nhappy
                         YM "Not at all, your bed looks pretty big."
+                        show ym nsmile
                         MC "(Damn it, does he actually wanna share a bed?)"
                         "(You know what? Screw it! I can use an extra stuffed animal)"
                         "I hope you don’t mind if I accidentally hug you when we sleep."
+                        show ym nrhappy
                         YM "That’s all good with me!"
+                        show ym nsmile
                         MC "Or if I kick you off the bed."
-                        "Maybe we should have the mattress on the floor, just in case."
+                        MC "Maybe we should have the mattress on the floor, just in case."
+                        show ym nhappy
                         YM "Okay then!"
         
+        show ym nrhappy
         YM "I swear you won’t regret agreeing to let me stay! I’ll clean and cook everyday for you!"
+        show ymsmile
         MC "(I feel like I should’ve realised this yesterday, but whatever the fuck he’s doing is starting to feel less than platonic to me)"
         "(Does he like me or something? Even if he does, who the fuck goes this far for a simple crush?)"
             menu:
@@ -912,15 +1057,20 @@ label day1:
                         "(If he really is into me that is)":
                 "(Cool, I’m gonna ignore this and brush off everything he does as a platonic gesture)"
                         "(Let’s not question anything, especially when this scenario helps with my ‘I don’t have time for housework’ problem)"
-        "Don’t you have college too? Wouldn’t it be a bit much?"
+        MC "Don’t you have college too? Wouldn’t it be a bit much?"
+        show ym nhappy
         YM "Not at all, I'll try my best."
+        show ym nrhappy
         "OOH! I almost forgot about this."
         MC "What is it?"
+        show ym napologetic
         YM "Can you close your eyes? It’ll be a surprise."
+        show ym nsmile
         MC "Okay?"
-        "Scene black with fade"
+        scene black with fade
         MC "Alright, my eyes are closed."
         YM "Wait just a sec, don’t peek okay?"
+        play sound fabric
         "As soon as he said that, I heard the sound of fabric swishing around and dropping to the floor."
         MC "What are you doing?"
         YM "(!!)"
@@ -930,21 +1080,37 @@ label day1:
         "Wait, just a bit more…"
         "I hear him rustle about the place, opening the wardrobe and closing it before shuffling back near me."
         YM "Okay, you can open your eyes now!"
-        "Scene inside with vpunch"
+
+        scene inside with vpunch
         MC "Is that??!"
+        show ym mrhappy
         YM "Ta-da! Do you like it? I bought it last night!"
         "Nix twirls around in the short skirt of his maid outfit, showing off every frill and ribbon that decorated it. "
         MC "(Holy shit, this is straight out of my dream!)"
+        show ym mworry
         YM "[MC]? Um..do you not like it?"
             menu : 
                 "Are you kidding? You look cute as hell!":
+                        show ym mrhappy
                         YM "[MC]! I’m glad you think so!"
-                        "Here, you can take a closer look at the accessories too."
-                        "Am I the cutest maid you have?"
+                        YM "Here, you can take a closer look at the accessories too."
+                        YM "Am I the cutest maid you have?"
                         MC "Nix, aren’t you my only maid?"
                         "Hearing that, he squeals in delight and hugs me tight, burying his face deep in my chest."
+                         show ym msqueal:
+                               parallel:
+                                   ease .5 zoom 2.0
+                               parallel:
+                                   yalign 0.0
+                                   linear 0.0 yalign 0.0 xalign 0.5
                         "*sprite zoom in"
-                        YM "I’m glad to hear that!  "
+                        YM "I’m glad to hear that!"
+                        show tsm mbsurprised:
+                              parallel:
+                                  ease .5 zoom 1.0
+                              parallel:
+                                  yalign 0.0
+                                  linear 0.0 yalign 0.0 xalign 0.5
                         "*sprite zoom out"
                 "Why? +dp":
                         MC "I mean you look cute but I definitely wasn’t expecting this."
