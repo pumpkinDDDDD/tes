@@ -3,6 +3,7 @@
 
 
 # agkdjagkjsdhkJAHKJA
+#yoooooo wasssupppp
 
 # The game starts here.
 define MC = Character ("[MC]")    
