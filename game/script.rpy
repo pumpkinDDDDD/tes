@@ -3170,29 +3170,32 @@ label week_ym:
     MC "No."
     I tackle him to the ground, putting my weight on him so he won’t be able to get up."
     #kalau sempet cg"
+    scene ed4ver2 with vpunch
     YM "[MC]?"
     "Please..[MC].. Am I that unlovable to you..?"
     "C-can you really not love me..?"
+    scene ed4ver2 with vpunch
     #slap sfx"
     MC "{b}Don’t move{/b}"
     YM "{size=-10)ahh..shit(/size}"
-    "ahahaha…HAHAHAHA"
+    scene ed4ver1 with vpunch
+    YM "ahahaha…HAHAHAHA"
     MC "(?)"
     YM "AHAhaha..ha.ha.."
     Delirious and losing blood, Nix gives me a gleeful smile."
     YM "W-well at least..if this is how it ends.."
     "{size=-10}I-it’s..by your hands…{/size}"
-    Scene hallwayn with fade"
-    Once the words leave his mouth, his eyes close as if he just said his final breath."
-    I place a hand to his chest, still sensing a heartbeat out of him."
-    LL "Tha ambulance is here!"
+    scene hallwayn with fade
+    "Once the words leave his mouth, his eyes close as if he just said his final breath."
+    "I place a hand to his chest, still sensing a heartbeat out of him."
+    LL "The ambulance is here!"
     MC "Get both of them to the hospital, now!"
     (This night certainly isn’t how I expected my college life to go, definitely a lot more dramatic than even my dreams)"
     (But at least, just for tonight. I survived)"
     (I don’t know how I’ll deal with the aftermath)"
     (But I’ll leave that as a problem for future me)"
-    Ending 4 : Survived the Night"
-    "
+    "Ending 4 : Survived the Night"
+    
     Else"
     MC "(I sure hope he isn’t doing anything weird, he was pretty on edge earlier)"
     Scene hallwayn with fade"
@@ -3320,23 +3323,24 @@ label week_ym:
     YM "Yes [MC]."
     MC "Good boy."
     I give him a little peck on his forehead while my hands reach for his own. Holding his hands in mine, I give them a tight squeeze, something to assure him that I still care about him."
-    "
-    #cg sini"
-    "
+    
+    scene ed5ver2 with fade
+    
     YM "D-does this mean that…you l-love me?"
     MC "Yes sweetie, as long as you follow my rules."
     "You can do that for me, can’t you?"
+    scene ed5ver1
     YM "Yes, yes, yes! I’ll be the best boyfriend you’ll ever have!"
     "I’ll be good from now on."
     MC "That’s all I need you to be."
-    Scene black with fade"
+    scene black with fade
     Finally, I seal the deal with a kiss to his lips. He hungrily accepts like a death row inmate who’s been starved for some time."
     And it feels {I}right{/I}"
     I can’t say for sure that I made the most rational decision tonight, but I know that it’s one I wouldn’t forget for the rest of my life.."
     Ending 5  : Good Boy."
     "
-    Else"
-    Scene black with fade"
+    Else
+    scene black with fade
     MC "(Was that..Nix back in highschool?)"
     (I guess we did meet back then…)"
     (He sure changed a lot)"
@@ -3365,7 +3369,8 @@ label week_ym:
     MC "No you weren’t, you were very cute."
     YM "Was I..?"
     He pulls away slightly, enough that I can see his face again."
-    #cg sini"
+    
+    scene ed6ver1 with fade
     YM "B-but I was so lame..I had no friends, I wasn’t smart, I wasn’t good at anything either.."
     MC "Doesn’t change the fact that you were cute."
     YM "I did a lot of pathetic things back then.."
@@ -3385,6 +3390,7 @@ label week_ym:
     YM "N-no..! I didn’t go that far..! I wouldn’t want to upset you.."
     MC "It’s okay, I can just invite you to visit during summer break."
     " I’m proud that you tried to get your life together in college."
+    scene ed6ver2
     YM "It was all for you [MC], all for you."
     "I didn’t want you to be embarrassed by me..so I wanted to become someone more worthy of you."
     "H-have I succeeded [MC]?"
@@ -3395,11 +3401,5 @@ label week_ym:
     He’s all I’ve ever wanted, and he’s all I’ve ever needed."
     Hopelessly vying for every scrap of my attention, he’s officially {b}mine.{/b} "
     Ending 6 :Mine"
-    "
-    nOTE (ngide doang)"
-    "Don’t stand too close, people might misunderstand"
-    "I want them to, though"
-    "
-    Nix has desperation points, get enough he snaps"
-    Jealous of eachother, inferiority complex"
+   
 
