@@ -94,75 +94,124 @@ label start1:
     "Scene kosd with fade"
     MC "(How much time do I have left?)"
     "(Okay, that’s not bad. With 20 minutes left I don’t think I’d need to run to get to campus on time)"
-    
+
+    show tsm sdangy
     "Before I head out the gate, I notice my downstairs neighbor Rudy coming out the door as well. He stares at me for a brief moment before looking away, seeming unsure of himself. "
     "Since we already made eye contact, I decided to walk up to him and talk to him."
     "He seems well, or at least well enough. To me, he seems like the type of person who would fare well against the hardships of college."
     MC "(I took a peek inside his place before we headed out to the campus orientation together, it seemed super clean.)"
     "(The fact that he didn't have a lot of things in his room helped a lot, it made me reconsider my own room for a moment)"
+    show tsm silent:
+       parallel:
+           ease .5 zoom 1.3
+       parallel:
+           yalign 0.0
+           linear 0.0 yalign 0.0 xalign 0.5
+
     "*sprite natap MC"
     "(Oh shit, did he not want me to come closer?)"
     "(Welp, too late now.)"
 
     "*Sprite zoom dikit"
+    show tsm silent:
+       parallel:
+           ease .5 zoom 1.5
+       parallel:
+           yalign 0.0
+           linear 0.0 yalign 0.0 xalign 0.5
     MC "Rudy?"
+    show tsm nuhsure
     TSM "[MC]?"
+    show tsm nsilent
     MC "Oh hi! You headin’ out too?"
+    show tsm nnormal
     TSM "Yea, I got class in like 20 minutes. I figured I'll walk while I still have time."
     MC  "So do I actually, wanna walk together?"
+    show tsm nuhsure
     TSM "Uh sure?"
     
     "Scene roadd with fade"
+     show tsm nsilent:
+       parallel:
+           ease .5 zoom 1.5
+       parallel:
+           yalign 0.0
+           linear 0.0 yalign 0.0 xalign 0.5
     MC "I haven’t seen you in a while"
+    show tsm nuhsure
     TSM "I haven’t seen you much either, has it been months?"
     MC "Definitely, how’s life treating you?"
+    show tsm nhappy
     TSM "It could be worse, but since we got this far I guess we just gotta survive."
+    show tsm nnormal
     "What about you? You seem tired."
          menu: 
                 "I make do, it’s not that bad":
                         MC "(I’ve seen my classmates be busier so i’m probably not doing too bad for now)"
+                        show tsm nhappy
                         TSM "That’s good to hear"
                 "Oh man, you can tell?":
                         "(Do I have under eye bags or something? Or is the stress just emanating from me?)"
-                        TSM "Sort of? I’ve been seeing you less frequently around here so I assumed you were."
+                        show tsm nuhsure
+                         TSM "Sort of? I’ve been seeing you less frequently around here so I assumed you were."
+    show tsm nsilent
     MC "Hmm"
     "(I haven’t seen him around in a while but if there’s anything that stayed the same about him, it’s his scent)"
     "(He kinda smells like food, I guess he was cooking before leaving? Or atleast whatever it is, it smells good)"
     MC "You smell good."
+    show tsm nhuh
     TSM "h-huh?"
+    show tsm ndeflecting
     "You tryin’ to do somethin?"
+    show tsm npout
     MC "Nah, I’m just kinda hungry and you happen to smell like food, very tasty."
+    show tsm nangy
     TSM "Don’t sniff me! I just finished making lunch for myself before I went off."
     MC "You’re still cooking everyday?"
+    show tsm nuhsure
     TSM "Yea?  And you’re not?"
     MC "No? Do I look like I have the time?"
+    show tsm nnormal
     TSM "Pretty sure you were making simple one pot pasta recipes back when we first met."
+    show tsm nsilent
     MC "Yea, that only lasted a whole month. My electric pot has been retired since."
+    show tsm nuhsure
     TSM "What? Then what have you been eating?"
+    show tsm nsilent
     MC "I buy food from the food stalls, they’re pretty cheap"
     "Or if  I have class I eat at the cafeteria. The food’s not bad y’know?"
+    show tsm nnormal
     TSM "If you say so, I still think cooking for myself is better."
     MC "Good for you, I think I've completely given up on it."
     TSM "You should eat better ."
+    show tsm nsdbangy
     "Not that I care about you or anything."
+    show tsm npout
     MC "Uh huh, thanks anyway."
     
          menu : 
                 "(Maybe I will try cooking again once I finish up some of my assignments)":
                         "(I’m bound to have some time sooner or later)"
                 "Actually, if you’re that worried about me, how about cooking for me?":
+                        show tsm ndeflecting
                         TSM "No way, I have a life y’know?"
                         MC "You’re not gonna share your lunch with me?"
+                        show tsm nsmirk
                         TSM "As if!"
                         MC "I thought so."
     
     "Scene campus1d with fade"
+    show tsm nnormal
     TSM "Well, we’ve reached campus."
     MC "Thanks for walking with me, it was nice seeing you again."
+    show tsm nangy
     TSM "Don’t get sappy."
+    show tsm n smirk
     {size=-7} "But well, I guess it was kinda nice" {/size}
     MC "See you.. some other time then?"
+    show tsm nhappy
     TSM "See ya’"
+    hide tsm
     "With that, he turned his back and headed off to his building with a hand waved towards me."
     MC "(Guess I won’t be seeing him again for awhile)"
     "(Time to go to my building, before I’m actually late)"
@@ -209,7 +258,7 @@ label start1:
     MC "(Yea, that sounds good. I’d rather not starve.)"
     "Before I could even lift my foot towards the cafeteria, my phone started ringing."
     MC "(Who is it?)"
-    "Show phone nix"
+    show phone nix
     "(Ah, it’s Nix)"
     MC "(Nix was a friend I made back when I first got into college, apparently we went to the same highschool.)"
     "(Never met him before though, and none of my friends seemed to know anyone who matched my description of him)"
@@ -223,93 +272,126 @@ label start1:
         menu : 
             "Sure, thanks a lot":
                     YM "No problem"
-                    "Scene cafeteria with fade"
+                    scene cafeteria with fade
                     MC "(Where is he?)"
+                    show ym nhappy
                     YM "[MC]! I’m over here!"
+                    show ym nsmile
                     MC "Thanks for ordering it for me, how much do I owe you?"
+                    show ym nrhappy
                     YM "You don’t need to pay me back. After all, we’re friends right?"
+                    show ym nsmile
                     MC "I should’ve known you wouldn’t let me pay you back"
                     "But you can’t keep doing this, I need to pay you back eventually. Who knows how many of my meals you’ve paid for by this point?"
+                    show ym nhappy
                     YM "Just you being friends with me is enough"
                     MC "If you say so. Although one these days I’m gonna run up to you and slap a big envelope of cash right in your hands, and I’ll run before you can give it back"
+                    show ym nrhappy
                     YM "Sure sure"
+                    show ym nsmile
                     MC "Anyway, let’s sit down"
             "Nah, I’ll eat something else today":
                     YM  "Okay, I'll wait for you so we can eat together."
                     "Scene cafeteria with fade"
                     MC "(I think I’ll buy something from that stall today)"
+                    show ym nhappy
                     YM "[MC]! You’re here! Mind if I talk to you while you wait in line?"
                     MC "Not at all, you talking to me would definitely keep my boredom away."
+                    show ym nrhappy
                     YM "I’m glad to be of service."
                     "How’s your day been [MC]?"
+                    show ym nsmile
                     MC "Same old, same old. You?"
+                    show ym nhappy
                     YM "I’ve been fine so far, and now that you’re here, it can’t be better."
                     MC "Stupid, you see me almost everyday."
+                    show ym nquestioning
                     YM "So?"
                     "Is there anything wrong with enjoying the presence of a friend?"
                     MC "Don’t you have other friends?"
+                    show ym napologetic
                     YM "I do, but I like you the most."
+                    show ym nsmile
                     LL "Excuse me, what would you like?"
                     MC "Oh sorry. Let’s see.. I’ll take the…"
     
     "Scene cafeteria with fade"
     MC "Alright, time to eat!"
     "Ooh, this is pretty good. I might order this again tomorrow."
+    show ym nhappy
     YM "I’m glad you like it"
+    show ym nsmile
     MC "What about you? D’ya like it?"
+    show ym napologetic
     YM "Well I wouldn’t’ve ordered it if I didn’t like it."
+    show ym nsmile
     MC "Fair."
+    show ym nhappy
     YM "You don’t have anYMore classes after this, right [MC]?"
+    show ym nsmile
     MC "Nope, I’m ready to go back after we eat lunch."
+    show ym nrhappy
     YM "Nice, wanna walk back together?"
     MC "Sure. why not?"
     
     "Scene roadd with fade"
+    show ym nquestioning
     YM "[MC], you sure you’re okay? You seem tired."
     MC "Is something off about me? This is the second time I've been told that."
+    show ym nnormal
     YM "Who did?"
+    show ym nsilent
     MC "My downstairs neighbor, I met him this morning. I haven’t seen him for a while."
     "He also said  I seemed tired."
+    show ym napologetic
     YM "Maybe you’ve been a bit stressed out? You know you can count on me if you need anything."
     MC "Nah, I’ll be fine, probably."
+    show ym nhappy
     YM "Or I can cook for you? Less time on worrying about what to eat means more time for something else, right?"
     MC "Since when do you cook?"
+    show ym nrhappy
     YM "Starting now if you’d like."
+    show ym nsmile
     MC "Ha ha, no thanks. "
     MC "I’ve been managing just fine so far, you can worry about yourself first. Haven’t you been busy recently?"
+    show ym nhappy
     YM "Yea well, I can always clear up time."
     MC "No need, besides.."
     
     "Scene kosd with fade"
+    show ym nsmile
     MC "We’re already here!"
     "See you tomorrow? If we even see each other?"
+    show ym napologetic
     YM "We always do though, one way or another."
-    "Well, see you tomorrow!"
+    show ym nrhappy
+    YM "Well, see you tomorrow!"
     MC "Byee!"
+    hide ym
     "(Now that I'm back, it’s time to lock in and get things done)."
     
-    "Scene inside with fade"
+    scene insidepr with fade
     MC "(Yikes, I forgot how messy my room is. Should I clean up now? I feel like i’ve been putting it off for some time)"
     "(How much work do I have left? If I finish then maybe I’ll clean up some other time when I’m less busy)"
     "(Yea, that sounds good)"
     
-    "Scene cg1 with fade"
+    scene cg1 with fade
     MC "Lock in [MC], you can do this."
-    "Scene lg"
+    scene cg1 with fade
     MC "Alright, done with that one. Now we can move on to.."
-    "Scene"
+    scene cg1 with fade
     "This is due next week but if I start now.."
-    "Scene"
+    scene cg1 with fade
     "Just a little more.."
-    "Scene"
+    scene cg1 with fade
     "Am I..done?"
     "Let’s check one last time, no mistakes right? "
     "(This part is fine, and this part..’s all good)"
     "(I think I’m officially done!)"
     "(Thank..{size=-10} God, I can rest {/size})"
-    "Scene black with fade"
+    scene black with fade
     "…"
-    "Scene insidedream with fade (route choice)"
+    scene insidedream with fade
     GTWU "[MC]?"
     MC "(huh? Who is it?)"
         menu: 
@@ -362,37 +444,56 @@ label start1:
         MC "(Is that Rudy?)"
         
         "Scene hallwayd with fade"
+        show tsm nangry
         TSM "I can’t find another place so quickly!"
-        MC "(Is he being kicked outGTWU?)"
+        MC "(Is he being kicked out???)"
+        show tsm nsilent at left
+        show ll normal at right
         LL "I’m sorry, but you’ve been behind on paYMent for a while now."
+        show tsm nnormal
         TSM "Couldn’t you have at least warned me before doing this?"
         LL "Sorry, but if it helps, they move out next month? You can move back in then."
+        show tsm nangry
         TSM " Next month?! Where am I gonna live for this month then??"
+        show tsm serious
         LL "Again, I'm sorry to hear that. But you’ll have to move out by tomorrow."
         "Hide ll"
+        show tsm nsdangry
         TSM "Shit."
+        show tsm nserious
         
         MC "(Should I.. Not have seen that?)"
+        show tsm nsdangry
         TSM "Fuck are you doing here?"
+        show tsm nserious
         MC "Sorry, I heard you shouting from upstairs and I got worried."
         "Is there any way I can help?"
+        show tsm nsdangry
         TSM "Nah, you can fuck off. It’s not your business, leave me alone."
         MC "(Ouch)"
+        show tsm nnormal
         TSM "Why are you still here? If ya can’t help then scram."
         "It’s not like you can do anything in this situation."
+        show tsm nserious
         MC "(Wait a minute this could be the solution to all my problems (in a way).)"
         "(He needs a temporary place to stay doesn’t he? I can provide that.)"
         "(And he’s really good at cooking and housework.. Something I'm less great at.)"
         "(I have a potentially devious idea thanks to my perfectly timed dream)"
+        show tsm nuhsure
         TSM "What’s with that look on your face? Don’t tell me you’re gonna keep bothering me."
         MC "Actually, I have an offer to make."
+        show tsm nhuh
         TSM "Huh?"
+        show tsm nsilent
         MC "You’re good at cooking and cleaning and all that jazz, yea?"
+        show tsm nnormal
         TSM "I’m not a moron, so yea."
+        show tsm nsilent
         MC "No need to diss me. Anyway, I happen to want someone to do all that stuff for me."
         "And in exchange, you can stay with me for the month."
         "For the low-low price of doing housework and wearing a maid outfit, you can live a month rent free at my place! I’ll also split the costs of whatever groceries you buy."
         MC "(Woops, the maid outfit portion slipped out)"
+        show tsm nbdeflecting
         TSM "Maid outfit?? Staying with you?? Are you joking?"
         MC "(For a moment I thought he’d be angrier at it, but his outburst comes off as huffy and embarrassed, maybe I can push further on this?)"
         "Not at all, I'm completely serious. "
