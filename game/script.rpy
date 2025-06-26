@@ -500,46 +500,67 @@ label start1:
         TSM "Why??"
             menu : 
                 "Because you’d look cute in one and it could motivate me to finish my assignments?":
+                    show tsm nbsurprised
                     TSM "!!!"
                     "He proceeds to make the most undignified embarrassed squeak I've ever heard in my life,  seemingly flustered from what I just said."
                     "Once he stopped making noises, he glanced at me before looking away and pouting."
                 "Why not? Don’t you need a place to stay? I’m pretty sure every other place around costs double this one."
-        TSM "Yea.. well.. I guess..You’re not wrong.":
+                     show tsm nsdquestioning
+                     TSM "Yea.. well.. I guess..You’re not wrong.":
                     "Is the maid outfit really necessary though?"
                     MC "Of course it is. "
+                    show tsm npout
                     "I give him my best assuring smile while he grumbles and looks away from me, seemingly unsure with my proposal. After some time he finally looks back at me, the redness yet to disappear from his cheeks."
         
+        show tsm nbangy
         TSM "Fine, I'll do it. But you better not get any weird ideas about this."
         MC "(WOO!)"
+        show tsm npout
         "I assure you I have no such thoughts."
+        show tsm nsmirk
         TSM "I have a hard time believing that."
+        show tsm nquestioning
         "But.. are you sure about this? "
         MC "Of course I am, I wouldn't have made the offer otherwise."
+        show tsm nsdquestioning
         TSM "You don’t have a significant other who’d be really mad at me for staying with you right?"
         MC "Nope?"
+        show tsm nuhsure
         TSM "Are you sure?"
         MC "Hey, I think I'd know if I have someone."
+        show tsm nnormal
         TSM "Alright then, that’s something."
+        show tsm nhappy
         "If you really don’t mind, I guess I'll do it."
         MC "I’m glad you agreed, is it safe to assume you’ll move in tomorrow?"
         TSM "Yea..."
         MC "Okay then, I’ll clear up my place a bit."
+        show tsm nsmirk
         TSM "I’m starting to worry about what your place looks like now."
+        show tsm nuhsure
         "Considering you want a maid to help clean, is it that bad now..?"
         MC "Oh come on, you’ve been in my room."
         "It’s not {I}that {/I} bad."
+        show tsm nsmirk
         TSM "I sure hope it isn’t."
+        show tsm nsilent
         "He pauses for a moment before looking like he just had a horrible realization, he immediately stares right into my eyes with a vaguely horrified look. "
+        show tsm nangy
         TSM "You’re not giving me some skimpy dress are you?"
         MC "We’ll see about that."
+        show tsm nbangy
         TSM "And don’t you dare tell anyone about this arrangement."
         MC "I don’t know~"
+        show tsm nbangry
         TSM "If you keep messing around I’ll..I’ll-"
         MC "Relax, I won't."
+        show tsm nsdnormal
         TSM "Good, you better not."
         "He gives me a small smile as he heads back to his room on the bottom floor. When he reaches his door, he looks back at me, seeming a little surprised that I'm still here."
+       show tsm nhappy
         TSM "Thanks..[MC]."
         MC "No problem!"
+        hide tsm
         "And with that, he shuts his door and the silence of the night fills the halls."
         MC "(Well, I guess it’s time for me to buy a maid outfit)"
     
@@ -562,15 +583,22 @@ label start1:
         "My eyes scan amongst the sea of people, hoping to see even a glimpse of his white hair running about. I rush about the crowd, trying to stay as calm as possible."
         MC "(He’s not inside the building, is he? I sure hope he’s okay.)"
         GTWU "Everyone! Do we have more water?"
+        show ym nsilent
         MC "(!!)"
         "(It’s him!!)"
+        show ym nsilengt with move at left
         "As soon as I heard the voice I turned my head around to the source, to my delight it really was Nix!"
+        show ym nsilent with move at right
         "He’s running about through the crowd carrying an empty bucket and as soon as he hands it over to someone else, another bucket filled with water is placed right in his hands causing him to rush back to the source of the fire. "
+        show ym nsilent with move at left
         MC "(I knew he was nice but I never quite expected him to be heroic like this.)"
+        hide
         "(Wait, I should be doing that too!)"
         "I swiftly rush near the line of people passing buckets to each other, offering my help."
         "Not long after, it seems the fire has died down. Despite the intensity of the night, I'm just glad it didn’t seem like the building sustained any major damages."
         
+        show ym nhuffy
+###broooo  nyampe sini nihhhhh
         YM "[MC]! There you are! Are you okay?"
         MC "I should be asking you that, what happened?"
         YM "I’m not sure, a fire broke out in one of the lower rooms"
