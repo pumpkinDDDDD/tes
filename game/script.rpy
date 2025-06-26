@@ -1,9 +1,5 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
-define e = Character("Eileen")
+﻿# bari 1000 ke atas blum aku edit
+# baris di bawah batas check blu aku proofread lgi jdi masi gaje jg  wkwkw
 
 
 # The game starts here.
