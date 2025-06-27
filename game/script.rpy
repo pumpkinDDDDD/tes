@@ -1983,10 +1983,10 @@ label TSMafterloop1:
     
     scene inside with fade
     MC "(I feel a little bad that Nix is doing all this while i’m just setting the table, but he did insist)"
-    "(Well..’table’, we’re eating on the floor with buckets and boxes as tables. By this point I should just buy a picnic blanket or something )"
-    "(I would set a candle or something to make it look nicer but I'd rather not start another fire. So I settled for a paper flower that I made five minutes ago, hopefully he doesn’t mind?)"
-    "(As soon as we got back, he changed into that maid outfit and started cooking"
-    "(I would protest but I’d be lying if I said I wasn’t happy with a cute boy in a maid outfit)"
+    MC "(Well..’table’, we’re eating on the floor with buckets and boxes as tables. By this point I should just buy a picnic blanket or something )"
+    MC "(I would set a candle or something to make it look nicer but I'd rather not start another fire. So I settled for a paper flower that I made five minutes ago, hopefully he doesn’t mind?)"
+    MC "(As soon as we got back, he changed into that maid outfit and started cooking"
+    MC "(I would protest but I’d be lying if I said I wasn’t happy with a cute boy in a maid outfit)"
     show ym mhappy
     YM "[MC]! I’m done cooking!"
     "Instantly, the smell of food wafts through the air, making the growls of my stomach grow louder as my mouth begins to water."
@@ -2122,7 +2122,7 @@ label TSMafterloop1:
                     show ym srhappy
                     YM "Sweet! I’ll be sure to work hard!"
             "Sorry no, stay in your own place. +dp":
-                    show ym sxorry
+                    show ym ssorry
                     YM "oh, okay then"
     
     MC "Anyway, g’night Nix. Turn off the light when you're done, kay?"
@@ -2148,14 +2148,14 @@ label week_tsm:
     #TSM Maid Week Later"
     scene insidepd with fade
     MC "(I have miraculously survived a whole week while living with Rudy)"
-    "(Or maybe saying {i}he{/i} survived would’ve been more fitting?)"
-    "(After all, I’m the one getting all the benefits from this cohabitation.)"
-    "(True to his word, he’s been regularly cleaning the place and cooking meals for us. It’s really thanks to him that I have more time to finish my current never ending wave of assignments.)"
-    "(In anycase, I managed to tone down whatever flirty comments came to my mind in an attempt to maintain peace and friendship)"
-    "(Since today marks the seventh day of him surviving in my place, I've decided to be extra nice and buy us dessert to celebrate.)"
-    "(Or maybe as an apology for making him wear a maid outfit)"
-    "(I’ve been sneakily asking him about the type of desserts that he likes and I think I found something within a reasonable budget that matched)"
-    "(Our nearby supermarket sells silky pudding and I’m planning on surprising him with it)"
+    MC "(Or maybe saying {i}he{/i} survived would’ve been more fitting?)"
+    MC "(After all, I’m the one getting all the benefits from this cohabitation.)"
+    MC "(True to his word, he’s been regularly cleaning the place and cooking meals for us. It’s really thanks to him that I have more time to finish my current never ending wave of assignments.)"
+    MC "(In anycase, I managed to tone down whatever flirty comments came to my mind in an attempt to maintain peace and friendship)"
+    MC "(Since today marks the seventh day of him surviving in my place, I've decided to be extra nice and buy us dessert to celebrate.)"
+    MC "(Or maybe as an apology for making him wear a maid outfit)"
+    MC "(I’ve been sneakily asking him about the type of desserts that he likes and I think I found something within a reasonable budget that matched)"
+    MC "(Our nearby supermarket sells silky pudding and I’m planning on surprising him with it)"
     show tsm nnormal
     TSM "I’m gonna head out. "
     show tsm nsilent
@@ -2570,86 +2570,127 @@ label week_tsm:
     scene insidepd with fade
     "Soon enough, I returned back with the puddings in my hands."
     MC "Ta da! Dessert!"
+    show tsm m
     TSM "Huh..?"
     MC "Dessert, I bought you pudding!"
     "Feigning innocence, I give him my most angelic smile. (Or at least I tried, I’ve never been good at smiling like that)"
+    show tsm m
     TSM "So you weren’t talking about..?"
     MC "About what?"
     "I tilt my head to feign confusion, trying my best to not slip up on the act."
+    show tsm m
     TSM "Y-you.."
+    show tsm m
     MC "Not sure what you thought I was talking about, but I figured I’d buy you pudding to celebrate your first week surviving here."
-    "And as a peace offering for whatever I’ve done that you may not like."
+    MC "And as a peace offering for whatever I’ve done that you may not like."
+    show tsm m
     "Despite seeming a little disappointed at first, his expression shifts to one of unexpected joy."
+    show tsm m
     TSM "You bought this for me?"
     MC "Well the other one’s mine but if you’re that hungry then you can eat both."
+    show tsm m
     TSM "I’m not that greedy, stupid."
-    "And um, thanks. I love pudding."
-    "How did you know I liked this?"
+    show tsm m
+    TSM "And um, thanks. I love pudding."
+    TSM "How did you know I liked this?"
     MC "Because you told me? I’ve been collecting information about you through our dinner conversations."
-    "Pretty sure I asked you this question 3 days ago."
+    MC "Pretty sure I asked you this question 3 days ago."
+    show tsm m
     TSM "Thanks, I guess we both have somethin’ special for today huh?"
-    MC "And here I thought we just had "extra ingredients""
+    MC "And here I thought we just had "extra ingredients"
+    show tsm m
     TSM "(!)"
-    "Don’t read into it. We did, but I also felt like making something else."
+    show tsm m
+    TSM "Don’t read into it. We did, but I also felt like making something else."
+    show tsm m
     MC "(Aww, I think he’s starting to warm up to me)"
-    "I’m glad you did. How’s the pudding?"
+    MC "I’m glad you did. How’s the pudding?"
+    show tsm m
     TSM "Great! This didn’t cost you too much, right?"
     MC "Oh it was a million bucks."
+    show tsm msmirk
     TSM "Shut the fuck up, no it wasn’t."
+    show tsm msilent
     MC "I know, just messin’ with ya."
+    show tsm m
     TSM "I’m starting to think you do certain things just to mess with me."
+    show tsm m
     MC "Sorry, do you hate it?"
+    show tsm m
     TSM "Too late for that, you’ve already shoved me into this maid outfit."
-    MC "(He’s not necessarily saying that he hated it though)"
-    "#ekspresi scandalised"
-    "Hey, I didn’t ‘shove’ you into it, I just gave it to you and you wore it."
-    "It’s not like I was helping you change."
+    show tsm mdeflecting
+    MC "(He’s not necessarily saying that he hated it though)
+    show tsm m
+    MC "Hey, I didn’t ‘shove’ you into it, I just gave it to you and you wore it."
+    MC "It’s not like I was helping you change."
+    show tsm m
     TSM "A-are you done? I’m gonna clean up and study."
+    show tsm m
     MC "You’re not saying that you hate it though."
+    show tsm m
     TSM "I’m gonna clean up-!"
+    show tsm m
     MC "Alright, I’ll help you."
     "(And so ends the night of our one week of living together)"
     
-    "Scene insiden with fade"
+    scene insiden with fade
     MC "(...)"
     MC "Rudy?"
+    show tsm snormal
     TSM "Yea?"
+    show tsm ssilent
     MC "G’night."
+    show tsm s
     TSM "G'night to you too."
+    show tsm s
     TSM "..."
+    show tsm s
     TSM "That all?"
+    show tsm s
     MC "Oh I also wanted to say that I love you."
+    show tsm s
     TSM "Quit messin’ with me and go to bed dumbass."
+    show tsm s
     MC "m’not though."
+    show tsm s
     TSM "You’re tired, go to bed."
+    show tsm s
     MC "Fine."
     
-    "Scene black with fade"
+    scene black with fade
     MC "..."
-    "Scene kosdream with fade"
+    scene kosdream with fade
     MC "(Shit, am I late?)"
     "I pull out my phone to check the time, it seems like I still have plenty to spare."
     MC "(That’s good, wouldn't wanna be late this early in the semester.)"
-    "(Hm?)"
-    "(What’s that smell? It’s delicious)"
-    "(Warm rice…Crispy Sides…Nice Sauce…)"
-    "(Hmmm, something smells good)"
-    "(I still have time right? I wanna check out the source)"
-    "(Shit, I’m getting hungry…)"
-    "Show TSM surprised with vpunch"
+    MC"(Hm?)"
+    MC "(What’s that smell? It’s delicious)"
+    MC "(Warm rice…Crispy Sides…Nice Sauce…)"
+    MC "(Hmmm, something smells good)"
+    MC "(I still have time right? I wanna check out the source)"
+    MC "(Shit, I’m getting hungry…)"
+    show TSM nsurprised with vpunch
     GTWU "(!!!)"
-    "Shit, you came out of nowhere."
+    GTWU"Shit, you came out of nowhere."
+    show tsm n
     MC "Sorry! My bad for bumping into you."
+    show tsm n
     GTWU" It’s fine."
+    show tsm n
     MC "(Actually, I feel like the smells coming from him)"
-    "(Shit, he smells delicious!)"
+    MC "(Shit, he smells delicious!)"
+    show tsm n
     GTWU "Uhh, did you hit your head or something?"
     MC "You smell good."
-    "(Maybe I shouldn’t’ve said that)"
+    show tsm nhuh
+    MC "(Maybe I shouldn’t’ve said that)"
     GTWU "Wha? Don’t sniff me jackass"
+    show tsm m
     MC "My bad, you smell like food. Where did you buy it?"
+    show tsm m
     GTWU "I didn’t buy it, I made it myself."
-    "I’m not feeding you shit."
+    GTWU "I’m not feeding you shit."
+    show tsm m
     MC "Wasn’t expecting you to. I already had breakfast."
     GTWU "And you’re still eyeing me like that?"
     "Whatever, I gotta go. I have this campus event in a bit so, sort that shit yourself."
