@@ -1714,38 +1714,49 @@ label TSMafterloop1:
     
     label day2_ym:
     #YM Maid day 2"
+    scene black with fade
     YM "[MC]? Are you awake?"
-    "I guess not."
-    "Hehe, you look so cute like this. I can stare at you for hours.."
-    "Wait, I have to wake [player_object] up!"
-    "[MC], wakey wakey!"
-    "(...)"
-    "Please? [MC]? Wake up."
-    "Well, here goes nothing."
-    "{size=+5}BOO! {/size}"
-    #Scene insided with vpunch"
+    YM "I guess not."
+    YM "Hehe, you look so cute like this. I can stare at you for hours.."
+    YM "Wait, I have to wake [player_object] up!"
+    YM "[MC], wakey wakey!"
+    YM "(...)"
+    YM "Please? [MC]? Wake up."
+    YM "Well, here goes nothing."
+    YM "{size=+5}BOO! {/size}"
+    scene inside with vpunch
     MC "(!!!)"
-    "WHAT HAPPENED? Is there a fire?? You okay??"
+    MC "WHAT HAPPENED? Is there a fire?? You okay??"
+    show ym nrhappy
     YM "Silly [MC], everything is fine!"
-    "I just wanted to wake you up, look I made breakfast!"
+    YM "I just wanted to wake you up, look I made breakfast!"
+    show ym nsmile
     "As he points at the table I see the aforementioned breakfast. It was a slice of bread covered with a chocolate spread and a messy smiley face drawn with condensed milk."
         menu:
             "Aww, it has a smiley face!":
+                    show ym napologetic
                     YM "Do you like it..?"
+                    show ym nsmile
                     MC "Of course I do! Thanks for breakfast."
-                    "Where’s your slice?"
+                    MC "Where’s your slice?"
+                    show ym nhappy
                     YM "Unfortunately, I already ate it earlier. I have class in a bit so I have to leave early."
+                    show ym nsmile
                     MC "Okayy, see you later."
+                    show ym nhappy
                     YM "Byee [MC]!"
             "(Unfortunately, that’s not my thing) +dp":
                     "(I’d feel bad if I said that though since he’s beaming with joy)"
                     MC "Well, thanks?"
+                    show ym nsilent
                     "I tried giving him the most convincing smile I could muster, if he noticed my insincerity, he didn’t voice them."
+                    show ym napologetic
                     YM "Well, I'll be leaving early since I have class. See you later?"
+                    show ym nsmile
                     MC "See ya’"
                     "(Well, I guess having breakfast never hurts)"
     
-    #Scene campus1d with fade"
+    scene campus1d with fade
     MC "(I feel like I haven’t felt this good in the morning for a while)"
     MC "(Still, he goes way above what I expected him to do. I like having him do stuff for me and all, but I kinda feel bad)"
     "(He even went as far as to wearing that maid outfit)"
@@ -1767,74 +1778,110 @@ label TSMafterloop1:
         menu: 
             "Go talk to him":
                     MC "(Nothing to be ashamed of, he usually approaches whether I’m staring or not)"
-                    "Hey man, what’s up?"
-                    "Breakfast was good by the way."
+                    MC "Hey man, what’s up?"
+                    MC "Breakfast was good by the way."
+                    show ym nrhappy
+                    show cs normal at left
+                    show qs normal at right
                     YM "Aww thanks [MC]! I’m glad you like it."
+                    show ym nsmile
                     MC "Sorry for staring, I just wanted to say hi. You can go back to your friends now."
+                    show ym nrhappy
                     YM "No way! We should walk together, our buildings are in the same direction anyway."
+                    show ym napologetic
                     YM "You guys don’t mind do you?"
+                    show ym nsmile
                     CS "It’s cool man."
                     QS "..."
                     "The other friend doesn’t say a word instead,  he gives a thumbs up in approval."
+                    show ym nhappy
                     YM "See? They’re okay with it."
+                    show ym nsmile
                     MC "Alright then, thanks for letting me join."
                     CS "Soo, what’s with the whole breakfast thing? You guys ate together or somethin?"
                     MC "Nah, but he did make me breakfast."
+                    show ym nrhappy
                     YM "I’ll do it again tomorrow!"
+                    show ym nsmile
                     CS "Oh, you two live together now?"
                     QS "That’s news to us."
                     MC "Yea, he asked to move with me ever since his place caught on fire."
                     QS "What?"
-                    CS "That was {I}your{/I} place?"
+                    CS "That was {i}your{/i} place?"
                     QS "You never told us that."
                     CS "Good thing your [player_pronoun] agreed to let you stay."
                     MC "(Wha-? [player_pronoun]?)"
+                    show ym nrhappy
                     YM "I know! I’m glad I have [MC] in my life."
+                    show ym nsmile
                     MC "(He’s not denying it. Guess I’ll play along?)"
                     MC "Anything for you {I}love{/I}."
+                    show ym nsqueal
                     "He freezes in his steps and gives out a strangled squeal, seemingly caught off guard by the sudden romantic pet name."
+                    show ym nrhappy
                     YM "You called me ‘love’!!"
+                    show ym nsqueal
                     MC "Yea?"
-                    "(Should I not have?)"
+                    MC "(Should I not have?)"
+                    show ym nrhappy
                     YM "I love you, I love you, I love you!!!"
                     "He gives me a tight hug "
+                    show ym nsmile
                     QM "Gross."
                     CM "Keep this up and we’re leaving you two behind."
                     QM "No. We’re leaving now."
+                    show qs at offscreenright with easeout
                     "With that, the quiet one sprints ahead leaving the rest of us behind."
+                    hide qs
                     CM "Well, I'm not gonna be a third wheel so.."
-                    "Byee!"
+                    CM "Byee!"
+                    show cs at offscreenright with easeout
                     "After a short wave, he soon follows and sprints in the direction of his next class."
+                    hide cs
+                    show ym nrhappy
                     YM "I guess it’s just the two of us now [MC]."
+                    show ym nsmile
                     MC "Why didn’t you correct them? "
+                    show ym nworry
                     YM "Are you mad at me for that?"
+                    show ym nsilent
                     MC "No, just curious."
+                    show ym nhappy
                     YM "Well, it’ll make explaining why we live together easier!"
-                    "Are you okay with that?"
+                    show ym napologetic
+                    YM "Are you okay with that?"
                     MC "Well…"
                     "(I’d be lying if I said it didn’t give my heart a little flutter, he’s cute after all)"
-                    "I guess I’m okay with it."
+                    show ym nhappy
+                    MC "I guess I’m okay with it."
+                    show ym nrhappy
                     "He beams with joy at my words and we slip into a comfortable silence for the rest of our walk."
                     
     
             "Run and pretend I never saw him +dp":
                     MC "(NOPE. I definitely made him uncomfortable with all the staring)"
-                    "(We’ve been spending so much time together, I should probably let him have some time with his other friends)"
-                    "(Time to head straight to class!!!!)"
-                    "I quickly sprint to the side, taking another path than my usual to my building."
-                    "scene campusd with vpunch"
+                    MC "(We’ve been spending so much time together, I should probably let him have some time with his other friends)"
+                    MC "(Time to head straight to class!!!!)"
+                    MC "I quickly sprint to the side, taking another path than my usual to my building."
+                    scene campusd with vpunch
                     MC "(Hopefully that wasn’t {I}too{/I} awkward.)"
-                    "(Hopefully he didn’t run after me!)"
+                    MC "(Hopefully he didn’t run after me!)"
+                    show tsm ndeflecting
                     TSM "!!!"
-                    "The hell? [MC]?"
+                    show tsm nuhsure
+                    TSM "The hell? [MC]?"
                     MC "Oh hi! Sorry for running into you!"
+                    show tsm nnormal
                     TSM "s’okay, you should hurry before you’re late."
-                    "You seem like you’re in a rush."
+                    TSM "You seem like you’re in a rush."
+                    show tsm nsilent
                     MC "Thanks!! Bye!!"
+                    show tsm nnormal
                     TSM "Yea."
+                    hide tsm
                     "And with that, I continue running to class."
     
-    "Scene class with fade"
+    scene class with fade
     MC "(WOO!! Class is OVER!)"
     "(And since I finished most of my assignments yesterday, i’m practically free tonight)"
     "(Maybe I can even clean up tonight, lessen whatever burden Nix decided to tackle while he moved into my place)"
@@ -1846,82 +1893,119 @@ label TSMafterloop1:
     MC "Byee!"
     "*phone ringing sfx"
     MC "(Is it Nix?)"
-    "(Yep, it is)"
-    "Hey, what’s up!"
+    show phone ym
+    MC "(Yep, it is)"
+    MC "Hey, what’s up!"
     YM "Hi! I’m planning on stopping by the grocery store so I can cook for us tonight, can you please come with me?"
-    "You can tell me what you like and what you don’t so I know what to make."
+    YM "You can tell me what you like and what you don’t so I know what to make."
     MC "You’re cooking dinner too?"
     YM "Yep! I wanna treat you as well as possible while I'm living with you."
     MC "Are you sure?"
     YM "Absolutely! In fact, I'm actually outside your class!"
+    hide phone
+    show ym n
     "I peek at the door and find Nix, eagerly waving at me through the door as if he’s been waiting for me this whole time."
     MC "Damn, I guess we’ll have to go grocery shopping huh?"
+    show ym nhappy
     YM "Yep! You can’t run away [MC]."
+    show ym nsmile
     MC "Alright, let’s go."
     
-    "Scene supermarket with fade"
+    scene supermarket with fade
+    show ym nhappy
     YM "Here we are! Is there anything you want?"
+    show ym nsmile
     MC "What can you cook?"
+    show ym nrhappy
     YM "Anything for you!"
-    MC "{I}Anything{/I}?"
+    show ym nsmile
+    MC "{i}Anything{/i}?"
+    show ym nhappy
     YM "Anything."
+    show ym nsmile
     MC "Uhh cool, let’s go with something easy then."
     "How about..."
         menu:
             "Pasta":
+                    show ym nhappy
                     YM "Sure! They have some over there."
             "Soup":
+                    show ym nhappy
                     YM "Nice! Something to really warm us up tonight"
             "Fried rice":
+                    show ym nrhappy
                     YM  "Oooh! I love fried rice!"
+                    show ym nsmile
                     MC "I know, you tend to order it when we eat at the cafeteria."
+                    show ym nrhappy
                     YM "Awww, you remember what I likee!!"
                     MC "Let’s continue shopping, shall we?"
-    
+
+    show ym nsmile
     "We head over to grab the ingredients for the dish, carefully comparing prices between brands. Neither of us are particularly well practiced in getting the best deals possible, but with our 2 brain cells combined, we managed to make one competent human being!"
     "Once we’ve grabbed everything we need, we head on over to the cashier and they start scanning our items."
     C "So that’ll be this much. How would you like to pay?"
-    YM "[MC], i’ll pay okay?"
+    show ym napologetic
+    YM "[MC], I’ll pay okay?"
     MC "No, QR code please."
-    "Knowing full well that Nix would never let me pay him back, I quickly grab my phone to scan the paYMent qr code."
+    show ym nquestioning
+    "Knowing full well that Nix would never let me pay him back, I quickly grab my phone to scan the payment qr code."
     "Whenever I buy food on campus, Nix would pay for it without ever letting me pay him back. "
-    "One time, I ended up sneaking the money in an envelope into his bag out of desperation only to find it back in mine the next day. "
+    "One time, I ended up sneaking the money in an envelope into his bag out of desperation only to find it back in mine the next day. 
     MC "(He’s sneaky, I’ll give him that)"
+    show ym nworry
     YM "But-"
+    show ym nsqueal
     "I shove my free hand to cover his mouth so he can’t protest any further. He immediately shuts up, staring at me wide-eyed."
     MC "No, we need to split it."
+    show ym nrhappy
     "He does a quick nod and I can feel his lips forming into a smile under my hands."
-    "Soon after it scans, I show the cashier the proof of my successful paYMent."
+    "Soon after it scans, I show the cashier the proof of my successful payment."
     C "Thank you! Have a nice day!"
     MC "There! I finally got to pay for something!"
+    show ym nhappy
     YM "I guess I can let it slide this time. After all, I'll be paying you back {I}all{/I} month."
+    show ym nsmile
     MC "Shall we go back so you can start repaying me then?"
+    show ym nhappy
     YM "Sure!"
     
-    "Scene insidepd with fade"
+    scene inside with fade
     MC "(I feel a little bad that Nix is doing all this while i’m just setting the table, but he did insist)"
     "(Well..’table’, we’re eating on the floor with buckets and boxes as tables. By this point I should just buy a picnic blanket or something )"
     "(I would set a candle or something to make it look nicer but I'd rather not start another fire. So I settled for a paper flower that I made five minutes ago, hopefully he doesn’t mind?)"
     "(As soon as we got back, he changed into that maid outfit and started cooking"
     "(I would protest but I’d be lying if I said I wasn’t happy with a cute boy in a maid outfit)"
+    show ym mhappy
     YM "[MC]! I’m done cooking!"
     "Instantly, the smell of food wafts through the air, making the growls of my stomach grow louder as my mouth begins to water."
     MC "Damn, I guess you can cook. It smells great!"
+    show ym mrhappy
     YM "Thanks! I tried!"
-    "Ooh! Did you make the flower?"
+    YM "Ooh! Did you make the flower?"
+    show ym msmile
     MC "Yea, I figured I’d add something to make it look nice."
+    show ym mhappy
     YM "Awww, thanks [MC]."
+    show ym mapologetic
     "With a smile he serves me my food, looking at me with a hopeful gaze. "
     MC "( I guess he’s waiting for my seal of approval?)"
+    show ym mgrin
     "I take a quick bite and a smile soon blooms on my face. Seeing my reaction, Nix grins happily."
+    show ym mhappy
     YM "I’m glad you like it!"
     MC "Itsshogood."
+    show ym mrhappy
     YM "Hehe, thanks!"
     MC "You should eat it too, enjoy your hard work and all."
+    show ym mhappy
     YM "I already am enjoying my hard work but alright."
-    "Hmm, it is good."
+    show ym mcontent
+    YM "Hmm, it is good."
     MC "Thanks for cooking, you really don’t have to do it."
+    show ym mquestioning
     YM "Why would I not? We’re friends, yea?"
+    show ym msmile
     MC "Hmm"
         menu:
             "(I guess we are)":
@@ -1930,63 +2014,95 @@ label TSMafterloop1:
                     MC "(Not that I’ll tell him that right now)"
     
     MC "Y’know, we eat together a lot but eating on the floor like this sure is a new feeling."
+    show ym mhappy
     YM "It’s kinda fun, thanks for setting up the table [MC]."
     MC "Should I buy us a picnic blanket? That’ll make it more exciting."
+    show ym mrhappy
     YM "Ooh! That sounds great!"
-    "You’re always fun to talk to [MC]."
+    show ym mapologetic
+    YM "You’re always fun to talk to [MC]."
     MC "And you have always been too nice to me."
-    "Seriously, how did we not meet in highschool? I kinda wish we did."
+    MC "Seriously, how did we not meet in highschool? I kinda wish we did."
+    show ym msdworry
     YM "I think it’s for the best that we met in college, highschool me was kinda…"
     MC "Oh, yea now that I think about it, I was also kinda mean in highschool."
+    show ym mwhine
     YM "NO YOU WEREN'T!"
-    "Oh-uh, sorry for raising my voice."
-    "You weren’t mean at all! In fact, you helped me out when I was in trouble back then, even when I was a complete stranger.."
+    show ym mworry
+    YM "Oh-uh, sorry for raising my voice."
+    show ym mapologetic
+    YM "You weren’t mean at all! In fact, you helped me out when I was in trouble back then, even when I was a complete stranger.."
+    show ym msmile
     MC "Sure you have the right person? Pretty sure I was kinda competitive at the time."
+    show ym mhappy
     YM "You didn’t know highschool me, but I knew highschool you. And you were definitely the nicest person I’ve met there."
     MC "Stop lyin’ bro."
+    show ym mhuffy
     YM "I’m not lying! I heard about how you would help your classmates if they asked, you taught them math, helped refine their grammar for those presentations done in foreign languages."
-    "You gave them your notes and helped review for tests even when it starts in 10 minutes."
+    YM "You gave them your notes and helped review for tests even when you didn't need to"
+    show ym mhuffy
     MC "And how do you know this?"
-    "I know for a fact we weren’t in the same class."
+    YM "I know for a fact we weren’t in the same class."
+    show ym mnormal
     YM "No, but I had friends who were."
-    "I was kinda jealous of them but highschool me was so… so.. Ugh I don’t even wanna say it."
+    show ym msdworry
+    YM "I was kinda jealous of them but highschool me was so… so.. Ugh I don’t even wanna say it."
     MC "It’s okay, we all have cringe pasts (like me). And for some of us, we have cringe presents (also like me)"
-    "Either way, we all have room to grow and embrace the embarrassing parts..or something like that."
-    "I’m not great at this kinda thing"
+    show ym msmile
+    MC "Either way, we all have room to grow and embrace the embarrassing parts..or something like that."
+    MC "I’m not great at this kinda thing"
+    show ym mcontent
     YM "N-no that made a lot of sense actually."
-    "Gosh, you just made yourself look even more amazing to me."
+    show ym mrhappy
+    YM "Gosh, you just made yourself look even more amazing to me."
+    show ym msmile
     MC "Nah, if you knew what I was like in middle school I'm sure your perception of me would drop."
+    show ym mproud
     YM "That doesn’t change who you are now!"
-    "And I like you for you."
+    show ym mcontent
+    YM "And I like you for you."
     MC "Aww, that’s oddly sweet."
-    "Seriously, by the way you act now, I'm really sure you weren’t that bad in highschool."
-    "Hey, we could’ve been slightly shitty people together?"
-    "I was a little mean (even if you didn’t think so) and you were..whatever it is you were."
+    show ym msmile
+    MC "Seriously, by the way you act now, I'm really sure you weren’t that bad in highschool."
+    MC "Hey, we could’ve been slightly shitty people together?"
+    MC "I was a little mean (even if you didn’t think so) and you were..whatever it is you were."
+    show ym mrhappy
     YM "Hehe, you always seem to make it better [MC]."
     MC "Are you done with your food?"
+    show ym mhappy
     YM "Oh yea."
     MC "I’m washing the plates!"
+    show ym mhuffy
     YM "Wait [MC]!"
     MC "Nope! NO objections! A cute maid cooked me dinner and now it’s time to return the favor."
+    show ym mapologetic
     YM "Oh [MC]..."
     
-    "Scene insided with fade"
+    scene inside with fade
     MC "I’m back!"
+    show ym sapologetic
     YM "Heyy, I’m about to study, is it okay if I borrow your desk? I can move if you’re working on something again."
+    show ym ssmile
     MC "Nah, it’s cool. I’m about to sleep early tonight."
+    show ym srhappy
     YM "Good night [MC]!"
-    "Actually…can I ask for a reward if I study hard tonight?"
+    show ym squestioning
+    YM "Actually…can I ask for a reward if I study hard tonight?"
     MC "What is it?"
+    show ym shappy
     YM "Can I cuddle up to you?"
         menu:
             "Go ahead! I hope you don’t mind if I hug back":
+                    show ym srhappy
                     YM "Sweet! I’ll be sure to work hard!"
             "Sorry no, stay in your own place. +dp":
+                    show ym sxorry
                     YM "oh, okay then"
     
     MC "Anyway, g’night Nix. Turn off the light when you're done, kay?"
+    show ym shappy
     YM "Okayy."
-    "Scene black with fade"
+    scene black with fade
     
     if YM_dp >= 6:
         YM "Hngh..[MC]..what did I do wrong..?"
@@ -2004,7 +2120,7 @@ label TSMafterloop1:
     
 label week_tsm:
     #TSM Maid Week Later"
-    "Scene insided with fade"
+    scene insidepd with fade
     MC "(I have miraculously survived a whole week while living with Rudy)"
     "(Or maybe saying {I}he{/I} survived would’ve been more fitting?)"
     "(After all, I’m the one getting all the benefits from this cohabitation.)"
