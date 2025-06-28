@@ -2570,66 +2570,67 @@ label week_tsm:
     scene insidepd with fade
     "Soon enough, I returned back with the puddings in my hands."
     MC "Ta da! Dessert!"
-    show tsm m
+    show tsm munsure
     TSM "Huh..?"
     MC "Dessert, I bought you pudding!"
     "Feigning innocence, I give him my most angelic smile. (Or at least I tried, I’ve never been good at smiling like that)"
-    show tsm m
+    show tsm mangy
     TSM "So you weren’t talking about..?"
     MC "About what?"
     "I tilt my head to feign confusion, trying my best to not slip up on the act."
-    show tsm m
+    show tsm mdeflecting
     TSM "Y-you.."
-    show tsm m
+    show tsm mpout
     MC "Not sure what you thought I was talking about, but I figured I’d buy you pudding to celebrate your first week surviving here."
     MC "And as a peace offering for whatever I’ve done that you may not like."
-    show tsm m
+    show tsm mhappy
     "Despite seeming a little disappointed at first, his expression shifts to one of unexpected joy."
-    show tsm m
+    show tsm msure
     TSM "You bought this for me?"
     MC "Well the other one’s mine but if you’re that hungry then you can eat both."
-    show tsm m
+    show tsm msmirk
     TSM "I’m not that greedy, stupid."
-    show tsm m
+    show tsm msure
     TSM "And um, thanks. I love pudding."
     TSM "How did you know I liked this?"
+    show tsm msilent
     MC "Because you told me? I’ve been collecting information about you through our dinner conversations."
     MC "Pretty sure I asked you this question 3 days ago."
-    show tsm m
+    show tsm mhappy
     TSM "Thanks, I guess we both have somethin’ special for today huh?"
     MC "And here I thought we just had "extra ingredients"
-    show tsm m
+    show tsm mbsurprised
     TSM "(!)"
-    show tsm m
+    show tsm msdnormal
     TSM "Don’t read into it. We did, but I also felt like making something else."
-    show tsm m
+    show tsm msilent
     MC "(Aww, I think he’s starting to warm up to me)"
     MC "I’m glad you did. How’s the pudding?"
-    show tsm m
+    show tsm mhappy
     TSM "Great! This didn’t cost you too much, right?"
     MC "Oh it was a million bucks."
     show tsm msmirk
     TSM "Shut the fuck up, no it wasn’t."
     show tsm msilent
     MC "I know, just messin’ with ya."
-    show tsm m
+    show tsm mhappy
     TSM "I’m starting to think you do certain things just to mess with me."
-    show tsm m
+    show tsm msilent
     MC "Sorry, do you hate it?"
-    show tsm m
+    show tsm mhappy
     TSM "Too late for that, you’ve already shoved me into this maid outfit."
-    show tsm mdeflecting
+    show tsm msilent
     MC "(He’s not necessarily saying that he hated it though)
-    show tsm m
+    show tsm mdeflecting
     MC "Hey, I didn’t ‘shove’ you into it, I just gave it to you and you wore it."
     MC "It’s not like I was helping you change."
-    show tsm m
+    show tsm mangy
     TSM "A-are you done? I’m gonna clean up and study."
-    show tsm m
+    show tsm mpout
     MC "You’re not saying that you hate it though."
-    show tsm m
+    show tsm mdeflecting
     TSM "I’m gonna clean up-!"
-    show tsm m
+    show tsm mpout
     MC "Alright, I’ll help you."
     "(And so ends the night of our one week of living together)"
     
@@ -2640,21 +2641,21 @@ label week_tsm:
     TSM "Yea?"
     show tsm ssilent
     MC "G’night."
-    show tsm s
+    show tsm snormal
     TSM "G'night to you too."
-    show tsm s
+    show tsm silent
     TSM "..."
-    show tsm s
+    show tsm suhsure
     TSM "That all?"
-    show tsm s
+    show tsm silent
     MC "Oh I also wanted to say that I love you."
-    show tsm s
+    show tsm ssmirk
     TSM "Quit messin’ with me and go to bed dumbass."
-    show tsm s
+    show tsm spout
     MC "m’not though."
-    show tsm s
+    show tsm snormal
     TSM "You’re tired, go to bed."
-    show tsm s
+    show tsm ssilent
     MC "Fine."
     
     scene black with fade
@@ -2669,87 +2670,119 @@ label week_tsm:
     MC "(Hmmm, something smells good)"
     MC "(I still have time right? I wanna check out the source)"
     MC "(Shit, I’m getting hungry…)"
-    show TSM nsurprised with vpunch
+    show tsm nsurprised with vpunch
     GTWU "(!!!)"
     GTWU"Shit, you came out of nowhere."
-    show tsm n
+    show tsm nsilent
     MC "Sorry! My bad for bumping into you."
-    show tsm n
-    GTWU" It’s fine."
-    show tsm n
+    show tsm nnormal
+    GTWU "It’s fine."
+    show tsm nsilent
     MC "(Actually, I feel like the smells coming from him)"
     MC "(Shit, he smells delicious!)"
-    show tsm n
+    show tsm nuhsure
     GTWU "Uhh, did you hit your head or something?"
     MC "You smell good."
     show tsm nhuh
     MC "(Maybe I shouldn’t’ve said that)"
     GTWU "Wha? Don’t sniff me jackass"
-    show tsm m
+    show tsm mnilent
     MC "My bad, you smell like food. Where did you buy it?"
-    show tsm m
+    show tsm nnormal
     GTWU "I didn’t buy it, I made it myself."
     GTWU "I’m not feeding you shit."
-    show tsm m
+    show tsm nsilent
     MC "Wasn’t expecting you to. I already had breakfast."
+    show tsm nuhsure
     GTWU "And you’re still eyeing me like that?"
-    "Whatever, I gotta go. I have this campus event in a bit so, sort that shit yourself."
+    show tsm nnormal
+    GTWU "Whatever, I gotta go. I have this campus event in a bit so, sort that shit yourself."
+    show tsm n
     MC "Wait a sec, you go to Begonia’s Institute of Technology too?"
+    show tsm nhuh
     GTWU "Shit, you too?"
     MC "Yea! Wanna walk together? "
+    show tsm nnormal
     GTWU "No"
+    show tsm nsilent
     MC "C’mon, help me out here. What if I get lost?"
+    show tsm nnormal
     GTWU "That’s your problem."
+    show tsm nsilent
     MC "What if you get lost?"
+    show tsm nnormal
     GTWU "Then that’s not your business."
+    show tsm nsilent
     MC "I can help you out? Two heads are better than one."
+    show tsm nuhsure
     GTWU "You’re awfully chummy to someone you just met."
+    show tsm nsilent
     MC "Sorry, I got a bit lonely since all my friends went to different colleges and I haven’t met anyone here."
-    "You’re actually the first one I’ve seen!"
+    MC "You’re actually the first one I’ve seen!"
+    show tsm nuhsure
     GTWU "Is that supposed to be some kinda honor?"
+    show tsm nsilent
     MC "Nope! I just wanted to talk to someone."
+    show tsm nuhsure
     GTWU "Guess I have no choice huh?"
+    show tsm nsilent
     MC "Well, you can always just run away from me? I don’t mind."
+    show tsm nhappy
     GTWU "Whatever."
-    "So are you coming or not?"
+    GTWU "So are you coming or not?"
+    show tsm nsilent
     MC "I am!"
-    "Actually, I don't know your name yet!"
+    MC "Actually, I don't know your name yet!"
+    show tsm nnormal
     TSM "Rudy."
     MC "Nice to meet you ! I’m [MC]."
+    show tsm nhappy
     TSM "Alright."
 
 label week_ym:
     #YM Maid Week Later"
-    "Scene insidepd with fade"
-    "(And so, my first week with Nix passes.)"
-    "(I don’t know what I was expecting when I first agreed but in some ways he did improve my life)"
-    "(Mostly surrounding cooking and other housework, if nothing else my place is the cleanest it’s been in weeks)"
+    scene insidepd with fade
+    MC "(And so, my first week with Nix passes.)"
+    MC "(I don’t know what I was expecting when I first agreed but in some ways he did improve my life)"
+    MC "(Mostly surrounding cooking and other housework, if nothing else my place is the cleanest it’s been in weeks)"
     if dp >= 5:
         MC "(Honestly though, I can’t wait for the month to be over.)"
-        "(Shit thing to say about living with your friend but I don’t know, the more I know about him the more I sense the bad vibes)"
+        MC "(Shit thing to say about living with your friend but I don’t know, the more I know about him the more I sense the bad vibes)"
         
     else:
         MC "(It’s been pretty good, although I do think he’s been too much recently)"
         "(WAY above ‘friend’ level)"
     
     MC "(Regardless, I’ve decided to be nice and buy something to celebrate)"
-    "(And as a sort of thanks for all he’s done for me this past week)"
-    "(Based on what I know about him, he seems to like those cookies with the strawberry jam so I’ll buy those)"
-    "(Trying to make those myself would be disastrous)"
+    MC "(And as a sort of thanks for all he’s done for me this past week)"
+    MC "(Based on what I know about him, he seems to like those cookies with the strawberry jam so I’ll buy those)"
+    MC "(Trying to make those myself would be disastrous)"
+    show ym n
     YM "What are you thinking about [MC]? You seem distracted today."
+    show ym n
     MC "I’m good."
+    show ym n
     YM "Really? You can always tell me if something is wrong. If nothing else, I can always act as a stress reliever."
+    show ym n
     MC "That won’t be necessary."
+    show ym n
     YM "Are you sure? I can skIp my morning class and stay here with you."
+    show ym n
     MC "No way man, go to class. "
-    "I’d hate to ruin your perfect attendance."
+    MC "I’d hate to ruin your perfect attendance."
+    show ym n
     YM "But..."
     MC "No buts! Go to class."
+    show ym n
     YM "Fine..."
-    "Do I get anything for being a good boy?"
+    show ym n
+    YM "Do I get anything for being a good boy?"
     MC "Yes, you get to keep your perfect attendance."
+    show ym n
     YM "Booo...! "
+    show ym n
     MC "Enough pouting, go already. Wouldn’t want you to be late."
+    show ym n
     YM "Can I atleast get a goodbye hug? "
         menu:
             "Sure why not?":
@@ -2769,39 +2802,64 @@ label week_ym:
                         "When he eventually gets further away, I shut the door and find a smile creeping on my face."
                         MC "(He’s pretty cute when he’s like that)"
     
-    "Scene campusd with fade"
+    scene campusd with fade
     MC "(I’m glad I managed to buy those cookies before I have class)"
-    "(I just know Nix would sniff me out if I bought it later)"
-    "(Is that..?)"
-    "(Rudy?)"
-    "(Man, I’ve been seeing him more often lately. It went from once every few months to once a week)"
-    "(No where near how often I encounter Nix though, so seeing him is a good change of pace)"
+    MC "(I just know Nix would sniff me out if I bought it later)"
+    MC "(Is that..?)"
+    show tsm nsilent
+    MC "(Rudy?)"
+    MC "(Man, I’ve been seeing him more often lately. It went from once every few months to once a week)"
+    MC "(No where near how often I encounter Nix though, so seeing him is a good change of pace)"
     MC "Rudy what’s up!"
+    show tsm nhuh
     TSM "huh?"
     "He faces my direction, a little confused. I give him a wave as I approach him and he returns the gesture."
-    "MC What’s up? I don’t usually see you around."
+    show tsm n
+    MC "What’s up? I don’t usually see you around."
+    show tsm n
     TSM "Same here, you followin me around or somethin?"
+    show tsm n
     MC "Obviously not, I don’t have the time for that."
+    show tsm n
     TSM "I sure hope so."
+    show tsm n
     MC "You seem on edge, life treating you badly?"
+    show tsm n
     TSM "Nothing I can't handle."
+    show tsm n
     MC "Well that’s good."
+    show tsm n
     TSM "Umm..I’ve got somethin to ask."
+    show tsm n
     MC "Shoot."
+    show tsm n
     TSM "Did your friend move to our place? I’ve been seeing him around our place a lot."
+    show tsm n
     MC "Yea he did."
+    show tsm nnormal
     TSM "Why? Kinda strange to move in just before the semester’s over."
-    "He’s not stalking you or anything, is he?"
+    show tsm nunsure
+    TSM "He’s not stalking you or anything, is he?"
+    show tsm n
     MC "Nah (probably). Remember the fire?"
+    show tsm n
     TSM "Oh, that."
-    "That was his room?"
+    show tsm n
+    TSM "That was his room?"
+    show tsm n
     MC "Uh no, his room is unscathed but he got scared and asked to move in with me."
+    show tsm n
     TSM "You’re living together ?!!??"
-    "Are you two..dating?"
+    show tsm n
+    TSM "Are you two..dating?"
+    show tsm n
     MC "Well-"
+    show ym nrhappy at right
+    show tsm nsilent at left
     YM "[MC]!"
     
     "Suddenly, I was tackled into a hug by an overly excited Nix. Once he releases me from the hug, he continues his hugging spree and staked his claim on my arm."
+    show ym n
     YM "[MC], who is this?"
     MC "That’s our downstairs neighbor."
     YM "Nice to meet you. I’m Nix."
