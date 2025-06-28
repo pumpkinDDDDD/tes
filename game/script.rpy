@@ -3031,152 +3031,208 @@ label week_ym:
         YM "[MC]! You’re awake."
         MC "(Is that…Nix? Still in the maid outfit..)"
         #make the outfit bloody"
+        show ym ed1sorry
         YM "Oh, please don’t struggle too much. You’ll hurt yourself."
         "I try to get up from my position, but fail."
         "As my consciousness returns, I realize that I’ve been buried under blankets and duct taped to my bed."
         "When I struggle once more to get up, Nix quickly panics and frantically places himself on top of me, acting as an extra weight."
-        #cgklsempet"
+        scene ed1ver2 with fade
         YM "Please don’t do this to me [MC]...Stay with me.."
-        "I don’t wanna hurt you more than I have.."
+        YM "I don’t wanna hurt you more than I have.."
         MC "The fuck?"
         YM "I’m sorry I have to do this [MC], but i’m scared you might leave me. And I can't let that happen."
-        "After all, I’ve worked so hard for this. I worked so hard for {I}you{/I}"
+        YM "After all, I’ve worked so hard for this. I worked so hard for {I}you{/I}"
         MC "(Why..? I thought Rudy was supposed to kick him out.)"
-        "(Did he bail on me?)"
+        MC "(Did he bail on me?)"
         YM "Oh [MC], don’t look away from me. Keep your eyes on me and me alone."
-        "Don’t think for one second that I didn't know what he was about to do."
+        YM "Don’t think for one second that I didn't know what he was about to do."
         MC "What happened to Rudy?"
         YM "{b} Don’t even say his name!{/b}"
-        "Woops, sorry for raising my voice at you. Please don’t do it again [MC], you know that it upsets me."
+        YM "Woops, sorry for raising my voice at you. Please don’t do it again [MC], you know that it upsets me."
         MC "{b}What happened?{/b}"
         YM "{b}I SAID DON’T MENTION HIM {/b]"
-        "What do I need to do to get your mind off of him [MC]? Please tell me, I’ll do anything."
+        YM "What do I need to do to get your mind off of him [MC]? Please tell me, I’ll do anything."
         MC "Tell me. What. Happened. To. Rudy."
         YM "ARRGHHH, Must you be so {b}stubborn{/b} !"
-        "You don’t need to know anything. All you need to know is that he won’t come between us anYMore, so don’t worry."
-        "I took care of everything, so please don’t even think about him anYMore."
-        "He’s in your past [MC]."
+        YM "You don’t need to know anything. All you need to know is that he won’t come between us anYMore, so don’t worry."
+        YM "I took care of everything, so please don’t even think about him anYMore."
+        YM "He’s in your past [MC]."
         MC "What did you do?! "
         YM "STOP…!!!"
         "Something seems to snap even further in Nix as heavy tears start streaming down his face."
         YM "PLEASE..JUST…LOOK AT {b}ME{/b}"
-        "He’s dead, okay???! DEAD! He’s gone and all you have left is {b}me{/b}."
+        scene ed1ver1
+        YM "He’s dead, okay???! DEAD! He’s gone and all you have left is {b}me{/b}."
         MC "You’re fucking lying. "
         YM "See [MC], I’m stronger..! All I needed to do was continuously spray his face with mosquito repellent before stabbing him..!"
         MC "(Guess that’s why the room smells like this)"
         YM "Why can’t you please see who it is that truly wants you? It’s me."
         MC "Want me? Or want me dead?"
         YM "I wouldn’t do that..! I love you [MC], always have and always will."
-        "Please.. You have to believe me. You’re the only reason why I even chose this college."
-        "You’re the only reason why I chose my current place."
-        "All this is so that I could be close to you…!"
-        "And you still won’t even consider me!"
+        YM "Please.. You have to believe me. You’re the only reason why I even chose this college."
+        YM "You’re the only reason why I chose my current place."
+        YM "All this is so that I could be close to you…!"
+        YM "And you still won’t even consider me!"
         MC "If there’s 7 billion people in this world, I’m not going for you."
         YM "Why won’t you just understand?"
-        "I love you."
+        YM "I love you."
         "..."
-        "I know what to do..."
-        "I think I need to prove it to you. Then you’ll believe me, right?"
+        YM "I know what to do..."
+        YM "I think I need to prove it to you. Then you’ll believe me, right?"
         In an instant, he closes the distance between us and places his lips on mine. His hands desperately cupping my face while his tears fall down onto mine."
         I try to get him off but he moves his other hand to hold me down to the bed."
         YM "Do you get it now [MC]? "
         "You’re mine you’re mine you’re mine you’re mine you’remine youremine youremine youremine youremine youremine"
         MC "(Fuck, I should’ve known that I would attract someone crazy)"
         "Ending 1 : You’re Mine."
+        jump label endgame
         
     else:
+        scene inside with fade
         MC "Nix? I’m back."
+        show ym mrhappy
         YM "Welcome back [MC]! "
         
-    if YM_ij == 1:
-        MC "How’s your..uhh..face? I have an ice pack around here somewhere."
-        YM "[MC]...It hurts…"
-        MC "Sorry. I’ll make it up to you now."
-        YM "That guy you were with, I don’t like him…"
-        MC "Again, sorry about that. I think he was just trying to help me out."
-        "I don’t appreciate you telling other people lies like that, y’know?"
-        YM "Hmph..fine…"
-        MC "Here, give me your hand."
-        YM "It’s colddd..!"
-        MC "It’s an ice pack, hold it up to where Rudy punched you earlier."
-        YM "Okayyy"
-    
-    else:
-        MC "So..boyfriend huh?"
-        YM "umm..sorry about that. You don’t mind, do you [MC]?"
-        "I just felt this tightness in my chest when I saw you with him..and I don’t know what to do about it.."
-        MC "So you got jealous?"
-        YM "Please don’t hate me.."
-        MC "Chill, I don’t."
-        YM "That’s good."
-    
+        if YM_ij == 1:
+            MC "How’s your..uhh..face? I have an ice pack around here somewhere."
+            show ym mconcerned
+            YM "[MC]...It hurts…"
+            MC "Sorry. I’ll make it up to you now."
+            show ym nworry
+            YM "That guy you were with, I don’t like him…"
+            MC "Again, sorry about that. I think he was just trying to help me out."
+            MC "I don’t appreciate you telling other people lies like that, y’know?"
+            show ym mhuffy
+            YM "Hmph..fine…"
+            MC "Here, give me your hand."
+            show ym mwhine
+            YM "It’s colddd..!"
+            MC "It’s an ice pack, hold it up to where Rudy punched you earlier."
+            show ym mnormal
+            YM "Okayyy"
+        
+        else:
+            show ym msmile
+            MC "So..boyfriend huh?"
+            show ym mapologetic
+            YM "umm..sorry about that. You don’t mind, do you [MC]?"
+            show ym mworry
+            YM "I just felt this tightness in my chest when I saw you with him..and I don’t know what to do about it.."
+            MC "So you got jealous?"
+            show ym mconcerned
+            YM "Please don’t hate me.."
+            MC "Chill, I don’t."
+            show ym mapologetic
+            YM "That’s good."
+
+    show ym mrhappy
     YM " Anyway, I already made dinner!"
     MC "Already? I haven’t even set up our picnic blanket yet."
+    show ym mhappy
     YM "It’s okay, I still need to grab the food from the kitchen."
+    show ym msmile
     MC "Gotcha’ I’ll set it up for us while you do that."
-    "Scene inside with fade"
-    
+    scene insidepd with fade
+
+    show ym mhappy    
     YM "[MC], you done?"
+    show ym msmile
     MC "I am, let’s dig in."
+    show ym mrhappy
     YM "Okie, here you go!"
+    show ym msmile:
+        parallel:
+            ease .5 zoom 1.5
+        parallel:
+            yalign 0.0
+            linear 0.0 yalign 0.0 xalign 0.5
     "#sprite zoom"
     MC "Y’know, I’m sorry for ever doubting you, I guess you are good at this!"
+    show ym mapologetic
     YM "I’m glad you think so but.."
-    "#sprite mulai serem "
+    show ym mmad
     YM "{b}Am I even better than the guy downstairs?{/b}"
     MC "Huh?"
+    show ym mnormal
     YM "I heard that he’s a good cook. I heard that you asked to taste his lunch at some point."
     MC "(Where is this coming from?)"
-    "I wouldn’t know, I never got a taste of his cooking."
+    MC "I wouldn’t know, I never got a taste of his cooking."
+    show ym mmad
     YM "I saw you walking to campus with him a week ago, why did you meet up with him?"
     MC "I didn’t ‘meet up’ with him, I didn't plan anything."
-    "I saw my neighbour and figured we’d have a chat since we’re heading in the same direction."
-    "(Why is he making such a big deal out of me and my neighbor walking together? I haven’t even seen him in months at that point!)"
-    "How do you even know that? You weren’t there."
+    MC "I saw my neighbour and figured we’d have a chat since we’re heading in the same direction."
+    MC "(Why is he making such a big deal out of me and my neighbor walking together? I haven’t even seen him in months at that point!)"
+    MC "How do you even know that? You weren’t there."
+    show ym mworry
     YM "And you were with him again this afternoon.."
+    show ym mwhine
     YM "You should’ve called me. I’m the one who’s closer to you!"
     MC "For what? I’m just walking to class, we’re not hanging out or anything."
     YM "Still-! Y-y..you-"
     "#zoom lagi"
-    "{b}You’re mine!{/b}"
+    show ym mmcangry:
+        parallel:
+            ease .5 zoom 2.0
+        parallel:
+            yalign 0.0
+            linear 0.0 yalign 0.0 xalign 0.5
+    YM "{b}You’re mine!{/b}"
     MC "(...)"
     "#zoom out"
+    show ym mhorrified:
+        parallel:
+            ease .5 zoom 1.5
+        parallel:
+            yalign 0.0
+            linear 0.0 yalign 0.0 xalign 0.5
     "Realizing his sudden outburst, he clams up and falls to his knees, seemingly horrified for raising his voice at me."
     MC "(This is the first time I’ve seen him this upset over anything)"
-    "(Scratch that, this is the first time I've seen him upset in general.)"
-    "Nix?"
+    MC "(Scratch that, this is the first time I've seen him upset in general.)"
+    MC "Nix?"
+    show ym mwhine
     YM "S-sorry, I-I don’t know what came over me.."
         menu:
             "Are you okay? You seem on edge.":
+                    show ym mconcerned
                     YM "I-i’m sorry, I shouldn’t’ve yelled like that."
             "You better be, You don’t get to be mad over who I interact with.":
                     "#sprite nangis"
+                    show ym mwhinecry
                     YM "I’M SORRY-! Y-you probably hate me now d-don’t you?"
                     
     MC "I hate to say this but you’ve been a bit weird for a while now. What's up?"
+    show ym mworry
     YM "[MC]..I..I.."
     "He struggles to get the words out before suddenly snapping back to normal, if a little more unhinged than usual."
+    #ganti bgm sini
+    show ym mgrin
     YM "Nothing’s wrong [MC] !"
-    "I’ve just been a little tired, maybe it’ll all be better if you let me cuddle up to you after this?"
-    "After all, I did do allll of this just for you."
-    MC "Why? Why go this far for me of all people?"
+    YM "I’ve just been a little tired, maybe it’ll all be better if you let me cuddle up to you after this?"
+    YM "After all, I did do allll of this just for you."
+    MC "Why? Why go this far for me of all people? You're not acting like yourself"
+    show ym mquestioning
     YM "Why not? As far as I’m concerned you’re the only important person in the world."
     MC "C’mon be real with me here. You’re pretty friendly, and you have lots of friends. Surely there are other people in your life that you care about?"
+    show ym mnormal
     YM "There aren’t, you’re the only one that matters."
         menu: 
             "(Oh? I kinda like that)":
                     MC "(I get that this is all a little much by conventional standards but I’m kinda into it)"
             "(Yikes, what is wrong with him?)":
                     MC "(That is NOT the Nix that I know)"
-    
+
+    show ym mhappy
     YM "You’re the only person worth caring about.."
-    "So please, let me take care of you. You just seem really tired lately and all I want is for you to be happy."
-    "Please..let me be useful to you [MC]..I can do so much for you.."
-    "I can cook right? You like my cooking? Even if you don’t. I promise I’ll learn what you like!"
-    "Or if you just need eye candy, I’m always here for you. Dress me up in anything you like."
-    "Anything so that I can be yours."
-    "Please [MC], won’t you give me the honor of being by your side? Let me serve you."
-    "Please?"
+    show ym mwhine
+    YM "So please, let me take care of you. You just seem really tired lately and all I want is for you to be happy."
+    YM "Please..let me be useful to you [MC]..I can do so much for you.."
+    YM "I can cook right? You like my cooking? Even if you don’t. I promise I’ll learn what you like!"
+    show ym mgrin
+    YM "Or if you just need eye candy, I’m always here for you. Dress me up in anything you like."
+    YM "Anything so that I can be yours."
+    show ym mbtouched
+    YM "Please [MC], won’t you give me the honor of being by your side? Let me serve you."
+    YM "Please?"
         menu: 
             "Y’know what? I’m down. Set dp=0":
                     YM "Is that a yes..?!"
