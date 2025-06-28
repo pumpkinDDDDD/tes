@@ -2757,44 +2757,58 @@ label week_ym:
     MC "(And as a sort of thanks for all he’s done for me this past week)"
     MC "(Based on what I know about him, he seems to like those cookies with the strawberry jam so I’ll buy those)"
     MC "(Trying to make those myself would be disastrous)"
-    show ym n
+    show ym nnormal
     YM "What are you thinking about [MC]? You seem distracted today."
-    show ym n
+    show ym nsmile
     MC "I’m good."
-    show ym n
+    show ym nhappy
     YM "Really? You can always tell me if something is wrong. If nothing else, I can always act as a stress reliever."
-    show ym n
+    show ym nsmile
     MC "That won’t be necessary."
-    show ym n
+    show ym nhappy
     YM "Are you sure? I can skIp my morning class and stay here with you."
-    show ym n
+    show ym nworry
     MC "No way man, go to class. "
     MC "I’d hate to ruin your perfect attendance."
-    show ym n
+    show ym nwhine
     YM "But..."
     MC "No buts! Go to class."
-    show ym n
+    show ym nworry
     YM "Fine..."
-    show ym n
+    show ym napologetic
     YM "Do I get anything for being a good boy?"
     MC "Yes, you get to keep your perfect attendance."
-    show ym n
+    show ym nhuffy
     YM "Booo...! "
-    show ym n
+    show ym nhuffy
     MC "Enough pouting, go already. Wouldn’t want you to be late."
-    show ym n
+    show ym nhappy
     YM "Can I atleast get a goodbye hug? "
         menu:
             "Sure why not?":
+                     show ym nrhappy: 
+                          parallel:
+                                ease .5 zoom 1.5
+                          parallel:
+                                yalign 0.0
+                                linear 0.0 yalign 0.0 xalign 0.5
                     "He beams with joy and soon buries himself in my chest, seeming way too comfortable, like he’s never gonna let go."
+                    show ym napologetic
                     YM "You’re the best [MC].."
                     MC "I know, but you should go now."
+                    show ym nhappy
+                    YM "Alrightttt"
             "No, just go already. +2 dp":
+                    show ym nmtch
                     YM "{size=-10}Shit{/size}"
+                    
                     MC "What was that?"
+                    show ym nhappy
                     YM "Nothing!"
+                    show ym rhappy
                     YM "Okie then, byee!"
                     MC "Bye!"
+                    hide ym
                     if dp >= 4:
                         "Once he leaves, I breathe a sigh of relief."
                         MC "(I’m starting to hate him, immensely)"
@@ -2802,7 +2816,7 @@ label week_ym:
                         "When he eventually gets further away, I shut the door and find a smile creeping on my face."
                         MC "(He’s pretty cute when he’s like that)"
     
-    scene campusd with fade
+    scene campus1d with fade
     MC "(I’m glad I managed to buy those cookies before I have class)"
     MC "(I just know Nix would sniff me out if I bought it later)"
     MC "(Is that..?)"
@@ -2814,62 +2828,73 @@ label week_ym:
     show tsm nhuh
     TSM "huh?"
     "He faces my direction, a little confused. I give him a wave as I approach him and he returns the gesture."
-    show tsm n
+    show tsm nsilent
     MC "What’s up? I don’t usually see you around."
-    show tsm n
+    show tsm nnormal
     TSM "Same here, you followin me around or somethin?"
-    show tsm n
+    show tsm nsilent
     MC "Obviously not, I don’t have the time for that."
-    show tsm n
+    show tsm nhappy
     TSM "I sure hope so."
-    show tsm n
+    show tsm nsilent
     MC "You seem on edge, life treating you badly?"
-    show tsm n
+    show tsm nnormal
     TSM "Nothing I can't handle."
-    show tsm n
+    show tsm nsilent
     MC "Well that’s good."
-    show tsm n
+    show tsm nsdquestioning
     TSM "Umm..I’ve got somethin to ask."
-    show tsm n
+    show tsm nsilent
     MC "Shoot."
-    show tsm n
+    show tsm nunsure
     TSM "Did your friend move to our place? I’ve been seeing him around our place a lot."
-    show tsm n
+    show tsm nsilent
     MC "Yea he did."
     show tsm nnormal
     TSM "Why? Kinda strange to move in just before the semester’s over."
     show tsm nunsure
     TSM "He’s not stalking you or anything, is he?"
-    show tsm n
+    show tsm nsilent
     MC "Nah (probably). Remember the fire?"
-    show tsm n
+    show tsm nnormal
     TSM "Oh, that."
-    show tsm n
+    show tsm nuhsure
     TSM "That was his room?"
-    show tsm n
+    show tsm nsilent
     MC "Uh no, his room is unscathed but he got scared and asked to move in with me."
-    show tsm n
+    show tsm nhuh
     TSM "You’re living together ?!!??"
-    show tsm n
+    show tsm nuhsure
     TSM "Are you two..dating?"
-    show tsm n
+    show tsm nsilent
     MC "Well-"
-    show ym nrhappy at right
+    show ym nrhappy at right:
+        linear 0.050 xoffset -10
+        linear 0.050 xoffset +0
+        linear 0.050 yoffset -10
+        linear 0.050 yoffset +0
     show tsm nsilent at left
     YM "[MC]!"
     
     "Suddenly, I was tackled into a hug by an overly excited Nix. Once he releases me from the hug, he continues his hugging spree and staked his claim on my arm."
-    show ym n
+    show ym nquestioning
     YM "[MC], who is this?"
     MC "That’s our downstairs neighbor."
+    show ym ngrin
     YM "Nice to meet you. I’m Nix."
     "He smiles as sweetly as he always does, but this time the light doesn’t quite seem to reach his eyes."
+    show tsm nsdquestioning
     TSM "Uh yea, sure."
+    show tsm nangry:
+        linear 0.050 xoffset +10
     "Like a cat sensing a threat, Rudy seems to instinctively back away from Nix, not bothering to hide his less than thrilled expression."
     MC "(I guess he is kinda bad with strangers)"
+    show ym nnormal
     YM "What are you talking about with my [player_pronoun]? "
+    show ym nsilent
+    show tsm nnsdangy
     TSM "Nothing, I’m about to leave anyway."
-    "So I guess he is your boyfriend?"
+    TSM "So I guess he is your boyfriend?"
         menu:
             "Nix, quit messing around. We’re not together. +2 dp + ij":
                     YM "[MC]...Don’t be like that, am I not enough for you? I can change..."
@@ -2890,6 +2915,7 @@ label week_ym:
                     "Not wanting to deal with Nix at the moment, I hurriedly follow behind Rudy as he runs away from the scene of the crime. "
                     "Once in a while, Rudy would look behind to see if I’m still there."
                     "Pretty sure we got a few odd looks, but by this point the adrenaline is getting to me."
+                    scene campusd with fade
                     "By the time we reached somewhere more secluded I was tired as all hell."
                     TSM "Are you okay?"
                     MC "I’ll live."
@@ -2938,53 +2964,59 @@ label week_ym:
                         MC "Alright, thanks for offering."
     
             "Clingy isn’t he? Not that I mind.":
+                    show ym nrhappy
                     YM "Hehe"
                     TSM "uh huh, whatever."
-                    "See you some other time."
-                    "Hide TSM"
+                    TSM "See you some other time."
+                    hide tsm
+                    show ym nnormal at center
                     YM "Why were you talking to him [MC]?"
                     MC "Because I saw him and I figured I’d say hi?"
+                    show ym nhuffy
                     YM "Don’t.."
                     MC "Why?"
+                    show ym nmnormal
                     YM "Because you’re with {b}me{/b}"
                     MC "Uh Nix? You’re holding on a bit too tight there."
+                    show ym napologetic
                     YM "Oh! Sorry, is this better?"
                     MC "Yea."
+                    show ym nhappy
                     YM "Alright then, shall we go to class?"
                     MC "Sure."
     
-    "Scene road with fade"
+    scene road with fade
     MC "(Class is done!)"
-    "(Time to get back to my place and see Nix again)"
+    MC "(Time to get back to my place and see Nix again)"
     if  YM_ij == 1 and YM_dp <= 9:
-        "(And maybe check on that bloody nose of his since I do feel a little bad)"
-        "(Just a little)"
+        MC "(And maybe check on that bloody nose of his since I do feel a little bad)"
+        MC "(Just a little)"
     else: 
-        "(And give him those cookies I got to mark his first week here)"
-        "(Might as well show a little appreciation for him)"
+        MC "(And give him those cookies I got to mark his first week here)"
+        MC "(Might as well show a little appreciation for him)"
         
     
     if dp == 10:
         MC "(Dear lord, class is officially over)"
-        "(I genuinely don’t wanna deal with Nix while I’m this tired but what else can I do?)"
-        "(I’m just glad Rudy was there to help)"
-        "(Whatever, I’ll think about this when I get there)"
-        "Scene black with fade"
-        "Stop  bg music"
+        MC "(I genuinely don’t wanna deal with Nix while I’m this tired but what else can I do?)"
+        MC "(I’m just glad Rudy was there to help)"
+        MC "(Whatever, I’ll think about this when I get there)"
+        scene black with fade"
+        stop bg music
         #creaky door sfx"
         MC "Nix? I’m back."
-        "(It’s so dark, what is he even doing like this?)"
-        "Scene insiden with vpunch"
+        MC "(It’s so dark, what is he even doing like this?)"
+        scene insiden with fade
         MC "Nix?"
         "Show YM siluet with vpunch (ini zoom)"
         "#spray sfx"
         MC "FUCK!!"
         "#punch sfx"
-        "Scene black"
+        scene black
         "Fabric moving sfx"
         YM "Sorry [MC], forgive me alright?"
         MC "(My head hurts, what the fuck happened?)"
-        "(Shit, I’m losing consciousness..)"
+        MC "(Shit, I’m losing consciousness..)"
         YM "{size=-5} I’m sorry, I’m sorry, I’m sorry,I'm sorry I'm sorry I'm sorry im sorry im sorry {/size}"
         MC "(?)"
         YM "{size=-10} I’m sorry, I’m sorry, I’m sorry,I'm sorry I'm sorry I'm sorry im sorryim sorry {/size}"
@@ -2994,7 +3026,7 @@ label week_ym:
         GTWU "Hmm hm hmm hm~"
         MC "(?)"
         GTWU "Hmm hm hm hmm~"
-        "Scene inside with fade"
+        scene insiden with fade
         MC "(My head hurts..)"
         YM "[MC]! You’re awake."
         MC "(Is that…Nix? Still in the maid outfit..)"
