@@ -3223,16 +3223,22 @@ label week_ym:
     YM "Please?"
         menu: 
             "Y’know what? I’m down. Set dp=0":
+                    show ym m
                     YM "Is that a yes..?!"
                     MC "Yes sweetie, It is."
+                    show ym m
                     With that, I lean towards him and give him a little peck on his cheek. He jolts in surprise but soon lets out the most adorable little squeal."
-                    He then moves from his current position to my lap and nuzzles right into the crook of my neck as he wraps his arms around me."
+                    He then moves from his current position to my lap and nuzzles right into the crook of my neck as he wraps his arms around me. 
+                    show ym m
                     YM "So, you love me back right? I’m not just dreaming?"
                     MC "No you’re not."
+                    show ym m
                     I give him a light squeeze in reassurance before gently patting his head. "
-                    "I love you too Nix."
+                    MC "I love you too Nix."
+                    show ym m
                     YM "Gosh [MC], I can drop dead in your hands right this moment and I’ll still be happy.."
                     MC "Please don’t, I can’t let a cute boy like you die in my lap."
+                    show ym m
                     YM "[MC], I’m really the only one for you right?"
                     MC "Yes sweetie, you are."
                     YM "What about that guy downstairs?"
