@@ -365,9 +365,9 @@ label start1:
     MC "“We’re already here!“"
     MC "“See you tomorrow? If we even see each other?“"
     show ym napologetic
-    YM "We always do though, one way or another."
+    YM "“We always do though, one way or another.“"
     show ym nrhappy
-    YM "Well, see you tomorrow!"
+    YM "“Well, see you tomorrow!“"
     MC "Byee!"
     hide ym
     "(Now that I'm back, it’s time to lock in and get things done)."
@@ -2596,8 +2596,11 @@ label week_tsm:
     MC "Pretty sure I asked you this question 3 days ago."
     show tsm mhappy
     TSM "Thanks, I guess we both have somethin’ special for today huh?"
+<<<<<<< Updated upstream
     MC "And here I thought we just had "extra ingredients"
     show tsm mbsurprised
+=======
+>>>>>>> Stashed changes
     MC "And here I thought we just had 'extra ingredients'"
     TSM "(!)"
     show tsm msdnormal
@@ -3422,6 +3425,7 @@ label month_tsm:
     FS "Good."
     LS "Anyway, what kinda guy do you like? And no, this is NOT for Rudy."
     MC "(Which means it is for Rudy)"
+<<<<<<< Updated upstream
     I glance at Rudy in the bushes, he stares at me expectantly, seemingly nervous at what I’m about to say."
     Menu:"
     "Men that can cook, It’d be great if they have a ponytail! Maybe their name starts with an ‘R’?"
@@ -4028,6 +4032,8 @@ label month_tsm:
     Hopelessly vying for every scrap of my attention, he’s officially {b}mine.{/b} "
     Ending 6 :Mine"
    
+=======
+>>>>>>> Stashed changes
     "I glance at Rudy in the bushes, he stares at me expectantly, seemingly nervous at what I’m about to say."
         menu:
             "Men that can cook, It’d be great if they have a ponytail! Maybe their name starts with an ‘R’?":
