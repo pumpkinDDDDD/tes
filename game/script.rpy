@@ -4,7 +4,7 @@
 
 # agkdjagkjsdhkJAHKJA
 #yoooooo wasssupppp
-#1111111
+#testeste
 
 # The game starts here.
 define MC = Character ("[MC]")    
@@ -368,137 +368,137 @@ label start1:
     YM "“We always do though, one way or another.“"
     show ym nrhappy
     YM "“Well, see you tomorrow!“"
-    MC "Byee!"
+    MC "“Byee!“"
     hide ym
-    "(Now that I'm back, it’s time to lock in and get things done)."
+    MC "(Now that I'm back, it’s time to lock in and get things done.)"
     
     scene insidepr with fade
-    MC "(Yikes, I forgot how messy my room is. Should I clean up now? I feel like i’ve been putting it off for some time)"
-    "(How much work do I have left? If I finish then maybe I’ll clean up some other time when I’m less busy)"
-    "(Yea, that sounds good)"
+    MC "(Yikes, I forgot how messy my room is. Should I clean up now? I feel like i’ve been putting it off for some time.)"
+    MC "(How much work do I have left? If I finish then maybe I’ll clean up some other time when I’m less busy.)"
+    MC "(Yea, that sounds good.)"
     
     scene cg1 with fade
-    MC "Lock in [MC], you can do this."
+    MC "“Lock in [MC], you can do this.“"
     scene cg1 with fade
-    MC "Alright, done with that one. Now we can move on to.."
+    MC "“Alright, done with that one. Now we can move on to...“"
     scene cg1 with fade
-    "This is due next week but if I start now.."
+    MC "“This is due next week but if I start now...“"
     scene cg1 with fade
-    "Just a little more.."
+    MC "“Just a little more...“"
     scene cg1 with fade
-    "Am I..done?"
-    "Let’s check one last time, no mistakes right? "
-    "(This part is fine, and this part..’s all good)"
-    "(I think I’m officially done!)"
-    "(Thank..{size=-10} God, I can rest {/size})"
+    MC "“Am I..done?“"
+    MC "“Let’s check one last time, no mistakes right?“"
+    MC "(This part is fine, and this part...’s all good.)"
+    MC "(I think I’m officially done!)"
+    MC "(Thank...{size=-10} God, I can rest {/size})"
     scene black with fade
-    "…"
+    "..."
     scene insidedream with fade
     GTWU "[MC]?"
-    MC "(huh? Who is it?)"
+    MC "(Huh? Who is it?)"
         menu: 
             "He sounds a little rough around the edges. I feel like I know him":
-                    GTWU "If ya don’t wake up now, you're gonna be late."
-                    GTWU "Geez, get an alarm or somethin’ "
-                    MC "My bad."
+                    GTWU "“If ya don’t wake up now, you're gonna be late.“"
+                    GTWU "“Geez, get an alarm or somethin’“"
+                    MC "“My bad.“"
             "Whoever it is, he’s friendly and chipper. He seems very familiar to me": 
-                    GTWU "Wakey wakey! It’s almost time for you to go!"
-                    GTWU "Please? [MC], won’t you wake up for me?"
-                    MC "Alright I’m up"
+                    GTWU "“Wakey wakey! It’s almost time for you to go!“"
+                    GTWU "“Please? [MC], won’t you wake up for me?“"
+                    MC "“Alright I’m up.“"
     
-    "When I opened my eyes, I saw a boy in a cute maid outfit. I can’t quite make out any other discerning features about him but i’ve decided not to question anything"
+    "When I opened my eyes, I saw a boy in a cute maid outfit. I can’t quite make out any other discerning features about him but i’ve decided not to question anything."
     MC "(Who is this?)"
     
         menu: 
-            "He looks pretty grumpy for someone in such a frilly apron, although the way his cheeks reddened is pretty cute": +TSM
-                    GTWU "What’re ya lookin’ at? I said you’re gonna be late."
+            "He looks pretty grumpy for someone in such a frilly apron, although the way his cheeks reddened is pretty cute.": +TSM
+                    GTWU "“What’re ya lookin’ at? I said you’re gonna be late.“"
             "He seems pretty happy in the maid outfit, he keeps twirling around like there’s no shame in it.": +YM
-                    GTWU "Do I look cute? I thought the extra bows might make you happy."
+                    GTWU "“Do I look cute? I thought the extra bows might make you happy.“"
     
     MC "(He’s cute.)"
     "He holds out a hand towards me and I grab it to steady myself out of bed, he seemed used to this."
         menu: 
             "He held out a lunch box towards me and quietly pointed at the table where breakfast had already been made. +TSM":
-                    GTWU "Uh, there’s breakfast. I made your usual."
-                    "And here’s your lunch. Make sure you eat it, don’t skip meals."
-                    MC "Don’t worry I won’t, thanks by the way."
+                    GTWU "“Uh, there’s breakfast. I made your usual.“"
+                    GTWU "“And here’s your lunch. Make sure you eat it, don’t skip meals.“"
+                    MC "“Don’t worry I won’t, thanks by the way.“"
             "He happily stood aside and made a gesture towards the floor and walls. It seemed like he cleaned it before I woke up. +YM":
-                    GTWU "[MC], look! I swept and mopped the floors this morning. Did I do a good job?"
-                    "Oh! And I made breakfast, I hope you’re fine with your usual."
-                    MC "I am, thanks a lot."
+                    GTWU "“[MC], look! I swept and mopped the floors this morning. Did I do a good job?“"
+                    GTWU "“Oh! And I made breakfast, I hope you’re fine with your usual.“"
+                    MC "“I am, thanks a lot.“"
     
-    MC "(Oh this is bliss, if only everyday can be like this)"
-    MC "(This is so nice, I don’t want to go back to what life was like before)"
-    "(Before? What happened before?)"
-    "(Was my life not like this?)"
-    "(Huh?)"
+    MC "(Oh this is bliss, if only everyday can be like this.)"
+    MC "(This is so nice, I don’t want to go back to what life was like before.)"
+    MC "(Before? What happened before?)"
+    MC "(Was my life not like this?)"
+    MC "(Huh?)"
     
     if TSM_route >= 2:
-        "(Actually, now that I think about it.. That maid kinda reminds me of Rudy.)"
-        "(I guess I do find him kinda cute)"
+        MC "(Actually, now that I think about it... That maid kinda reminds me of Rudy.)"
+        MC "(I guess I do find him kinda cute.)"
         "*stuff tumbling sfx"
-        "Scene laptop with fade"
-        GTWU "Wait, please let me stay here!"
+        Scene laptop with fade
+        GTWU "“Wait, please let me stay here!“"
         MC "(What’s going on?)"
-        GTWU "No please! I’ll pay up by the end of the week."
-        "(...)"
-        GTWU "What do you mean you promised the room to someone else? They move in in 2 days?!"
+        GTWU "“No please! I’ll pay up by the end of the week.“"
+        MC "(...)"
+        GTWU "“What do you mean you promised the room to someone else? They move in in 2 days?!“"
         MC "(Is that Rudy?)"
         
-        "Scene hallwayd with fade"
+        Scene hallwayd with fade
         show tsm nangry
-        TSM "I can’t find another place so quickly!"
+        TSM "“I can’t find another place so quickly!“"
         MC "(Is he being kicked out???)"
         show tsm nsilent at left
         show ll normal at right
-        LL "I’m sorry, but you’ve been behind on paYMent for a while now."
+        LL "“I’m sorry, but you’ve been behind on paYMent for a while now.“"
         show tsm nnormal
-        TSM "Couldn’t you have at least warned me before doing this?"
-        LL "Sorry, but if it helps, they move out next month? You can move back in then."
+        TSM "“Couldn’t you have at least warned me before doing this?“"
+        LL "“Sorry, but if it helps, they move out next month? You can move back in then.“"
         show tsm nangry
-        TSM " Next month?! Where am I gonna live for this month then??"
+        TSM "“Next month?! Where am I gonna live for this month then??“"
         show tsm serious
-        LL "Again, I'm sorry to hear that. But you’ll have to move out by tomorrow."
-        "Hide ll"
+        LL "“Again, I'm sorry to hear that. But you’ll have to move out by tomorrow.“"
+        Hide ll
         show tsm nsdangry
-        TSM "Shit."
+        TSM "“Shit.“"
         show tsm nserious
         
-        MC "(Should I.. Not have seen that?)"
+        MC "(Should I.. .Not have seen that?)"
         show tsm nsdangry
-        TSM "Fuck are you doing here?"
+        TSM "“Fuck are you doing here?“"
         show tsm nserious
-        MC "Sorry, I heard you shouting from upstairs and I got worried."
-        "Is there any way I can help?"
+        MC "“Sorry, I heard you shouting from upstairs and I got worried.“"
+        MC "“Is there any way I can help?“"
         show tsm nsdangry
-        TSM "Nah, you can fuck off. It’s not your business, leave me alone."
-        MC "(Ouch)"
+        TSM "“Nah, you can fuck off. It’s not your business, leave me alone.“"
+        MC "(Ouch.)"
         show tsm nnormal
-        TSM "Why are you still here? If ya can’t help then scram."
-        "It’s not like you can do anything in this situation."
+        TSM "“Why are you still here? If ya can’t help, then scram.“"
+        TSM "“It’s not like you can do anything in this situation.“"
         show tsm nserious
         MC "(Wait a minute this could be the solution to all my problems (in a way).)"
-        "(He needs a temporary place to stay doesn’t he? I can provide that.)"
-        "(And he’s really good at cooking and housework.. Something I'm less great at.)"
-        "(I have a potentially devious idea thanks to my perfectly timed dream)"
+        MC "(He needs a temporary place to stay doesn’t he? I can provide that.)"
+        MC "(And he’s really good at cooking and housework... Something I'm less great at.)"
+        MC "(I have a potentially devious idea thanks to my perfectly timed dream.)"
         show tsm nuhsure
-        TSM "What’s with that look on your face? Don’t tell me you’re gonna keep bothering me."
-        MC "Actually, I have an offer to make."
+        TSM "“What’s with that look on your face? Don’t tell me you’re gonna keep bothering me.“"
+        MC "“Actually, I have an offer to make.“"
         show tsm nhuh
-        TSM "Huh?"
+        TSM "“Huh?“"
         show tsm nsilent
-        MC "You’re good at cooking and cleaning and all that jazz, yea?"
+        MC "“You’re good at cooking and cleaning and all that jazz, yea?“"
         show tsm nnormal
-        TSM "I’m not a moron, so yea."
+        TSM "“I’m not a moron, so yea.“"
         show tsm nsilent
-        MC "No need to diss me. Anyway, I happen to want someone to do all that stuff for me."
-        "And in exchange, you can stay with me for the month."
-        "For the low-low price of doing housework and wearing a maid outfit, you can live a month rent free at my place! I’ll also split the costs of whatever groceries you buy."
-        MC "(Woops, the maid outfit portion slipped out)"
+        MC "“No need to diss me. Anyway, I happen to want someone to do all that stuff for me.“"
+        MC "“And in exchange, you can stay with me for the month.“"
+        MC "“For the low-low price of doing housework and wearing a maid outfit, you can live a month rent free at my place! I’ll also split the costs of whatever groceries you buy.“"
+        MC "(Woops, the maid outfit portion slipped out.)"
         show tsm nbdeflecting
-        TSM "Maid outfit?? Staying with you?? Are you joking?"
+        TSM "“Maid outfit?? Staying with you?? Are you joking?“"
         MC "(For a moment I thought he’d be angrier at it, but his outburst comes off as huffy and embarrassed, maybe I can push further on this?)"
-        "Not at all, I'm completely serious. "
+        MC "Not at all, I'm completely serious. "
         TSM "Why??"
             menu : 
                 "Because you’d look cute in one and it could motivate me to finish my assignments?":
@@ -506,65 +506,65 @@ label start1:
                     TSM "!!!"
                     "He proceeds to make the most undignified embarrassed squeak I've ever heard in my life,  seemingly flustered from what I just said."
                     "Once he stopped making noises, he glanced at me before looking away and pouting."
-                "Why not? Don’t you need a place to stay? I’m pretty sure every other place around costs double this one."
-                     show tsm nsdquestioning
-                     TSM "Yea.. well.. I guess..You’re not wrong.":
-                    "Is the maid outfit really necessary though?"
-                    MC "Of course it is. "
+                "Why not? Don’t you need a place to stay? I’m pretty sure every other place around costs double this one.":
+                    show tsm nsdquestioning
+                    TSM "“Yea... well... I guess...You’re not wrong.“"
+                    TSM "“Is the maid outfit really necessary though?“"
+                    MC "“Of course it is.“"
                     show tsm npout
                     "I give him my best assuring smile while he grumbles and looks away from me, seemingly unsure with my proposal. After some time he finally looks back at me, the redness yet to disappear from his cheeks."
         
         show tsm nbangy
-        TSM "Fine, I'll do it. But you better not get any weird ideas about this."
+        TSM "“Fine, I'll do it. But you better not get any weird ideas about this.“"
         MC "(WOO!)"
         show tsm npout
-        "I assure you I have no such thoughts."
+        MC "“I assure you I have no such thoughts.“"
         show tsm nsmirk
-        TSM "I have a hard time believing that."
+        TSM "“I have a hard time believing that.“"
         show tsm nquestioning
-        "But.. are you sure about this? "
-        MC "Of course I am, I wouldn't have made the offer otherwise."
+        TSM "“But...are you sure about this?“"
+        MC "“Of course I am, I wouldn't have made the offer otherwise.“"
         show tsm nsdquestioning
-        TSM "You don’t have a significant other who’d be really mad at me for staying with you right?"
-        MC "Nope?"
+        TSM "“You don’t have a significant other who’d be really mad at me for staying with you right?“"
+        MC "“Nope?“"
         show tsm nuhsure
-        TSM "Are you sure?"
-        MC "Hey, I think I'd know if I have someone."
+        TSM "“Are you sure?“"
+        MC "“Hey, I think I'd know if I have someone.“"
         show tsm nnormal
-        TSM "Alright then, that’s something."
+        TSM "“Alright then, that’s something.“"
         show tsm nhappy
-        "If you really don’t mind, I guess I'll do it."
-        MC "I’m glad you agreed, is it safe to assume you’ll move in tomorrow?"
-        TSM "Yea..."
-        MC "Okay then, I’ll clear up my place a bit."
+        TSM "“If you really don’t mind, I guess I'll do it.“"
+        MC "“I’m glad you agreed, is it safe to assume you’ll move in tomorrow?“"
+        TSM "“Yea...“"
+        MC "“Okay then, I’ll clear up my place a bit.“"
         show tsm nsmirk
-        TSM "I’m starting to worry about what your place looks like now."
+        TSM "“I’m starting to worry about what your place looks like now.“"
         show tsm nuhsure
-        "Considering you want a maid to help clean, is it that bad now..?"
-        MC "Oh come on, you’ve been in my room."
-        "It’s not {I}that {/I} bad."
+        TSM "“Considering you want a maid to help clean, is it that bad now..?“"
+        MC "“Oh come on, you’ve been in my room.“"
+        MC "“It’s not {I}that {/I} bad.“"
         show tsm nsmirk
-        TSM "I sure hope it isn’t."
+        TSM "“I sure hope it isn’t.“"
         show tsm nsilent
-        "He pauses for a moment before looking like he just had a horrible realization, he immediately stares right into my eyes with a vaguely horrified look. "
+        "He pauses for a moment before looking like he just had a horrible realization, he immediately stares right into my eyes with a vaguely horrified look."
         show tsm nangy
-        TSM "You’re not giving me some skimpy dress are you?"
-        MC "We’ll see about that."
+        TSM "“You’re not giving me some skimpy dress are you?“"
+        MC "“We’ll see about that.“"
         show tsm nbangy
-        TSM "And don’t you dare tell anyone about this arrangement."
-        MC "I don’t know~"
+        TSM "“And don’t you dare tell anyone about this arrangement.“"
+        MC "“I don’t know~“"
         show tsm nbangry
-        TSM "If you keep messing around I’ll..I’ll-"
-        MC "Relax, I won't."
+        TSM "“If you keep messing around I’ll...I’ll-“"
+        MC "“Relax, I won't.“"
         show tsm nsdnormal
-        TSM "Good, you better not."
+        TSM "“Good, you better not.“"
         "He gives me a small smile as he heads back to his room on the bottom floor. When he reaches his door, he looks back at me, seeming a little surprised that I'm still here."
-       show tsm nhappy
-        TSM "Thanks..[MC]."
-        MC "No problem!"
+        show tsm nhappy
+        TSM "“Thanks...[MC].“"
+        MC "“No problem!“"
         hide tsm
         "And with that, he shuts his door and the silence of the night fills the halls."
-        MC "(Well, I guess it’s time for me to buy a maid outfit)"
+        MC "(Well, I guess it’s time for me to buy a maid outfit.)"
     
     else:
         "(Actually, now that I think about it, that maid kinda reminds me of Nix)"
