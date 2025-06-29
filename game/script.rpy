@@ -1,10 +1,4 @@
-﻿# bari 1000 ke atas blum aku edit
-# baris di bawah batas check blu aku proofread lgi jdi masi gaje jg  wkwkw
-
-
-# agkdjagkjsdhkJAHKJA
-#yoooooo wasssupppp
-#testeste
+﻿#stecustecu
 
 # The game starts here.
 define MC = Character ("[MC]")    
