@@ -1458,678 +1458,677 @@ label TSMafterloop1:
             "Nah, I think this is it."
 
     show tsm nsmirk
-    TSM "Cool, let’s head to the checkout now."
+    TSM "“Cool, let’s head to the checkout now.“"
     show tsm nsilent
     "As the cashier scans our things, I catch her eyeing me and Rudy."
-    MC "(Is something.. Wrong? Hopefully that’s just my imagination)"
-    C "Your total is this much, how would you like to pay?"
+    MC "(Is something... Wrong? Hopefully that’s just my imagination.)"
+    C "“Your total is this much, how would you like to pay?“"
     "Before Rudy can pull out his wallet, I go ahead and tell her to give me the QR code for payment."
     show tsm nhuh
-    TSM "H-hey, I thought we were splitting the bill?"
-    MC "You can worry about that at home, we can calculate it later."
+    TSM "“H-hey, I thought we were splitting the bill?“"
+    MC "“You can worry about that at home, we can calculate it later.“"
     show tsm nuhsure
-    C "Here’s the code."
-    "MC Okay wait a sec."
-    "And done!"
-    C "Thankyou for your patronage."
-    "You two make a lovely couple by the way! Is this perhaps your first week of moving together?"
+    C "“Here’s the code.“"
+    MC "“Okay wait a sec.“"
+    MC "“And done!“"
+    C "“Thank you for your patronage.“"
+    C "“You two make a lovely couple by the way! Is this perhaps your first week of moving together?“"
     show tsm nbsurprised
     TSM "(!!!)"
     show tsm nsurprised
     "Rudy turns to look at me, completely frozen. The words completely stuck in his mouth, something in his eyes tells me that he wants me to say something for him."
         menu:
-            "We do, don’t we {I}darling{/I}?":
+            "We do, don’t we, {I}darling{/I}?":
                     show tsm nsdquestioning
-                    TSM "[MC]..."
+                    TSM "“[MC]...“"
                     show tsm npout
                     "He tugs at my sleeve, silently begging to get us as far as possible from the store."
-                    MC "Anything wrong?"
+                    MC "“Anything wrong?“"
                     show tsm npout
                     "He tugs even harder."
-                    MC "Sorry, he’s shy. We’ll be off now, thanks!"
+                    MC "“Sorry, he’s shy. We’ll be off now, thanks!“"
                     show tsm nuhsure
-                    TSM "{size=+10}Why didn’t you correct her?{/size}"
-                    MC "Oh? That’s not what you wanted me to say?"
+                    TSM "{size=+10}“Why didn’t you correct her?“{/size}"
+                    MC "“Oh? That’s not what you wanted me to say?“"
                     show tsm nbangy
-                    TSM "No! "
+                    TSM "“No!“"
                     show tsm npout
-                    MC "Then you correct her then."
+                    MC "“Then you correct her then.“"
                     show tsm nsdbangy
-                    TSM "I-i…Ugh shit.."
+                    TSM "“I-I...Ugh shit...“"
             "Oh, we’re not married.":
-                    C "I’m so sorry! "
-                    MC "It’s okay, thanks anyway."
+                    C "“I’m so sorry!“"
+                    MC "“It’s okay, thanks anyway.“"
     
     scene road with fade
     show tsm nsdbangy
-    TSM "I don’t think I'll ever be able to step foot in that store ever again."
-    MC "Oh come on, it’s not that bad."
-    "Besides, it’s just one employee out of dozens. You might not even see her again."
+    TSM "“I don’t think I'll ever be able to step foot in that store ever again.“"
+    MC "“Oh come on, it’s not that bad.“"
+    MC "“Besides, it’s just one employee out of dozens. You might not even see her again.“"
     show tsm nsmirk
-    TSM "Whatever. Let’s go back, I'll make us something."
-    MC "Ooh, can’t wait!"
+    TSM "“Whatever. Let’s go back, I'll make us something.“"
+    MC "“Ooh, can’t wait!“"
     
     scene inside with fade
-    MC "(I’m getting really hungry)"
-    "Rudy’s in the kitchen preparing our food while I'm setting up the dinner table. "
-    "Well…’table’, I don’t actually have one so we’re using the small stools and cardboard boxes instead. "
+    MC "(I’m getting really hungry.)"
+    "Rudy’s in the kitchen preparing our food while I'm setting up the dinner table."
+    "Well...table’, I don’t actually have one so we’re using the small stools and cardboard boxes instead. "
     "We could eat at my desk but we’d have to clear out all the papers and stuff first."
-    MC "(Maybe I should just buy us a picnic blanket and we’ll eat on the floor)"
+    MC "(Maybe I should just buy us a picnic blanket and we’ll eat on the floor.)"
     "I already prepared a glass of water for both of us. Earlier, I asked him which glass he wanted to use and by now he has staked his claim on this glass that I bought as a souvenir from a tourist location."
-    #sprite maid"
     show tsm mnormal
-    TSM "Here’s dinner."
+    TSM "“Here’s dinner.“"
     show tsm msilent
     "As he enters the room with food in his hands, my mouth starts to water in anticipation as the smell wafts around the room."
     MC "(What did I do in my past life to deserve this?)"
-    "(Warm food and a cute boy in a maid outfit, what else can a [player_ds} want?)"
+    MC "(Warm food and a cute boy in a maid outfit, what else can a [player_ds} want?)"
     show tsm munsure
-    TSM "What’s with that look on your face?"
+    TSM "“What’s with that look on your face?“"
     show tsm msilent
-    MC "What?"
+    MC "“What?“"
     show tsm mnormal
-    TSM "You’ve been staring."
+    TSM "“You’ve been staring.“"
     "If you’re hungry just eat, the food is right there. Unless you have something to complain about?"
         menu: 
             "Not at all, dinner looks great.":
                     show tsm m
-                    TSM "Good. Eat up then."
-                    MC "Will do Chef!"
+                    TSM "“Good. Eat up then.“"
+                    MC "“Will do, Chef!“"
                     show tsm m
                     "Upon hearing my enthusiastic exclamation, he lets out a small chuckle."
-                    TSM "Stop that, stupid."
-                    MC "Yes Chef."
+                    TSM "“Stop that, stupid.“"
+                    MC "“Yes, Chef.“"
             "Is the cute chef part of the meal as well?":
                     show tsm mbsurprised
                     TSM "(!)"
                     show tsm mbangy
-                    "Shut up and eat already!"
-                    MC "Eat what? The cehf or the food?"
+                    TSM "“Shut up and eat already!“"
+                    MC "“Eat what? The cehf or the food?v"
                     show tsm mdeflecting
-                    TSM "THE FOOD!"
+                    TSM "“THE FOOD!“"
                     show tsm mangy
-                    "Urgh, I can't believe you.."
+                    TSM "“Urgh, I can't believe you...“"
                     show tsm mbpout
-                    MC "Sorry, I’ll stop. The food looks and smells great by the way."
-                    MC "Thanks for the meal."
+                    MC "“Sorry, I’ll stop. The food looks and smells great by the way.“"
+                    MC "“Thanks for the meal.“"
                     MC "(I keep forgetting that I should tone the teasing down, wouldn’t wanna piss him off before we’re even a week through the deal.)"
 
     show tsm msilent
-    "…"
+    TSM "..."
     MC "(I feel kinda awkward if we’re just eating in total silence, maybe I can strike up a conversation?)"
-    MC "So.. how was your day?"
-    MC "(Yea that’s a {I}great{/I} way to start [MC])"
+    MC "“So... how was your day?“"
+    MC "(Yea, that’s a {I}great{/I} way to start, [MC])"
     show tsm mnormal
-    TSM "‘s fine"
-    TSM "You?"
+    TSM "“‘s fine.“"
+    TSM "“You?“"
     show tsm msilent
-    MC "Better than a few days ago that’s for sure."
+    MC "“Better than a few days ago that’s for sure.“"
     show tsm mnormal
-    TSM "Oh, good."
+    TSM "vOh, good.“"
     show tsm msilent
-    "(...)"
+    TSM "(...)"
     MC "(What else?)"
-    MC "It’s been a while since we’ve eaten together."
+    MC "“It’s been a while since we’ve eaten together.“"
     show tsm munsure
-    TSM "It has?"
+    TSM "“It has?“"
     show tsm msilent
-    MC "The last time we ate together was when we first entered college, and now we’re almost on our third semester."
+    MC "“The last time we ate together was when we first entered college, and now we’re almost on our third semester.“"
     show tsm mnormal
-    TSM "Right, it was when we were searching for clubs together."
-    TSM "I was gonna go alone but then you asked me to go with you out of nowhere."
-    MC "Yup, I’m glad I asked! Going alone would’ve been pretty lonely besides, that’s the first time I ever saw your homemade lunches."
-    MC "We sat down on the side of the field under the tree."
+    TSM "“Right, it was when we were searching for clubs together.“"
+    TSM "“I was gonna go alone but then you asked me to go with you out of nowhere.“"
+    MC "“Yup, I’m glad I asked! Going alone would’ve been pretty lonely besides, that’s the first time I ever saw your homemade lunches.“"
+    MC "“We sat down on the side of the field under the tree.“"
     show tsm mhappy
-    TSM "I can’t believe you asked me which stall sold the meal. As if it wasn’t obviously my own lunch box."
+    TSM "“I can’t believe you asked me which stall sold the meal. As if it wasn’t obviously my own lunch box.“"
     show tsm msilent
-    MC "Can’t help it, it smelled good and I wanted a bite!"
-    MC "I wasn’t about to ask for a bite from a guy I wasn’t too close with."
+    MC "“Can’t help it, it smelled good and I wanted a bite!“"
+    MC "“I wasn’t about to ask for a bite from a guy I wasn’t too close with.“"
     show tsm msmirk
-    TSM "And where did all that hesitation go, huh?"
-    TSM "You went from not daring to ask for a bite, to asking me to cook for you everyday"
+    TSM "“And where did all that hesitation go, huh?“"
+    TSM "“You went from not daring to ask for a bite, to asking me to cook for you everyday.“"
     show tsm msilent
-    MC "Hey, you agreed."
-    MC "I think this is one of the smartest things I've done in your life."
+    MC "“Hey, you agreed.“"
+    MC "“I think this is one of the smartest things I've done in your life.“"
     show tsm msmirk
-    TSM "You must’ve done a lot of stupid things then."
-    MC "Hey, watch it."
+    TSM "“You must’ve done a lot of stupid things then.“"
+    MC "“Hey, watch it.“"
     show tsm mhappy
-    TSM "C’mon, you gotta be pretty stupid to have {i}this{/i} as one of the smartest things you’ve ever done."
-    MC "Really? You’ve seen me do other less stupid things. It's not like you've never done aything stupid before."
+    TSM "“C’mon, you gotta be pretty stupid to have {i}this{/i} as one of the smartest things you’ve ever done.“"
+    MC "“Really? You’ve seen me do other less stupid things. It's not like you've never done aything stupid before.“"
     show tsm mpout
-    MC "Who was it that forgot their hat and sunscreen when we went club hunting?"
-    TSM "grr..
-    MC "Who got us lost during orientation?
+    MC "“Who was it that forgot their hat and sunscreen when we went club hunting?“"
+    TSM "“grr...“"
+    MC "“Who got us lost during orientation?“"
     show tsm mnormal
-    TSM "Whatever, we made it there on time. I’m glad you brought that umbrella with you, it would’ve been super hot otherwise."
+    TSM "“Whatever, we made it there on time. I’m glad you brought that umbrella with you, it would’ve been super hot otherwise.“"
     show tsm msilent
-    MC "It really blocked the sun didn’t it?"
+    MC "“It really blocked the sun didn’t it?“"
     show tsm msure
-    TSM "Well, I guess that’s one of your good traits.."
-    MC "Oh?"
+    TSM "“Well, I guess that’s one of your good traits...“"
+    MC "“Oh?“"
     show tsm mahppy
-    TSM "I don’t see you often, but whenever I do, you’re.. oddly well prepared."
+    TSM "“I don’t see you often, but whenever I do, you’re.. oddly well prepared.“"
     show tsm msilent
-    MC "It’s just an umbrella."
+    MC "“It’s just an umbrella.“"
     show tsm munsure
-    TSM "You have stomach medicine on the ready in your bag, and you don’t even need it."
+    TSM "“You have stomach medicine on the ready in your bag, and you don’t even need it.“"
     show tsm msilent
-    MC "Well, they made us buy it, I might as well bring it in case."
-    MC "Since I don't need it, I might as well give it to people who do, like you."
+    MC "“Well, they made us buy it, I might as well bring it in case.“"
+    MC "“Since I don't need it, I might as well give it to people who do, like you.“"
     show tsm msure
-    TSM "Y-yea. Uh, thanks for that. I wouldn’t’ve survived the opening ceremonies otherwise."
+    TSM "“Y-yea. Uh, thanks for that. I wouldn’t’ve survived the opening ceremonies otherwise.“"
     show tsm msilent
-    MC "Don’t mention it."
-    MC "‘Sides I think we’ve grown a bit closer since that time, no?"
+    MC "“Don’t mention it.“"
+    MC "“‘Sides I think we’ve grown a bit closer since that time, no?“"
     show tsm munsure
-    TSM "I could’ve sworn you wanted to join 2 clubs, did you ever fall through with that plan?"
+    TSM "“I could’ve sworn you wanted to join 2 clubs, did you ever fall through with that plan?“"
     show tsm msilent
-    MC "Nah, I totally forgot to go back and sign up"
-    MC "I’m kinda glad that happened though, I don’t think I'd ever get any sleep if I was any busier."
-    MC "I’m happy with my current choice though."
-    MC "If I remember, you chose badminton?"
+    MC "“Nah, I totally forgot to go back and sign up.“"
+    MC "“I’m kinda glad that happened though, I don’t think I'd ever get any sleep if I was any busier.“"
+    MC "“I’m happy with my current choice though.“"
+    MC "“If I remember, you chose badminton?“"
     show tsm mhappy
-    TSM "Yea, I’ve been doing it since I was a kid."
-    TSM "Might as well keep going."
+    TSM "“Yea, I’ve been doing it since I was a kid.“"
+    TSM "“Might as well keep going.“"
     show tsm msilent
-    MC "I still can’t believe we don’t have a book club of all things."
+    MC "“I still can’t believe we don’t have a book club of all things.“"
     show tsm msmirk
-    TSM "Same here, I feel like that should’ve been a basic pick."
-    TSM "We have a club for diving and we don’t even live near the ocean."
+    TSM "“Same here, I feel like that should’ve been a basic pick.“"
+    TSM "“We have a club for diving and we don’t even live near the ocean.“"
     show tsm msilent
-    MC "You think they travel for hours just to do their club activities?"
+    MC "“You think they travel for hours just to do their club activities?v"
     show tsm mhappy
-    TSM "Nah, I bet they just practice at the pool unless some special event happens."
+    TSM "“Nah, I bet they just practice at the pool unless some special event happens.“"
     show tsm msilent
-    MC "Maybe?"
-    MC "Man, getting to talk to you again is pretty fun. We barely walk to campus together anYMore, so this has been kinda nice."
+    MC "“Maybe?“"
+    MC "“Man, getting to talk to you again is pretty fun. We barely walk to campus together anYMore, so this has been kinda nice.“"
     show tsm mnormal
-    TSM "You just walk alone then?"
+    TSM "“You just walk alone then?“"
     show tsm msilent
-    MC "I did, but as time went on I found that my schedule matches with another friend. And I usually walk with him, if I do see him."
-    MC "Which is surprisingly pretty often."
+    MC "“I did, but as time went on I found that my schedule matches with another friend. And I usually walk with him, if I do see him.“"
+    MC "“Which is surprisingly pretty often.“"
     show tsm mnormal
-    TSM "Guessin’ he’s in the same major?"
+    TSM "“Guessin’ he’s in the same major?“"
     show tsm msilent
-    MC "No actually, which makes the fact that our schedules line up even more surprising."
-    MC "I swear he’s psychic or some shit."
+    MC "“No actually, which makes the fact that our schedules line up even more surprising.“"
+    MC "“I swear he’s psychic or some shit.“"
     show tsm msdnormal
-    TSM "{size=-10} Lucky bastard..{/size}"
-    MC "Sorry what? Couldn’t hear you."
+    TSM "{size=-10} “Lucky bastard...“{/size}"
+    MC "“Sorry what? Couldn’t hear you."“
     show tsm mbangy
-    TSM "Nothin’! You done eating?"
+    TSM "“Nothin’! You done eating?“"
     show tsm mpout
-    MC "Yea I am."
+    MC "“Yea, I am.“"
     show tsm mnormal
-    TSM "Here, let me do the dishes."
+    TSM "“Here, let me do the dishes.“"
     show tsm msilent
-    MC "Nah, I’ll handle it."
-    MC "I can’t let you do {i}all{/i} the work. I’m sure I can handle the dishes."
+    MC "“Nah, I’ll handle it.“"
+    MC "“I can’t let you do {i}all{/i} the work. I’m sure I can handle the dishes.“"
     show tsm munsure
-    TSM "Are you sure?"
+    TSM "“Are you sure?“"
     show tsm msilent
-    MC "Yep. Relax for a bit, why don’t cha?"
+    MC "“Yep. Relax for a bit, why don’t cha?“"
     show tsm msure
-    TSM "Oh.. alright then. Thanks."
+    TSM "“Oh... alright then. Thanks.“"
     show tsm msilent
-    MC "No problem."
-    MC "(Huzzah, one successful dinner without teasing him {i}too{/i} much)"
-    MC "(Whether or not I can do this again tomorrow is up for debate)"
+    MC "“No problem.“"
+    MC "(Huzzah, one successful dinner without teasing him {i}too{/i} much.)"
+    MC "(Whether or not I can do this again tomorrow is up for debate.)"
     
     scene inside with fade
-    MC "I’m back. "
+    MC "“I’m back.“"
     show tsm snormal
-    TSM "Hey, do you mind if I use your desk? I’m planning on studying tonight."
+    TSM "“Hey, do you mind if I use your desk? I’m planning on studying tonight.“"
     show tsm ssilent
-    MC "Go ahead, I finished my work yesterday. "
-    MC "I think I'll go to bed early today."
+    MC "“Go ahead, I finished my work yesterday.“"
+    MC "“I think I'll go to bed early today.“"
     show tsm shappy
-    TSM "Good, you should have some sleep. "
+    TSM "“Good, you should have some sleep.“"
     show tsm suhsure
-    TSM "I’m guessing you slept pretty late yesterday?"
-    MC "Yea"
-    MC "(And the day before that, and the day before that too..)"
+    TSM "“I’m guessing you slept pretty late yesterday?“"
+    MC "“Yea.“"
+    MC "(And the day before that, and the day before that too...)"
     show tsm snormal
-    TSM "G’night then. You wanna turn the lights off? "
+    TSM "“G’night then. You wanna turn the lights off?“"
     show tsm ssilent
-    MC "Nah, it’s cool. I have this sleeping mask to block the lights out."
-    MC "Besides, you need it don’t you? After all, ‘Working with the lights off hurts your eyes’."
+    MC "“Nah, it’s cool. I have this sleeping mask to block the lights out.“"
+    MC "“Besides, you need it don’t you? After all, ‘Working with the lights off hurts your eyes’.“"
     show tsm ssmirk
-    TSM "Is that supposed to be an impression of me?"
+    TSM "“Is that supposed to be an impression of me?“"
     show tsm ssilent
-    MC "What? That’s what you said yesterday. "
-    MC "So don’t worry about me, I'm sure you need to study."
+    MC "“What? That’s what you said yesterday.“"
+    MC "“So don’t worry about me, I'm sure you need to study.“"
     show tsm shappy
-    TSM "Well…thanks then. I’ll be quiet."
+    TSM "“Well...thanks then. I’ll be quiet.“"
     show tsm ssilent
-    MC "Goodnight Rudy."
+    MC "“Goodnight, Rudy.“"
     show tsm shappy
-    TSM "Yea, g’night."
+    TSM "“Yea, g’night.“"
     hide tsm
     scene black with fade
     
-    label day2_ym:
+label day2_ym:
     #YM Maid day 2"
     scene black with fade
-    YM "[MC]? Are you awake?"
-    YM "I guess not."
-    YM "Hehe, you look so cute like this. I can stare at you for hours.."
-    YM "Wait, I have to wake [player_object] up!"
-    YM "[MC], wakey wakey!"
+    YM "“[MC]? Are you awake?“"
+    YM "“I guess not.“"
+    YM "“Hehe, you look so cute like this. I can stare at you for hours...“"
+    YM "“Wait, I have to wake [player_object] up!“"
+    YM "“[MC], wakey wakey!“"
     YM "(...)"
-    YM "Please? [MC]? Wake up."
-    YM "Well, here goes nothing."
-    YM "{size=+5}BOO! {/size}"
+    YM "“Please? [MC]? Wake up.“"
+    YM "“Well, here goes nothing.“"
+    YM "{size=+5}“BOO!“{/size}"
     scene inside with vpunch
     MC "(!!!)"
-    MC "WHAT HAPPENED? Is there a fire?? You okay??"
+    MC "“WHAT HAPPENED? Is there a fire?? You okay??“"
     show ym nrhappy
-    YM "Silly [MC], everything is fine!"
-    YM "I just wanted to wake you up, look I made breakfast!"
+    YM "“Silly [MC], everything is fine!“"
+    YM "“I just wanted to wake you up, look I made breakfast!“"
     show ym nsmile
     "As he points at the table I see the aforementioned breakfast. It was a slice of bread covered with a chocolate spread and a messy smiley face drawn with condensed milk."
         menu:
             "Aww, it has a smiley face!":
                     show ym napologetic
-                    YM "Do you like it..?"
+                    YM "“Do you like it...?“"
                     show ym nsmile
-                    MC "Of course I do! Thanks for breakfast."
-                    MC "Where’s your slice?"
+                    MC "“Of course I do! Thanks for breakfast.“"
+                    MC "“Where’s your slice?“"
                     show ym nhappy
-                    YM "Unfortunately, I already ate it earlier. I have class in a bit so I have to leave early."
+                    YM "“Unfortunately, I already ate it earlier. I have class in a bit so I have to leave early.“"
                     show ym nsmile
-                    MC "Okayy, see you later."
+                    MC "“Okayy, see you later.“"
                     show ym nhappy
-                    YM "Byee [MC]!"
+                    YM "“Byee, [MC]!“"
             "(Unfortunately, that’s not my thing) +dp":
-                    "(I’d feel bad if I said that though since he’s beaming with joy)"
-                    MC "Well, thanks?"
+                    "(I’d feel bad if I said that though since he’s beaming with joy.)"
+                    MC "“Well, thanks?“"
                     show ym nsilent
                     "I tried giving him the most convincing smile I could muster, if he noticed my insincerity, he didn’t voice them."
                     show ym napologetic
-                    YM "Well, I'll be leaving early since I have class. See you later?"
+                    YM "“Well, I'll be leaving early since I have class. See you later?“"
                     show ym nsmile
-                    MC "See ya’"
-                    "(Well, I guess having breakfast never hurts)"
+                    MC "“See ya’“"
+                    MC "(Well, I guess having breakfast never hurts)"
     
     scene campus1d with fade
-    MC "(I feel like I haven’t felt this good in the morning for a while)"
-    MC "(Still, he goes way above what I expected him to do. I like having him do stuff for me and all, but I kinda feel bad)"
-    "(He even went as far as to wearing that maid outfit)"
+    MC "(I feel like I haven’t felt this good in the morning for a while.)"
+    MC "(Still, he goes way above what I expected him to do. I like having him do stuff for me and all, but I kinda feel bad.)"
+    "(He even went as far as to wearing that maid outfit.)"
         menu:
             "(Personally, I love it! He’s so cute!!)":
                     MC "(I don’t know what he was thinking when he bought it but I like it!)"
-            "(I think he’s going way too far)"
+            "(I think he’s going way too far.)"
                     MC "(I’m grateful that he’s doing housework but this seems too far, like it’s the plot of a self-indulgent piece of media.)"
     
     "In the distance I slowly start to see Nix’s silhouette appear, strolling casually with a few people I recognize as his friends."
     "Based on the pins they have on their bag, I’ve always assumed they’re from the same major."
     "Sometimes I wonder why I didn't meet Nix sooner. If we went to the same highschool surely I must've encountered him at some point."
     "Seeing that he’s quite the social butterfly, I find it weird that neither me nor any of my friends seem to recall ever meeting someone like him."
-    MC "(Unless..he’s been lying?)"
-    "(No way, he knows all the teachers I know and every story he tells about our school events seem to line up with my memories)"
-    "(I don’t think you can make up stories about extremely specific school events like that)"
-    MC "(Oh shit, did he catch me staring? I guess getting stared at from a distance isn’t a nice feeling)"
+    MC "(Unless...he’s been lying?)"
+    MC "(No way, he knows all the teachers I know and every story he tells about our school events seem to line up with my memories.)"
+    MC "(I don’t think you can make up stories about extremely specific school events like that.)"
+    MC "(Oh shit, did he catch me staring? I guess getting stared at from a distance isn’t a nice feeling.)"
     "He waves his entire arm at me and almost beckons me to come over."
         menu: 
             "Go talk to him":
-                    MC "(Nothing to be ashamed of, he usually approaches whether I’m staring or not)"
-                    MC "Hey man, what’s up?"
-                    MC "Breakfast was good by the way."
+                    MC "(Nothing to be ashamed of, he usually approaches whether I’m staring or not.)"
+                    MC "“Hey man, what’s up?v"
+                    MC "“Breakfast was good by the way.“"
                     show ym nrhappy
                     show cs normal at left
                     show qs normal at right
-                    YM "Aww thanks [MC]! I’m glad you like it."
+                    YM "“Aww thanks, [MC]! I’m glad you like it.“"
                     show ym nsmile
-                    MC "Sorry for staring, I just wanted to say hi. You can go back to your friends now."
+                    MC "“Sorry for staring, I just wanted to say hi. You can go back to your friends now.“"
                     show ym nrhappy
-                    YM "No way! We should walk together, our buildings are in the same direction anyway."
+                    YM "“No way! We should walk together, our buildings are in the same direction anyway.“"
                     show ym napologetic
-                    YM "You guys don’t mind do you?"
+                    YM "“You guys don’t mind do you?“"
                     show ym nsmile
-                    CS "It’s cool man."
+                    CS "“It’s cool man.“"
                     QS "..."
                     "The other friend doesn’t say a word instead,  he gives a thumbs up in approval."
                     show ym nhappy
-                    YM "See? They’re okay with it."
+                    YM "“See? They’re okay with it.“"
                     show ym nsmile
-                    MC "Alright then, thanks for letting me join."
-                    CS "Soo, what’s with the whole breakfast thing? You guys ate together or somethin?"
-                    MC "Nah, but he did make me breakfast."
+                    MC "“Alright then, thanks for letting me join.“"
+                    CS "“Soo, what’s with the whole breakfast thing? You guys ate together or somethin'?“"
+                    MC "“Nah, but he did make me breakfast.“"
                     show ym nrhappy
-                    YM "I’ll do it again tomorrow!"
+                    YM "“I’ll do it again tomorrow!“"
                     show ym nsmile
-                    CS "Oh, you two live together now?"
-                    QS "That’s news to us."
-                    MC "Yea, he asked to move with me ever since his place caught on fire."
-                    QS "What?"
-                    CS "That was {i}your{/i} place?"
-                    QS "You never told us that."
-                    CS "Good thing your [player_pronoun] agreed to let you stay."
+                    CS "“Oh, you two live together now?“"
+                    QS "“That’s news to us.“"
+                    MC "“Yea, he asked to move with me ever since his place caught on fire.“"
+                    QS "“What?“"
+                    CS "“That was {i}your{/i} place?“"
+                    QS "“You never told us that.“"
+                    CS "“Good thing your [player_pronoun] agreed to let you stay."
                     MC "(Wha-? [player_pronoun]?)"
                     show ym nrhappy
-                    YM "I know! I’m glad I have [MC] in my life."
+                    YM "“I know! I’m glad I have [MC] in my life.“"
                     show ym nsmile
                     MC "(He’s not denying it. Guess I’ll play along?)"
-                    MC "Anything for you {I}love{/I}."
+                    MC "“Anything for you {I}love{/I}.“"
                     show ym nsqueal
                     "He freezes in his steps and gives out a strangled squeal, seemingly caught off guard by the sudden romantic pet name."
                     show ym nrhappy
-                    YM "You called me ‘love’!!"
+                    YM "“You called me ‘love’!!“"
                     show ym nsqueal
-                    MC "Yea?"
+                    MC "“Yea?“"
                     MC "(Should I not have?)"
                     show ym nrhappy
-                    YM "I love you, I love you, I love you!!!"
+                    YM "“I love you, I love you, I love you!!!“"
                     "He gives me a tight hug "
                     show ym nsmile
-                    QM "Gross."
-                    CM "Keep this up and we’re leaving you two behind."
-                    QM "No. We’re leaving now."
+                    QM "“Gross.“"
+                    CM "“Keep this up and we’re leaving you two behind.“"
+                    QM "“No. We’re leaving now.“"
                     show qs at offscreenright with easeout
                     "With that, the quiet one sprints ahead leaving the rest of us behind."
                     hide qs
-                    CM "Well, I'm not gonna be a third wheel so.."
-                    CM "Byee!"
+                    CM "“Well, I'm not gonna be a third wheel so...“"
+                    CM "“Byee!“"
                     show cs at offscreenright with easeout
                     "After a short wave, he soon follows and sprints in the direction of his next class."
                     hide cs
                     show ym nrhappy
-                    YM "I guess it’s just the two of us now [MC]."
+                    YM "“I guess it’s just the two of us now, [MC].“"
                     show ym nsmile
-                    MC "Why didn’t you correct them? "
+                    MC "“Why didn’t you correct them?“"
                     show ym nworry
-                    YM "Are you mad at me for that?"
+                    YM "“Are you mad at me for that?“"
                     show ym nsilent
-                    MC "No, just curious."
+                    MC "“No, just curious.“"
                     show ym nhappy
-                    YM "Well, it’ll make explaining why we live together easier!"
+                    YM "“Well, it’ll make explaining why we live together easier!“"
                     show ym napologetic
-                    YM "Are you okay with that?"
-                    MC "Well…"
-                    "(I’d be lying if I said it didn’t give my heart a little flutter, he’s cute after all)"
+                    YM "“Are you okay with that?v"
+                    MC "“Well...“"
+                    MC "(I’d be lying if I said it didn’t give my heart a little flutter, he’s cute after all)"
                     show ym nhappy
-                    MC "I guess I’m okay with it."
+                    MC "“I guess I’m okay with it.“"
                     show ym nrhappy
                     "He beams with joy at my words and we slip into a comfortable silence for the rest of our walk."
                     
     
             "Run and pretend I never saw him +dp":
-                    MC "(NOPE. I definitely made him uncomfortable with all the staring)"
-                    MC "(We’ve been spending so much time together, I should probably let him have some time with his other friends)"
+                    MC "(NOPE. I definitely made him uncomfortable with all the staring.)"
+                    MC "(We’ve been spending so much time together, I should probably let him have some time with his other friends.)"
                     MC "(Time to head straight to class!!!!)"
-                    MC "I quickly sprint to the side, taking another path than my usual to my building."
+                    MC "“I quickly sprint to the side, taking another path than my usual to my building.“"
                     scene campusd with vpunch
                     MC "(Hopefully that wasn’t {I}too{/I} awkward.)"
                     MC "(Hopefully he didn’t run after me!)"
                     show tsm ndeflecting
                     TSM "!!!"
                     show tsm nuhsure
-                    TSM "The hell? [MC]?"
-                    MC "Oh hi! Sorry for running into you!"
+                    TSM "“The hell? [MC]?“"
+                    MC "“Oh, hi! Sorry for running into you!“"
                     show tsm nnormal
-                    TSM "s’okay, you should hurry before you’re late."
-                    TSM "You seem like you’re in a rush."
+                    TSM "“s’okay, you should hurry before you’re late.“"
+                    TSM "“You seem like you’re in a rush.“"
                     show tsm nsilent
-                    MC "Thanks!! Bye!!"
+                    MC "“Thanks!! Bye!!“"
                     show tsm nnormal
-                    TSM "Yea."
+                    TSM "“Yea.“"
                     hide tsm
                     "And with that, I continue running to class."
     
     scene class with fade
     MC "(WOO!! Class is OVER!)"
-    "(And since I finished most of my assignments yesterday, i’m practically free tonight)"
-    "(Maybe I can even clean up tonight, lessen whatever burden Nix decided to tackle while he moved into my place)"
-    F "You seem to be doing better."
-    MC "Yea, I finished my assignments."
-    F "Good for you. I still have to hurry back and finish mine."
-    MC "Good luck!"
-    F "Thanks. See you tomorrow!"
-    MC "Byee!"
+    MC "(And since I finished most of my assignments yesterday, i’m practically free tonight.)"
+    MC "(Maybe I can even clean up tonight, lessen whatever burden Nix decided to tackle while he moved into my place.)"
+    F "“You seem to be doing better.“"
+    MC "“Yea, I finished my assignments.“"
+    F "“Good for you. I still have to hurry back and finish mine.“"
+    MC "“Good luck!“"
+    F "“Thanks. See you tomorrow!“"
+    MC "“Byee!“"
     "*phone ringing sfx"
     MC "(Is it Nix?)"
     show phone ym
-    MC "(Yep, it is)"
-    MC "Hey, what’s up!"
-    YM "Hi! I’m planning on stopping by the grocery store so I can cook for us tonight, can you please come with me?"
-    YM "You can tell me what you like and what you don’t so I know what to make."
-    MC "You’re cooking dinner too?"
-    YM "Yep! I wanna treat you as well as possible while I'm living with you."
-    MC "Are you sure?"
-    YM "Absolutely! In fact, I'm actually outside your class!"
+    MC "(Yep, it is.)"
+    MC "“Hey, what’s up!“"
+    YM "“Hi! I’m planning on stopping by the grocery store so I can cook for us tonight, can you please come with me?“"
+    YM "“You can tell me what you like and what you don’t so I know what to make.“"
+    MC "“You’re cooking dinner too?“"
+    YM "“Yep! I wanna treat you as well as possible while I'm living with you.“"
+    MC "“Are you sure?“"
+    YM "“Absolutely! In fact, I'm actually outside your class!“"
     hide phone
     show ym n
     "I peek at the door and find Nix, eagerly waving at me through the door as if he’s been waiting for me this whole time."
-    MC "Damn, I guess we’ll have to go grocery shopping huh?"
+    MC "“Damn, I guess we’ll have to go grocery shopping huh?“"
     show ym nhappy
-    YM "Yep! You can’t run away [MC]."
+    YM "“Yep! You can’t run away, [MC].“"
     show ym nsmile
-    MC "Alright, let’s go."
+    MC "“Alright, let’s go.“"
     
     scene supermarket with fade
     show ym nhappy
-    YM "Here we are! Is there anything you want?"
+    YM "“Here we are! Is there anything you want?“"
     show ym nsmile
-    MC "What can you cook?"
+    MC "“What can you cook?“"
     show ym nrhappy
-    YM "Anything for you!"
+    YM "“Anything for you!“"
     show ym nsmile
-    MC "{i}Anything{/i}?"
+    MC "“{i}Anything{/i}?“"
     show ym nhappy
-    YM "Anything."
+    YM "“Anything.“"
     show ym nsmile
-    MC "Uhh cool, let’s go with something easy then."
+    MC "“Uhh, cool, let’s go with something easy then.“"
     "How about..."
         menu:
             "Pasta":
                     show ym nhappy
-                    YM "Sure! They have some over there."
+                    YM "“Sure! They have some over there.“"
             "Soup":
                     show ym nhappy
-                    YM "Nice! Something to really warm us up tonight"
+                    YM "“Nice! Something to really warm us up tonight.“"
             "Fried rice":
                     show ym nrhappy
-                    YM  "Oooh! I love fried rice!"
+                    YM  "“Oooh! I love fried rice!“"
                     show ym nsmile
-                    MC "I know, you tend to order it when we eat at the cafeteria."
+                    MC "“I know, you tend to order it when we eat at the cafeteria.“"
                     show ym nrhappy
-                    YM "Awww, you remember what I likee!!"
-                    MC "Let’s continue shopping, shall we?"
+                    YM "“Awww, you remember what I likee!!“"
+                    MC "“Let’s continue shopping, shall we?“"
 
     show ym nsmile:
                    parallel:
-                         ease .5 zoom 1.5
+                           ease .5 zoom 1.5
                    parallel:
-                         yalign 0.0
-                         linear 0.0 yalign 0.0 xalign 0.5
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
     "We head over to grab the ingredients for the dish, carefully comparing prices between brands. Neither of us are particularly well practiced in getting the best deals possible, but with our 2 brain cells combined, we managed to make one competent human being!"
     "Once we’ve grabbed everything we need, we head on over to the cashier and they start scanning our items."
-    C "So that’ll be this much. How would you like to pay?"
+    C "“So that’ll be this much. How would you like to pay?“"
     show ym napologetic
-    YM "[MC], I’ll pay okay?"
-    MC "No, QR code please."
+    YM "“[MC], I’ll pay okay?“"
+    MC "“No, QR code please.“"
     show ym nquestioning
     "Knowing full well that Nix would never let me pay him back, I quickly grab my phone to scan the payment qr code."
-    "Whenever I buy food on campus, Nix would pay for it without ever letting me pay him back. "
-    "One time, I ended up sneaking the money in an envelope into his bag out of desperation only to find it back in mine the next day. 
-    MC "(He’s sneaky, I’ll give him that)"
+    "Whenever I buy food on campus, Nix would pay for it without ever letting me pay him back."
+    "One time, I ended up sneaking the money in an envelope into his bag out of desperation only to find it back in mine the next day." 
+    MC "(He’s sneaky, I’ll give him that.)"
     show ym nworry
-    YM "But-"
+    YM "“But-“"
     show ym nsqueal
     "I shove my free hand to cover his mouth so he can’t protest any further. He immediately shuts up, staring at me wide-eyed."
-    MC "No, we need to split it."
+    MC "“No, we need to split it.“"
     show ym nrhappy
-    "He does a quick nod and I can feel his lips forming into a smile under my hands."
-    "Soon after it scans, I show the cashier the proof of my successful payment."
-    C "Thank you! Have a nice day!"
-    MC "There! I finally got to pay for something!"
+    "He does a quick nod and I can feel his lips forming into a smile under my hands.“"
+    "Soon after it scans, I show the cashier the proof of my successful payment.“"
+    C "“Thank you! Have a nice day!“"
+    MC "“There! I finally got to pay for something!“"
     show ym nhappy
-    YM "I guess I can let it slide this time. After all, I'll be paying you back {I}all{/I} month."
+    YM "“I guess I can let it slide this time. After all, I'll be paying you back {I}all{/I} month.“"
     show ym nsmile
-    MC "Shall we go back so you can start repaying me then?"
+    MC "“Shall we go back so you can start repaying me then?“"
     show ym nhappy
-    YM "Sure!"
+    YM "“Sure!“"
     
     scene inside with fade
-    MC "(I feel a little bad that Nix is doing all this while i’m just setting the table, but he did insist)"
-    MC "(Well..’table’, we’re eating on the floor with buckets and boxes as tables. By this point I should just buy a picnic blanket or something )"
+    MC "(I feel a little bad that Nix is doing all this while i’m just setting the table, but he did insist.)"
+    MC "(Well..’table’, we’re eating on the floor with buckets and boxes as tables. By this point I should just buy a picnic blanket or something.)"
     MC "(I would set a candle or something to make it look nicer but I'd rather not start another fire. So I settled for a paper flower that I made five minutes ago, hopefully he doesn’t mind?)"
-    MC "(As soon as we got back, he changed into that maid outfit and started cooking"
-    MC "(I would protest but I’d be lying if I said I wasn’t happy with a cute boy in a maid outfit)"
+    MC "(As soon as we got back, he changed into that maid outfit and started cooking.)"
+    MC "(I would protest but I’d be lying if I said I wasn’t happy with a cute boy in a maid outfit.)"
     show ym mhappy
-    YM "[MC]! I’m done cooking!"
+    YM "“[MC]! I’m done cooking!“"
     "Instantly, the smell of food wafts through the air, making the growls of my stomach grow louder as my mouth begins to water."
-    MC "Damn, I guess you can cook. It smells great!"
+    MC "“Damn, I guess you can cook. It smells great!“"
     show ym mrhappy
-    YM "Thanks! I tried!"
-    YM "Ooh! Did you make the flower?"
+    YM "“Thanks! I tried!“"
+    YM "“Ooh! Did you make the flower?“"
     show ym msmile
-    MC "Yea, I figured I’d add something to make it look nice."
+    MC "“Yea, I figured I’d add something to make it look nice.“"
     show ym mhappy
-    YM "Awww, thanks [MC]."
+    YM "“Awww, thanks, [MC].“"
     show ym mapologetic:
                    parallel:
-                         ease .5 zoom 1.5
+                           ease .5 zoom 1.5
                    parallel:
-                         yalign 0.0
-                         linear 0.0 yalign 0.0 xalign 0.5
-    "With a smile he serves me my food, looking at me with a hopeful gaze. "
-    MC "( I guess he’s waiting for my seal of approval?)"
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
+    "With a smile he serves me my food, looking at me with a hopeful gaze."
+    MC "(I guess he’s waiting for my seal of approval?)"
     show ym mgrin
     "I take a quick bite and a smile soon blooms on my face. Seeing my reaction, Nix grins happily."
     show ym mhappy
-    YM "I’m glad you like it!"
-    MC "Itsshogood."
+    YM "“I’m glad you like it!“"
+    MC "“Itsshogood.“"
     show ym mrhappy
-    YM "Hehe, thanks!"
-    MC "You should eat it too, enjoy your hard work and all."
+    YM "“Hehe, thanks!“"
+    MC "“You should eat it too, enjoy your hard work and all.“"
     show ym mhappy
-    YM "I already am enjoying my hard work but alright."
+    YM "“I already am enjoying my hard work but alright.“"
     show ym mcontent
-    YM "Hmm, it is good."
-    MC "Thanks for cooking, you really don’t have to do it."
+    YM "“Hmm, it is good.“"
+    MC "“Thanks for cooking, you really don’t have to do it.“"
     show ym mquestioning
-    YM "Why would I not? We’re friends, yea?"
+    YM "“Why would I not? We’re friends, yea?“"
     show ym msmile
-    MC "Hmm"
+    MC "“Hmm.“"
         menu:
             "(I guess we are)":
-                    MC "(By some definition of the word)"
+                    MC "(By some definition of the word.)"
             "(I’d like us to be something more)":
-                    MC "(Not that I’ll tell him that right now)"
+                    MC "(Not that I’ll tell him that right now.)"
     
-    MC "Y’know, we eat together a lot but eating on the floor like this sure is a new feeling."
+    MC "“Y’know, we eat together a lot but eating on the floor like this sure is a new feeling.“"
     show ym mhappy
-    YM "It’s kinda fun, thanks for setting up the table [MC]."
-    MC "Should I buy us a picnic blanket? That’ll make it more exciting."
+    YM "“It’s kinda fun, thanks for setting up the table, [MC].“"
+    MC "“Should I buy us a picnic blanket? That’ll make it more exciting.“"
     show ym mrhappy
-    YM "Ooh! That sounds great!"
+    YM "“Ooh! That sounds great!“"
     show ym mapologetic
-    YM "You’re always fun to talk to [MC]."
-    MC "And you have always been too nice to me."
-    MC "Seriously, how did we not meet in highschool? I kinda wish we did."
+    YM "“You’re always fun to talk to, [MC].“"
+    MC "“And you have always been too nice to me.“"
+    MC "“Seriously, how did we not meet in highschool? I kinda wish we did.“"
     show ym msdworry
-    YM "I think it’s for the best that we met in college, highschool me was kinda…"
-    MC "Oh, yea now that I think about it, I was also kinda mean in highschool."
+    YM "“I think it’s for the best that we met in college, highschool me was kinda...“"
+    MC "“Oh, yea now that I think about it, I was also kinda mean in highschool.“"
     show ym mwhine:
                    parallel:
-                         ease .5 zoom 1.7
+                           ease .5 zoom 1.7
                    parallel:
-                         yalign 0.0
-                         linear 0.0 yalign 0.0 xalign 0.5
-    YM "NO YOU WEREN'T!"
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
+    YM "“NO YOU WEREN'T!“"
     show ym mworry
-    YM "Oh-uh, sorry for raising my voice."
+    YM "“Oh-uh, sorry for raising my voice.“"
     show ym mapologetic:
                    parallel:
-                         ease .5 zoom 1.5
+                           ease .5 zoom 1.5
                    parallel:
-                         yalign 0.0
-                         linear 0.0 yalign 0.0 xalign 0.5
-    YM "You weren’t mean at all! In fact, you helped me out when I was in trouble back then, even when I was a complete stranger.."
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
+    YM "“You weren’t mean at all! In fact, you helped me out when I was in trouble back then, even when I was a complete stranger...“"
     show ym msmile
-    MC "Sure you have the right person? Pretty sure I was kinda competitive at the time."
+    MC "“Sure you have the right person? Pretty sure I was kinda competitive at the time.“"
     show ym mhappy
-    YM "You didn’t know highschool me, but I knew highschool you. And you were definitely the nicest person I’ve met there."
-    MC "Stop lyin’ bro."
+    YM "“You didn’t know highschool me, but I knew highschool you. And you were definitely the nicest person I’ve met there.“"
+    MC "“Stop lyin’ bro.“"
     show ym mhuffy
-    YM "I’m not lying! I heard about how you would help your classmates if they asked, you taught them math, helped refine their grammar for those presentations done in foreign languages."
-    YM "You gave them your notes and helped review for tests even when you didn't need to"
+    YM "“I’m not lying! I heard about how you would help your classmates if they asked, you taught them math, helped refine their grammar for those presentations done in foreign languages.“"
+    YM "“You gave them your notes and helped review for tests even when you didn't need to.“"
     show ym mhuffy
-    MC "And how do you know this?"
-    YM "I know for a fact we weren’t in the same class."
+    MC "“And how do you know this?“"
+    YM "“I know for a fact we weren’t in the same class.“"
     show ym mnormal
-    YM "No, but I had friends who were."
+    YM "“No, but I had friends who were.“"
     show ym msdworry
-    YM "I was kinda jealous of them but highschool me was so… so.. Ugh I don’t even wanna say it."
-    MC "It’s okay, we all have cringe pasts (like me). And for some of us, we have cringe presents (also like me)"
+    YM "“I was kinda jealous of them but highschool me was so… so.. Ugh I don’t even wanna say it.“"
+    MC "“It’s okay, we all have cringe pasts (like me). And for some of us, we have cringe presents (also like me).“"
     show ym msmile
-    MC "Either way, we all have room to grow and embrace the embarrassing parts..or something like that."
-    MC "I’m not great at this kinda thing"
+    MC "“Either way, we all have room to grow and embrace the embarrassing parts..or something like that.“"
+    MC "“I’m not great at this kinda thing.“"
     show ym mcontent
-    YM "N-no that made a lot of sense actually."
+    YM "“N-no that made a lot of sense actually.“"
     show ym mrhappy
-    YM "Gosh, you just made yourself look even more amazing to me."
+    YM "“Gosh, you just made yourself look even more amazing to me.“"
     show ym msmile
-    MC "Nah, if you knew what I was like in middle school I'm sure your perception of me would drop."
+    MC "“Nah, if you knew what I was like in middle school I'm sure your perception of me would drop.“"
     show ym mproud
-    YM "That doesn’t change who you are now!"
+    YM "“That doesn’t change who you are now!“"
     show ym mcontent
-    YM "And I like you for you."
-    MC "Aww, that’s oddly sweet."
+    YM "“And I like you for you.“"
+    MC "“Aww, that’s oddly sweet.“"
     show ym msmile
-    MC "Seriously, by the way you act now, I'm really sure you weren’t that bad in highschool."
-    MC "Hey, we could’ve been slightly shitty people together?"
-    MC "I was a little mean (even if you didn’t think so) and you were..whatever it is you were."
+    MC "“Seriously, by the way you act now, I'm really sure you weren’t that bad in highschool.“"
+    MC "“Hey, we could’ve been slightly shitty people together?“"
+    MC "“I was a little mean (even if you didn’t think so) and you were..whatever it is you were.“"
     show ym mrhappy
-    YM "Hehe, you always seem to make it better [MC]."
-    MC "Are you done with your food?"
+    YM "“Hehe, you always seem to make it better, [MC].“"
+    MC "“Are you done with your food?“"
     show ym mhappy
-    YM "Oh yea."
-    MC "I’m washing the plates!"
+    YM "“Oh yea.“"
+    MC "“I’m washing the plates!“"
     show ym mhuffy
-    YM "Wait [MC]!"
-    MC "Nope! NO objections! A cute maid cooked me dinner and now it’s time to return the favor."
+    YM "“Wait [MC]!“"
+    MC "“Nope! NO objections! A cute maid cooked me dinner and now it’s time to return the favor.“"
     show ym mapologetic
-    YM "Oh [MC]..."
+    YM "“Oh, [MC]...“"
     
     scene inside with fade
-    MC "I’m back!"
+    MC "“I’m back!“"
     show ym sapologetic
-    YM "Heyy, I’m about to study, is it okay if I borrow your desk? I can move if you’re working on something again."
+    YM "“Heyy, I’m about to study, is it okay if I borrow your desk? I can move if you’re working on something again.“"
     show ym ssmile
-    MC "Nah, it’s cool. I’m about to sleep early tonight."
+    MC "“Nah, it’s cool. I’m about to sleep early tonight.“"
     show ym srhappy
-    YM "Good night [MC]!"
+    YM "“Good night, [MC]!“"
     show ym squestioning
-    YM "Actually…can I ask for a reward if I study hard tonight?"
-    MC "What is it?"
+    YM "“Actually...can I ask for a reward if I study hard tonight?“"
+    MC "“What is it?“"
     show ym shappy
-    YM "Can I cuddle up to you?"
+    YM "“Can I cuddle up to you?“"
         menu:
             "Go ahead! I hope you don’t mind if I hug back":
                     show ym srhappy
-                    YM "Sweet! I’ll be sure to work hard!"
+                    YM "“Sweet! I’ll be sure to work hard!“"
             "Sorry no, stay in your own place. +dp":
                     show ym ssorry
-                    YM "oh, okay then"
+                    YM "“Oh, okay then.“"
     
-    MC "Anyway, g’night Nix. Turn off the light when you're done, kay?"
+    MC "“Anyway, g’night Nix. Turn off the light when you're done, kay?“"
     show ym shappy
-    YM "Okayy."
+    YM "“Okayy.“"
     scene black with fade
     
     if YM_dp >= 6:
-        YM "Hngh..[MC]..what did I do wrong..?"
-        "Why..just w-why won’t you love me..?"
-        "You even ran away from me this afternoon..Did I…do something?"
-        "I was hoping dinner would win you over but you still wouldn’t even {i}touch{/i} me.."
-        "W-where did I go wrong? I changed so much for you..!"
-        "I’m {b}different{/b}  from back then, I changed so much just for you alone."
-        "You’re the only reason I’m even at this place…"
-        "You have to love me, you just have to…"
-        "{b}I won’t let you go no matter what.{/b}"
+        YM "“Hngh...[MC]...what did I do wrong...?“"
+        YM "“Why...just w-why won’t you love me...?“"
+        YM "“You even ran away from me this afternoon..Did I...do something?“"
+        YM "“I was hoping dinner would win you over but you still wouldn’t even {i}touch{/i} me...“"
+        YM "“W-where did I go wrong? I changed so much for you...!“"
+        YM "“I’m {b}different{/b}  from back then, I changed so much just for you alone.“"
+        YM "“You’re the only reason I’m even at this place...“"
+        YM "“You have to love me, you just have to...“"
+        YM "“{b}I won’t let you go no matter what.{/b}“"
     
     else:
         "Jump label"
@@ -2137,123 +2136,123 @@ label TSMafterloop1:
 label week_tsm:
     #TSM Maid Week Later"
     scene insidepd with fade
-    MC "(I have miraculously survived a whole week while living with Rudy)"
+    MC "(I have miraculously survived a whole week while living with Rudy.)"
     MC "(Or maybe saying {i}he{/i} survived would’ve been more fitting?)"
     MC "(After all, I’m the one getting all the benefits from this cohabitation.)"
     MC "(True to his word, he’s been regularly cleaning the place and cooking meals for us. It’s really thanks to him that I have more time to finish my current never ending wave of assignments.)"
-    MC "(In anycase, I managed to tone down whatever flirty comments came to my mind in an attempt to maintain peace and friendship)"
+    MC "(In anycase, I managed to tone down whatever flirty comments came to my mind in an attempt to maintain peace and friendship.)"
     MC "(Since today marks the seventh day of him surviving in my place, I've decided to be extra nice and buy us dessert to celebrate.)"
-    MC "(Or maybe as an apology for making him wear a maid outfit)"
-    MC "(I’ve been sneakily asking him about the type of desserts that he likes and I think I found something within a reasonable budget that matched)"
-    MC "(Our nearby supermarket sells silky pudding and I’m planning on surprising him with it)"
+    MC "(Or maybe as an apology for making him wear a maid outfit.)"
+    MC "(I’ve been sneakily asking him about the type of desserts that he likes and I think I found something within a reasonable budget that matched.)"
+    MC "(Our nearby supermarket sells silky pudding and I’m planning on surprising him with it.)"
     show tsm nnormal
-    TSM "I’m gonna head out. "
+    TSM "“I’m gonna head out.“"
     show tsm nsilent
-    MC "Okayy"
+    MC "“Okayy.“"
     show tsm nuhsure
-    TSM "You want anything specific for dinner? I’m gonna go shopping for groceries later."
+    TSM "“You want anything specific for dinner? I’m gonna go shopping for groceries later.“"
     show tsm nnormal
-    TSM "I think I know what you like by now so you don’t need to tag along if you’re busy."
-    MC "I’ll take anything you cook, I trust you."
-    MC "By the way, are you just telling me not to go with you so that the cashier won’t mistake us for a couple again?"
+    TSM "“I think I know what you like by now so you don’t need to tag along if you’re busy.“"
+    MC "“I’ll take anything you cook, I trust you.“"
+    MC "“By the way, are you just telling me not to go with you so that the cashier won’t mistake us for a couple again?“"
     show tsm nsdbangy
-    TSM "no.."
+    TSM "“No...“"
         menu:
             "If you say so.":
                     show tsm nbangy
-                    TSM "Hey-! It’s not like that!"
+                    TSM "“Hey-! It’s not like that!“"
             "In that case, I’ll go with you!":
                     show tsm nbdeflecting
-                    TSM "NO DON’T!"
+                    TSM "“NO DON’T!“"
                     show tsm nnormal
-                    TSM "I mean. Uh. You’re busy, yea? Don’t bother."
+                    TSM "“I mean. Uh. You’re busy, yea? Don’t bother.“"
     
-    MC "Whatever you say, {i}darling{/i}"
+    MC "“Whatever you say, {i}darling{/i}.“"
     show tsm npout
-    TSM "Hrmph.."
+    TSM "“Hrmph...“"
     show tsm nsdnormal
-    TSM "You’re cruel and unusual, y’know that?"
-    MC "Gee, I have no clue what you’re talking about."
+    TSM "“You’re cruel and unusual, y’know that?“"
+    MC "“Gee, I have no clue what you’re talking about.“"
     show tsm nnormal
-    TSM "By the way,  I'm going to a different grocery store so no one will recognize me."
+    TSM "“By the way,  I'm going to a different grocery store so no one will recognize me.“"
     show tsm nsilent
-    MC "Damn, isn’t that one even further?"
+    MC "“Damn, isn’t that one even further?“"
     show tsm nuhsure
-    TSM "So?"
+    TSM "“So?“"
     show tsm nsilent
-    MC "Any clue what time you’ll be back?"
-    MC "(I kinda need an estimate so I can keep the pudding a surprise)"
+    MC "“Any clue what time you’ll be back?“"
+    MC "(I kinda need an estimate so I can keep the pudding a surprise.)"
     show tsm nhuh
-    TSM "W-why d’ya wanna know? "
+    TSM "“W-why d’ya wanna know?“"
     MC "(Here we go [mc], do NOT respond with ‘Cause i’ll miss you’, I promised not to tease him too much)"
-    MC "Just wanted to make sure I’m not already asleep by the time."
+    MC "“Just wanted to make sure I’m not already asleep by the time.“"
     show tsm nnormal
-    TSM "No way, I’ll be back before 6. 30"
+    TSM "“No way, I’ll be back before 6:30.“"
     show tsm nsmirk
-    TSM "I can’t have you falling asleep before even having dinner."
+    TSM "“I can’t have you falling asleep before even having dinner.“"
     show tsm nsilent
-    MC "Good to know."
-    MC "(Alright, my classes end at 5. If I hurry I should be able to make it in time)"
+    MC "“Good to know.“"
+    MC "(Alright, my classes end at 5. If I hurry I should be able to make it in time.)"
     show tsm nuhsure
-    TSM "Anything else? I’m about to leave."
+    TSM "“Anything else? I’m about to leave.“"
     show tsm nsilent
-    MC "Nope! You can go now."
+    MC "“Nope! You can go now.“"
     show tsm nhappy
-    TSM "See ya’"
-    MC "See you later too!"
+    TSM "“See ya’“"
+    MC "“See you later too!“"
     
     scene campusd with fade
     MC "(What flavor should I get him later?)"
-    "(He likes chocolate, maybe I should stick with that? Or maybe he’d want something else for a change..?)"
-    "(No, he doesn’t like fruity flavors in pudding so maybe not..)"
-    "(Vanilla perhaps? If they have any)"
-    YM "{size=-5}[MC]!{/size}"
+    MC "(He likes chocolate, maybe I should stick with that? Or maybe he’d want something else for a change...?)"
+    MC "(No, he doesn’t like fruity flavors in pudding so maybe not...)"
+    MC "(Vanilla perhaps? If they have any.)"
+    YM "{size=-5}“[MC]!“{/size}"
     MC "(What if they don’t?)"
-    YM "{size =-7} Hey, [MC]?{/size}"
-    MC "(I guess I’ll stick to chocolate..)"
-    YM "[MC]!"
+    YM "{size =-7} “Hey, [MC]?“{/size}"
+    MC "(I guess I’ll stick to chocolate...)"
+    YM "“[MC]!“"
     scene campusd with vpunch
     show ym nworry
-    MC "Nix? Sorry I wasn't paying attention to my surroundings."
-    MC "What’s up?"
+    MC "“Nix? Sorry I wasn't paying attention to my surroundings.“"
+    MC "“What’s up?“"
     show ym nhappy
-    YM "I saw you in the distance and figured I'd say hi. Wanna walk together?"
+    YM "“I saw you in the distance and figured I'd say hi. Wanna walk together?“"
     show ym smile
-    MC "Same as always huh?"
+    MC "“Same as always huh?“"
     show ym rhappy
-    YM "Yep!"
+    YM "“Yep!“"
     show ym smile
-    MC "Let’s go then"
+    MC "“Let’s go then.“"
 
     scene campusd with fade
     show ym napologetic:
                    parallel:
-                         ease .5 zoom 1.75
+                           ease .5 zoom 1.75
                    parallel:
-                         yalign 0.0
-                         linear 0.0 yalign 0.0 xalign 0.5
-    YM "So, how are you doing? You seem happier recently. Anything good happened?"
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
+    YM "“So, how are you doing? You seem happier recently. Anything good happened?“"
     show ym nsmile
-    MC "(Yea, I have someone to help out with housework now. Not that I can tell him that)"
-    MC "I’ve been keeping up with my assignments better that’s all"
+    MC "(Yea, I have someone to help out with housework now. Not that I can tell him that.)"
+    MC "“I’ve been keeping up with my assignments better that’s all.“"
     show ym nhappy
-    YM "If you’re ever stressed out, I’m here for you."
-    YM "I can make you lunch and stuff."
+    YM "“If you’re ever stressed out, I’m here for you.“"
+    YM "“I can make you lunch and stuff.“"
     MC "(Oops, I can’t tell him I got Rudy for that.)"
-    MC "(Even if I wanted to tell him, I’m a hundred percent sure that Rudy would hate it if anyone knew we were living together)"
-    MC "You don’t need to do that, I’m surviving just fine."
+    MC "(Even if I wanted to tell him, I’m a hundred percent sure that Rudy would hate it if anyone knew we were living together.)"
+    MC "“You don’t need to do that, I’m surviving just fine.“"
     show ym nnormal
-    YM "But really, I want to."
-    MC "And again, since when do you cook?"
+    YM "“But really, I want to.“"
+    MC "“And again, since when do you cook?“"
     show ym nhappy
-    YM "I can start whenever you want me to"
-    MC "Yea, No. I’m fine without it dude."
+    YM "“I can start whenever you want me to.“"
+    MC "“Yea, No. I’m fine without it dude.“"
     show ym nhappyat right:
                    parallel:
-                         ease .5 zoom 1.75
+                           ease .5 zoom 1.75
                    parallel:
-                         yalign 0.0
-                         linear 0.0 yalign 0.0 xalign 0.5
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
     show tsm nsilent at left
     
     "As Nix tries to convince me to let him cook for me, I see a familiar view in the distance."
@@ -2262,48 +2261,48 @@ label week_tsm:
     "I decided to wave at him as both a ‘hi!’ and ‘see you later!’"
     show tsm nhuh
     "I wish I could say that he reciprocated but instead he stood there in shock and ran away without acknowledging it at all."
-     hide tsm
+    hide tsm
     show ym ngrin at center
-    "(Ouch, I guess waving at him was the wrong call.)"
-    "(Or even worse, maybe that wasn’t Rudy and I just waved at a complete stranger)"
+    MC "(Ouch, I guess waving at him was the wrong call.)"
+    MC "(Or even worse, maybe that wasn’t Rudy and I just waved at a complete stranger.)"
     show ym nquestioning
-    YM "Who was that [MC]? You were waving your hands."
+    YM "“Who was that, [MC]? You were waving your hands.“"
     show ym nsilent
-    MC "I thought I saw someone I knew but I guess I had the wrong person?"
+    MC "“I thought I saw someone I knew but I guess I had the wrong person?“"
     show ym nhappy
-    YM "{size=-10}good{/size}"
+    YM "{size=-10}“good.“{/size}"
     show ym nsmile
-    MC "What was that?"
+    MC "“What was that?“"
     show ym nrhappy
-    YM "Nothing! That probably wasn’t anyone important then. Let’s head to class, shall we?"
-    MC "Okay?"
+    YM "“Nothing! That probably wasn’t anyone important then. Let’s head to class, shall we?“"
+    MC "“Okay?“"
     
     scene class with fade
     MC "(Class is over, it’s go time!)"
     "I check my phone for time and see that it’s currently five past five."
-    "(No time to dawdle, I gotta hurry before Rudy gets back)"
+    MC "(No time to dawdle, I gotta hurry before Rudy gets back.)"
     
     scene supermarket with fade
     MC "(Alright! Where’s the pudding section?)"
-    MC "(Pretty sure it’s over there..somewhere?)"
+    MC "(Pretty sure it’s over there...somewhere?)"
     "#kalau bisa bg zoom in terus geser kiri kanan terus balik normal"
-    MC "(Aha! There it is)"
+    MC "(Aha! There it is.)"
     MC "(I got the chocolate pudding!)"
-    MC "I hold the cups high above my head as if I was a knight celebrating over a triumphant duel before suddenly remembering that I was in the middle of the grocery store."
+    MC "“I hold the cups high above my head as if I was a knight celebrating over a triumphant duel before suddenly remembering that I was in the middle of the grocery store.“"
     MC "(Oops, let’s just go pay)"
-    C "Oh! You’re the one from last week!"
-    MC "Oh hi?"
+    C "“Oh! You’re the one from last week!“"
+    MC "“Oh, hi?“"
     MC "(That’s the cashier from last week, I guess Rudy made the right choice since she still remembers me)"
-    C "I see you’re shopping alone this time. Are things well with your..husband?..err boyfriend?"
-    MC "(Oh, she’s still mistaking us for a couple)"
-    MC "Uhh, things are fine. I bought these for him. "
-    C "How sweet! How would you like to pay?"
-    MC "QR code please"
-    C "Alright, give me a sec."
-    C "Here."
-    MC "Done! "
-    C "Thankyou for your purchase!"
-    MC "Sure!"
+    C "“I see you’re shopping alone this time. Are things well with your...husband?...err boyfriend?“"
+    MC "(Oh, she’s still mistaking us for a couple.)"
+    MC "“Uhh, things are fine. I bought these for him.“"
+    C "“How sweet! How would you like to pay?“"
+    MC "“QR code please.“"
+    C "“Alright, give me a sec.“"
+    C "“Here.“"
+    MC "“Done!“"
+    C "“Thankyou for your purchase!“"
+    MC "“Sure!“"
     "Once outside, I check my phone once again to make sure I’m still on time."
     MC "(20 minutes left till 6, let’s go!)"
     
@@ -2311,79 +2310,79 @@ label week_tsm:
     play sound doorop
     MC "(Is he back yet?)"
     "I unlock the doors to my place and peek inside, since the lights are off I can only assume Rudy isn’t here yet."
-    MC "(Good, now I just gotta hide these in the fridge and wait for him to get back)"
-    MC "(Then I’ll start working on my assignments while I wait for him)"
+    MC "(Good, now I just gotta hide these in the fridge and wait for him to get back.)"
+    MC "(Then I’ll start working on my assignments while I wait for him.)"
     
     scene cg1 with fade
-    MC "(Alright, I think I’ll work on my homework while he isn't back. He might wanna use it to study later)"
+    MC "(Alright, I think I’ll work on my homework while he isn't back. He might wanna use it to study later.)"
     "#typing sfx"
     pause 1s
     scene cg1 with fade
     #typing sfx
     "..."
     "#knock sfx"
-    GTWU "{size=-10}[MC], I’m back.{/size}"
+    GTWU "{size=-10}“[MC], I’m back.“{/size}"
     MC "(Damn, how do I do this part?)"
     "#knock sfx"
-    TSM "[MC]?"
+    TSM "“[MC]?“"
     MC "(?)"
-    TSM "Shit, [player_sb] [player_gender] not back?"
+    TSM "“Shit, [player_sb] [player_gender] not back?“"
     MC "(OH shit)"
     scene inside with fade
     show tsm nsilent
-    MC "No, I’m here! Sorry, I was catching up on my homework"
+    MC "“No, I’m here! Sorry, I was catching up on my homework.“"
     show tsm nnormal
-    TSM "Oh, okay."
-    TSM "I’ll get started with dinner then."
+    TSM "“Oh, okay."
+    TSM "“I’ll get started with dinner then.“"
     hide tsm
     "He places all of his bags on the floor before grabbing the maid outfit from the hanging rack and heading over to the bathroom to change into it."
-    MC "(I don’t think I’ve ever really enforced the maid outfit thing ever since I gave it to him on the first day. So it’s kind of a miracle that he’s wearing it now with no complaints)"
-    MC "(I kinda thought he would pretend to forget. Especially when i’m so focused on my stuff that I barely notice my surroundings)"
+    MC "(I don’t think I’ve ever really enforced the maid outfit thing ever since I gave it to him on the first day. So it’s kind of a miracle that he’s wearing it now with no complaints.)"
+    MC "(I kinda thought he would pretend to forget. Especially when i’m so focused on my stuff that I barely notice my surroundings.)"
     MC "(But no, he really stuck to it. He’s just obediently listened to me without much protest.)"
-    MC "(On day 3 I ended up buying a second identical set just so he won’t have to wear the same one everyday)"
-    MC "(He looks cute in it though)"
+    MC "(On day 3 I ended up buying a second identical set just so he won’t have to wear the same one everyday.)"
+    MC "(He looks cute in it though.)"
     show tsm mangy
-    TSM "You’re smiling."
+    TSM "“You’re smiling.“"
     show tsm mpout
-    MC "I can’t smile now?"
+    MC "“I can’t smile now?“"
     show tsm mangy
-    TSM "It’s the evil smile. It’s your grin."
+    TSM "“It’s the evil smile. It’s your grin.“"
     show tsm munsure
-    TSM "What are you up to?"
+    TSM "“What are you up to?“"
     show tsm msilent
-    MC "I’m not up to anything!"
-    MC "(Well, nothing bad)"
+    MC "“I’m not up to anything!“"
+    MC "(Well, nothing bad.)"
     show tsm muhsure
-    TSM "Uh huh, that’s not very convincing.."
+    TSM "“Uh huh, that’s not very convincing...“"
     show tsm mnormal
-    TSM "I’m just gonna go cook dinner. You still have homework to finish, yea?"
-    MC "Yep!"
+    TSM "“I’m just gonna go cook dinner. You still have homework to finish, yea?“"
+    MC "“Yep!“"
     
     scene cg1 with fade
-    MC "(I know I said I was gonna do my homework. But DAMN, having a cute boy in maid outfit is really distracting)"
-    MC "(There’s something special about seeing him with the cute little frilly headwear, the bows and ruffles, and the way the skirt beautiful swishes around and you can see the layers and lace underneath)"
-    MC "(All this combined with his little ponytail and pouty expression. Makes him look real kissable)"
-    MC "(Wait..kissable? Do I like him now..?)"
-    MC "(Did I like him even before this..?)"
+    MC "(I know I said I was gonna do my homework. But DAMN, having a cute boy in maid outfit is really distracting.)"
+    MC "(There’s something special about seeing him with the cute little frilly headwear, the bows and ruffles, and the way the skirt beautiful swishes around and you can see the layers and lace underneath.)"
+    MC "(All this combined with his little ponytail and pouty expression. Makes him look real kissable.)"
+    MC "(Wait...kissable? Do I like him now...?)"
+    MC "(Did I like him even before this...?)"
     scene cg1 with vpunch
-    MC "(WAIT)"
+    MC "(WAIT.)"
     MC "(THAT DREAM I HAD OF HIM THE NIGHT I OFFERED TO LET HIM STAY WITH ME!!!!)"
-    MC "(MAYBE I DO LIKE HIM)"
-    MC "(I feel like I should’ve realized this a week ago but oh well)"
-    TSM "[MC]! Dinner’s almost done."
-    MC "Got it!"
+    MC "(MAYBE I DO LIKE HIM.)"
+    MC "(I feel like I should’ve realized this a week ago, but oh well.)"
+    TSM "“[MC]! Dinner’s almost done.“"
+    MC "“Got it!“"
     
     scene insidepd with fade
-    "Upon hearing his voice I got up from my seat and started setting up the plates and utensils. "
+    "Upon hearing his voice I got up from my seat and started setting up the plates and utensils."
     "Ever since our last time eating, I’ve officially bought that picnic blanket for us to eat on."
     "It’s kind of nice since it brings a little whimsy into my life."
     show tsm mnormal:
                    parallel:
-                         ease .5 zoom 1.3
+                           ease .5 zoom 1.3
                    parallel:
-                         yalign 0.0
-                         linear 0.0 yalign 0.0 xalign 0.5
-    TSM "Here, eat up."
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
+    TSM "“Here, eat up.“"
     show tsm msilent
     MC "Oh? We got kind of fancy today. There’s an extra side dish."
     show tsm mnormal
@@ -3413,7 +3412,6 @@ label month_tsm:
     FS "Good."
     LS "Anyway, what kinda guy do you like? And no, this is NOT for Rudy."
     MC "(Which means it is for Rudy)"
-<<<<<<< Updated upstream
     I glance at Rudy in the bushes, he stares at me expectantly, seemingly nervous at what I’m about to say."
     Menu:"
     "Men that can cook, It’d be great if they have a ponytail! Maybe their name starts with an ‘R’?"
