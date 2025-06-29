@@ -61,7 +61,7 @@ label start1:
     MC "(Must... continue.)"                             
     Scene black with fade                            
     MC "(...)"                                
-    "*bird sfx"                             
+    play sound "audio/bird.mp3"                          
     MC "(...)"                              
     MC "(Huh? Is...is the sun up?)"                            
                             
@@ -85,7 +85,7 @@ label start1:
     MC "(Yea, having a maid sounds really nice.)"                            
     MC "(What if I sneak in some cleaning time this morning? I might have enough time to atleast take my laundry to the laundromat?)"
     Scene room with vpunch
-    "*alarm sfx"
+    play sound "audio/alarm.mp3"
     MC "(Or not! That’s my 'late alarm' ringing!)"
     MC "(You can do this [MC], if you hurry you can still get to campus on time!)"
     
@@ -1060,7 +1060,7 @@ label day1:
         scene black with fade
         MC "“Alright, my eyes are closed.“"
         YM "“Wait just a sec, don’t peek okay?“"
-        play sound fabric
+        play sound "audio/fabric.mp3"
         "As soon as he said that, I heard the sound of fabric swishing around and dropping to the floor."
         MC "“What are you doing?“"
         YM "(!!)"
@@ -2309,10 +2309,10 @@ label week_tsm:
     
     scene cg1 with fade
     MC "(Alright, I think I’ll work on my homework while he isn't back. He might wanna use it to study later.)"
-    "#typing sfx"
+    play sound "audio/typing.mp3"
     pause 1s
     scene cg1 with fade
-    #typing sfx
+    play sound "audio/typing.mp3"
     "..."
     "#knock sfx"
     GTWU "{size=-10}“[MC], I’m back.“{/size}"
@@ -2990,11 +2990,11 @@ label week_ym:
         scene insiden with fade
         MC "Nix?"
         "Show YM siluet with vpunch (ini zoom)"
-        "#spray sfx"
+        play sound "audio/spray.mp3"
         MC "“FUCK!!“"
         "#punch sfx"
         scene black
-        "Fabric moving sfx"
+        play sound "audio/fabric.mp3"
         YM "“Sorry, [MC]. Forgive me alright?“"
         MC "(My head hurts, what the fuck happened?)"
         MC "(Shit, I’m losing consciousness...)"
@@ -3711,7 +3711,7 @@ label month_tsm:
             MC "Thankyou for letting me do this, I love you."
             Gently, I unwrap all the bow, layer by layer, freeing his arms from its temporary shackle."
             He gestures at my thigh, as if asking for permission to place his hand there. I nod and he shakily caresses my thigh."
-            MC ‘(He’s too cute.)"
+            MC (He’s too cute.)"
             Finally, I pull him back into another kiss, wrapping my arms around his shoulder."
             He responds in kind, moving his arms around my back, holding me like a dream that might disappear any minute."
             Luckily for him, I won’t. I’ll be here as long as he still loves me. And I’ll reassure him of my love whenever he needs it."
