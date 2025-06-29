@@ -1,4 +1,5 @@
 ﻿#stecustecu
+#brooo
 
 # The game starts here.
 define MC = Character ("[MC]")    
