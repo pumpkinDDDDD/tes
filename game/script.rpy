@@ -2517,15 +2517,15 @@ label week_tsm:
                     TSM "“I don’t!“"
 
     show tsm mnormal
-    TSM "Anyway, you done eating? I’m gonna clear the plates."
+    TSM "“Anyway, you done eating? I’m gonna clear the plates.“"
     show tsm mbsurprised
-    MC "Wait! It’s time for dessert!"
+    MC "“Wait! It’s time for dessert!“"
     "He makes an undignified yelp, and stares at me like a deer caught in headlights."
     show tsm mbdeflecting
-    TSM "HUH?! Y-you can’t seriously be..!"
-    MC "What’s wrong?"
+    TSM "“HUH?! Y-you can’t seriously be...!“"
+    MC "“What’s wrong?“"
     MC "(I was gonna bring out the puddings, but I’m guessing he thinks I want {I}him{/I} for dessert?)"
-    MC "(Aww, that’s too cute)"
+    MC "(Aww, that’s too cute.)"
     show tsm mbsdquestioning:
                    parallel:
                            ease .5 zoom 1.5
@@ -2534,117 +2534,117 @@ label week_tsm:
                            linear 0.0 yalign 0.0 xalign 0.5
     "I lean closer towards him and he freezes on the spot, eyes looking in a million different directions besides my face."
     show tsm mbsdquestioning with vpunch
-    TSM "W-we can’t! You..a-and..me..we’re not..like.. a-and the walls.."
-    MC "But I want dessert, don’t you?"
+    TSM "“W-we can’t! You...a-and...me...we’re not...like...a-and the walls...“"
+    MC "“But I want dessert, don’t you?“"
     show tsm bdeflecting
-    TSM "You gotta be joking..! W-with me?"
-    MC "Yes with you, who else?"
-    TSM "I-i don't know-“"
-    TSM "Urgh...“"
+    TSM "“You gotta be joking..! W-with me?“"
+    MC "“Yes with you, who else?“"
+    TSM "“I-I don't know-“"
+    TSM "“Urgh...“"
     show tsm bstopit
-    TSM "I..uh..fine."
+    TSM "“I..uh....fine.“"
     show tsm mbsdquestioning
-    TSM "Do what you want with me.. Just be quick"
+    TSM "“Do what you want with me... Just be quick.“"
     show tsm mbpout
     "He seemingly steels his nerves, finally staring right at me despite the red flush on his cheeks."
     "His eyes glisten with anticipation on my next move, his breathing speeding up."
-    MC "(OH. That’s kinda hot)"
+    MC "(OH. That’s kinda hot.)"
     show tsm mbangy
-    TSM "So? Get on with it."
+    TSM "“So? Get on with it.“"
     show tsm mbpout
-    MC "Good boy, wait here."
-    "(I feel a little bad that I left him there without clearing up his misunderstanding, but seeing him like that is way too fun)"
+    MC "“Good boy, wait here.“"
+    "(I feel a little bad that I left him there without clearing up his misunderstanding, but seeing him like that is way too fun.)"
     
     scene insidepd with fade
     "Soon enough, I returned back with the puddings in my hands."
-    MC "Ta da! Dessert!"
+    MC "“Ta da! Dessert!“"
     show tsm munsure
-    TSM "Huh..?"
-    MC "Dessert, I bought you pudding!"
-    "Feigning innocence, I give him my most angelic smile. (Or at least I tried, I’ve never been good at smiling like that)"
+    TSM "“Huh...?“"
+    MC "“Dessert, I bought you pudding!“"
+    "Feigning innocence, I give him my most angelic smile (Or at least I tried, I’ve never been good at smiling like that)."
     show tsm mangy
-    TSM "So you weren’t talking about..?"
-    MC "About what?"
+    TSM "“So you weren’t talking about...?“"
+    MC "“About what?“"
     "I tilt my head to feign confusion, trying my best to not slip up on the act."
     show tsm mdeflecting
-    TSM "Y-you.."
+    TSM "“Y-you...“"
     show tsm mpout
-    MC "Not sure what you thought I was talking about, but I figured I’d buy you pudding to celebrate your first week surviving here."
-    MC "And as a peace offering for whatever I’ve done that you may not like."
+    MC "“Not sure what you thought I was talking about, but I figured I’d buy you pudding to celebrate your first week surviving here.“"
+    MC "“And as a peace offering for whatever I’ve done that you may not like.“"
     show tsm mhappy
     "Despite seeming a little disappointed at first, his expression shifts to one of unexpected joy."
     show tsm msure
-    TSM "You bought this for me?"
-    MC "Well the other one’s mine but if you’re that hungry then you can eat both."
+    TSM "“You bought this for me?“"
+    MC "“Well the other one’s mine but if you’re that hungry then you can eat both.“"
     show tsm msmirk
-    TSM "I’m not that greedy, stupid."
+    TSM "“I’m not that greedy, stupid.“"
     show tsm msure
-    TSM "And um, thanks. I love pudding."
-    TSM "How did you know I liked this?"
+    TSM "“And um, thanks. I love pudding.“"
+    TSM "“How did you know I liked this?“"
     show tsm msilent
-    MC "Because you told me? I’ve been collecting information about you through our dinner conversations."
-    MC "Pretty sure I asked you this question 3 days ago."
+    MC "“Because you told me? I’ve been collecting information about you through our dinner conversations.“"
+    MC "“Pretty sure I asked you this question 3 days ago.“"
     show tsm mhappy
-    TSM "Thanks, I guess we both have somethin’ special for today huh?"
-    MC "And here I thought we just had "extra ingredients"
+    TSM "“Thanks, I guess we both have somethin’ special for today huh?“"
+    MC "“And here I thought we just had 'extra ingredients'.“"
     show tsm mbsurprised
     TSM "(!)"
     show tsm msdnormal
-    TSM "Don’t read into it. We did, but I also felt like making something else."
+    TSM "“Don’t read into it. We did, but I also felt like making something else.“"
     show tsm msilent
-    MC "(Aww, I think he’s starting to warm up to me)"
-    MC "I’m glad you did. How’s the pudding?"
+    MC "(Aww, I think he’s starting to warm up to me.)"
+    MC "“I’m glad you did. How’s the pudding?“"
     show tsm mhappy
-    TSM "Great! This didn’t cost you too much, right?"
-    MC "Oh it was a million bucks."
+    TSM "“Great! This didn’t cost you too much, right?“"
+    MC "“Oh it was a million bucks.“"
     show tsm msmirk
-    TSM "Shut the fuck up, no it wasn’t."
+    TSM "“Shut the fuck up, no it wasn’t.“"
     show tsm msilent
-    MC "I know, just messin’ with ya."
+    MC "“I know, just messin’ with ya.“"
     show tsm mhappy
-    TSM "I’m starting to think you do certain things just to mess with me."
+    TSM "“I’m starting to think you do certain things just to mess with me.“"
     show tsm msilent
-    MC "Sorry, do you hate it?"
+    MC "“Sorry, do you hate it?“"
     show tsm mhappy
-    TSM "Too late for that, you’ve already shoved me into this maid outfit."
+    TSM "“Too late for that, you’ve already shoved me into this maid outfit.“"
     show tsm msilent
-    MC "(He’s not necessarily saying that he hated it though)
+    MC "(He’s not necessarily saying that he hated it though.)"
     show tsm mdeflecting
-    MC "Hey, I didn’t ‘shove’ you into it, I just gave it to you and you wore it."
-    MC "It’s not like I was helping you change."
+    MC "“Hey, I didn’t ‘shove’ you into it, I just gave it to you and you wore it.“"
+    MC "“It’s not like I was helping you change.“"
     show tsm mangy
-    TSM "A-are you done? I’m gonna clean up and study."
+    TSM "“A-are you done? I’m gonna clean up and study.“"
     show tsm mpout
-    MC "You’re not saying that you hate it though."
+    MC "“You’re not saying that you hate it though.“"
     show tsm mdeflecting
-    TSM "I’m gonna clean up-!"
+    TSM "“I’m gonna clean up-!“"
     show tsm mpout
-    MC "Alright, I’ll help you."
-    "(And so ends the night of our one week of living together)"
+    MC "“Alright, I’ll help you.“"
+    "(And so ends the night of our one week of living together.)"
     
     scene insiden with fade
     MC "(...)"
-    MC "Rudy?"
+    MC "“Rudy?“"
     show tsm snormal
-    TSM "Yea?"
+    TSM "“Yea?“"
     show tsm ssilent
-    MC "G’night."
+    MC "“G’night.“"
     show tsm snormal
-    TSM "G'night to you too."
+    TSM "“G'night to you too.“"
     show tsm silent
     TSM "..."
     show tsm suhsure
-    TSM "That all?"
+    TSM "“That all?“"
     show tsm silent
-    MC "Oh I also wanted to say that I love you."
+    MC "“Oh I also wanted to say that I love you.“"
     show tsm ssmirk
-    TSM "Quit messin’ with me and go to bed dumbass."
+    TSM "“Quit messin’ with me and go to bed dumbass.“"
     show tsm spout
-    MC "m’not though."
+    MC "“m’not though.“"
     show tsm snormal
-    TSM "You’re tired, go to bed."
+    TSM "“You’re tired, go to bed.“"
     show tsm ssilent
-    MC "Fine."
+    MC "“Fine.“"
     
     scene black with fade
     MC "..."
@@ -2653,128 +2653,128 @@ label week_tsm:
     "I pull out my phone to check the time, it seems like I still have plenty to spare."
     MC "(That’s good, wouldn't wanna be late this early in the semester.)"
     MC"(Hm?)"
-    MC "(What’s that smell? It’s delicious)"
-    MC "(Warm rice…Crispy Sides…Nice Sauce…)"
-    MC "(Hmmm, something smells good)"
-    MC "(I still have time right? I wanna check out the source)"
-    MC "(Shit, I’m getting hungry…)"
+    MC "(What’s that smell? It’s delicious.)"
+    MC "(Warm rice...Crispy Sides...Nice Sauce...)"
+    MC "(Hmmm, something smells good.)"
+    MC "(I still have time right? I wanna check out the source.)"
+    MC "(Shit, I’m getting hungry...)"
     show tsm nsurprised with vpunch
     GTWU "(!!!)"
-    GTWU"Shit, you came out of nowhere."
+    GTWU "“Shit, you came out of nowhere.“"
     show tsm nsilent
-    MC "Sorry! My bad for bumping into you."
+    MC "“Sorry! My bad for bumping into you.“"
     show tsm nnormal
-    GTWU "It’s fine."
+    GTWU "“It’s fine.“"
     show tsm nsilent
-    MC "(Actually, I feel like the smells coming from him)"
+    MC "(Actually, I feel like the smells coming from him.)"
     MC "(Shit, he smells delicious!)"
     show tsm nuhsure
-    GTWU "Uhh, did you hit your head or something?"
-    MC "You smell good."
+    GTWU "“Uhh, did you hit your head or something?“"
+    MC "“You smell good“."
     show tsm nhuh
-    MC "(Maybe I shouldn’t’ve said that)"
-    GTWU "Wha? Don’t sniff me jackass"
+    MC "(Maybe I shouldn’t’ve said that.)"
+    GTWU "“Wha? Don’t sniff me jackass.“"
     show tsm mnilent
-    MC "My bad, you smell like food. Where did you buy it?"
+    MC "“My bad, you smell like food. Where did you buy it?“"
     show tsm nnormal
-    GTWU "I didn’t buy it, I made it myself."
-    GTWU "I’m not feeding you shit."
+    GTWU "“I didn’t buy it, I made it myself.“"
+    GTWU "“I’m not feeding you shit.“"
     show tsm nsilent
-    MC "Wasn’t expecting you to. I already had breakfast."
+    MC "“Wasn’t expecting you to. I already had breakfast.“"
     show tsm nuhsure
-    GTWU "And you’re still eyeing me like that?"
+    GTWU "“And you’re still eyeing me like that?“"
     show tsm nnormal
-    GTWU "Whatever, I gotta go. I have this campus event in a bit so, sort that shit yourself."
+    GTWU "“Whatever, I gotta go. I have this campus event in a bit so, sort that shit yourself.“"
     show tsm n
-    MC "Wait a sec, you go to Begonia’s Institute of Technology too?"
+    MC "“Wait a sec, you go to Begonia’s Institute of Technology too?“"
     show tsm nhuh
-    GTWU "Shit, you too?"
-    MC "Yea! Wanna walk together? "
+    GTWU "“Shit, you too?“"
+    MC "“Yea! Wanna walk together?“"
     show tsm nnormal
-    GTWU "No"
+    GTWU "“No.“"
     show tsm nsilent
-    MC "C’mon, help me out here. What if I get lost?"
+    MC "“C’mon, help me out here. What if I get lost?“"
     show tsm nnormal
-    GTWU "That’s your problem."
+    GTWU "“That’s your problem.“"
     show tsm nsilent
-    MC "What if you get lost?"
+    MC "“What if you get lost?“"
     show tsm nnormal
-    GTWU "Then that’s not your business."
+    GTWU "“Then that’s not your business.“"
     show tsm nsilent
-    MC "I can help you out? Two heads are better than one."
+    MC "“I can help you out? Two heads are better than one.“"
     show tsm nuhsure
-    GTWU "You’re awfully chummy to someone you just met."
+    GTWU "“You’re awfully chummy to someone you just met.“"
     show tsm nsilent
-    MC "Sorry, I got a bit lonely since all my friends went to different colleges and I haven’t met anyone here."
-    MC "You’re actually the first one I’ve seen!"
+    MC "“Sorry, I got a bit lonely since all my friends went to different colleges and I haven’t met anyone here.“"
+    MC "“You’re actually the first one I’ve seen!“"
     show tsm nuhsure
-    GTWU "Is that supposed to be some kinda honor?"
+    GTWU "“Is that supposed to be some kinda honor?“"
     show tsm nsilent
-    MC "Nope! I just wanted to talk to someone."
+    MC "“Nope! I just wanted to talk to someone.“"
     show tsm nuhsure
-    GTWU "Guess I have no choice huh?"
+    GTWU "“Guess I have no choice, huh?“"
     show tsm nsilent
-    MC "Well, you can always just run away from me? I don’t mind."
+    MC "“Well, you can always just run away from me? I don’t mind.“"
     show tsm nhappy
-    GTWU "Whatever."
-    GTWU "So are you coming or not?"
+    GTWU "“Whatever."
+    GTWU "“So, are you coming or not?“"
     show tsm nsilent
-    MC "I am!"
-    MC "Actually, I don't know your name yet!"
+    MC "“I am!"
+    MC "“Actually, I don't know your name yet!“"
     show tsm nnormal
-    TSM "Rudy."
-    MC "Nice to meet you ! I’m [MC]."
+    TSM "“Rudy."
+    MC "“Nice to meet you ! I’m [MC].“"
     show tsm nhappy
-    TSM "Alright."
+    TSM "“Alright.“"
 
 label week_ym:
     #YM Maid Week Later"
     scene insidepd with fade
     MC "(And so, my first week with Nix passes.)"
-    MC "(I don’t know what I was expecting when I first agreed but in some ways he did improve my life)"
-    MC "(Mostly surrounding cooking and other housework, if nothing else my place is the cleanest it’s been in weeks)"
+    MC "(I don’t know what I was expecting when I first agreed but in some ways he did improve my life.)"
+    MC "(Mostly surrounding cooking and other housework, if nothing else my place is the cleanest it’s been in weeks.)"
     if dp >= 5:
         MC "(Honestly though, I can’t wait for the month to be over.)"
-        MC "(Shit thing to say about living with your friend but I don’t know, the more I know about him the more I sense the bad vibes)"
+        MC "(Shit thing to say about living with your friend but I don’t know, the more I know about him the more I sense the bad vibes.)"
         
     else:
-        MC "(It’s been pretty good, although I do think he’s been too much recently)"
-        "(WAY above ‘friend’ level)"
+        MC "(It’s been pretty good, although I do think he’s been too much recently.)"
+        MC "(WAY above ‘friend’ level.)"
     
-    MC "(Regardless, I’ve decided to be nice and buy something to celebrate)"
-    MC "(And as a sort of thanks for all he’s done for me this past week)"
-    MC "(Based on what I know about him, he seems to like those cookies with the strawberry jam so I’ll buy those)"
-    MC "(Trying to make those myself would be disastrous)"
+    MC "(Regardless, I’ve decided to be nice and buy something to celebrate.)"
+    MC "(And as a sort of thanks for all he’s done for me this past week.)"
+    MC "(Based on what I know about him, he seems to like those cookies with the strawberry jam so I’ll buy those.)"
+    MC "(Trying to make those myself would be disastrous.)"
     show ym nnormal
-    YM "What are you thinking about [MC]? You seem distracted today."
+    YM "“What are you thinking about [MC]? You seem distracted today.“"
     show ym nsmile
-    MC "I’m good."
+    MC "“I’m good.“"
     show ym nhappy
-    YM "Really? You can always tell me if something is wrong. If nothing else, I can always act as a stress reliever."
+    YM "“Really? You can always tell me if something is wrong. If nothing else, I can always act as a stress reliever.“"
     show ym nsmile
-    MC "That won’t be necessary."
+    MC "“That won’t be necessary.“"
     show ym nhappy
-    YM "Are you sure? I can skIp my morning class and stay here with you."
+    YM "“Are you sure? I can skIp my morning class and stay here with you.“"
     show ym nworry
-    MC "No way man, go to class. "
-    MC "I’d hate to ruin your perfect attendance."
+    MC "“No way man, go to class.“"
+    MC "“I’d hate to ruin your perfect attendance.“"
     show ym nwhine
-    YM "But..."
-    MC "No buts! Go to class."
+    YM "“But...“"
+    MC "“No buts! Go to class.“"
     show ym nworry
-    YM "Fine..."
+    YM "“Fine...“"
     show ym napologetic
-    YM "Do I get anything for being a good boy?"
-    MC "Yes, you get to keep your perfect attendance."
+    YM "“Do I get anything for being a good boy?“"
+    MC "“Yes, you get to keep your perfect attendance.“"
     show ym nhuffy
-    YM "Booo...! "
+    YM "“Booo...!“"
     show ym nhuffy
-    MC "Enough pouting, go already. Wouldn’t want you to be late."
+    MC "“Enough pouting, go already. Wouldn’t want you to be late.“"
     show ym nhappy
-    YM "Can I atleast get a goodbye hug? "
+    YM "“Can I atleast get a goodbye hug?“"
         menu:
             "Sure why not?":
-                     show ym nrhappy: 
+                    show ym nrhappy: 
                           parallel:
                                 ease .5 zoom 1.5
                           parallel:
@@ -2782,391 +2782,387 @@ label week_ym:
                                 linear 0.0 yalign 0.0 xalign 0.5
                     "He beams with joy and soon buries himself in my chest, seeming way too comfortable, like he’s never gonna let go."
                     show ym napologetic
-                    YM "You’re the best [MC].."
-                    MC "I know, but you should go now."
+                    YM "“You’re the best, [MC]...“"
+                    MC "“I know, but you should go now.“"
                     show ym nhappy
-                    YM "Alrightttt"
+                    YM "“Alrightttt.“"
             "No, just go already. +2 dp":
                     show ym nmtch
-                    YM "{size=-10}Shit{/size}"
-                    
-                    MC "What was that?"
+                    YM "{size=-10}“Shit.“{/size}"
+                    MC "“What was that?“"
                     show ym nhappy
-                    YM "Nothing!"
+                    YM "“Nothing!“"
                     show ym rhappy
-                    YM "Okie then, byee!"
-                    MC "Bye!"
+                    YM "“Okie then, byee!“"
+                    MC "“Bye!“"
                     hide ym
                     if dp >= 4:
                         "Once he leaves, I breathe a sigh of relief."
-                        MC "(I’m starting to hate him, immensely)"
+                        MC "(I’m starting to hate him, immensely.)"
                     else:
                         "When he eventually gets further away, I shut the door and find a smile creeping on my face."
-                        MC "(He’s pretty cute when he’s like that)"
+                        MC "(He’s pretty cute when he’s like that.)"
     
     scene campus1d with fade
-    MC "(I’m glad I managed to buy those cookies before I have class)"
-    MC "(I just know Nix would sniff me out if I bought it later)"
-    MC "(Is that..?)"
+    MC "(I’m glad I managed to buy those cookies before I have class.)"
+    MC "(I just know Nix would sniff me out if I bought it later.)"
+    MC "(Is that...?)"
     show tsm nsilent
     MC "(Rudy?)"
-    MC "(Man, I’ve been seeing him more often lately. It went from once every few months to once a week)"
-    MC "(No where near how often I encounter Nix though, so seeing him is a good change of pace)"
-    MC "Rudy what’s up!"
+    MC "(Man, I’ve been seeing him more often lately. It went from once every few months to once a week.)"
+    MC "(No where near how often I encounter Nix though, so seeing him is a good change of pace.)"
+    MC "“Rudy what’s up!“"
     show tsm nhuh
-    TSM "huh?"
+    TSM "“Huh?“"
     "He faces my direction, a little confused. I give him a wave as I approach him and he returns the gesture."
     show tsm nsilent
-    MC "What’s up? I don’t usually see you around."
+    MC "“What’s up? I don’t usually see you around."
     show tsm nnormal
-    TSM "Same here, you followin me around or somethin?"
+    TSM "“Same here, you followin me around or somethin'?“"
     show tsm nsilent
-    MC "Obviously not, I don’t have the time for that."
+    MC "“Obviously not, I don’t have the time for that.“"
     show tsm nhappy
-    TSM "I sure hope so."
+    TSM "“I sure hope so.“"
     show tsm nsilent
-    MC "You seem on edge, life treating you badly?"
+    MC "“You seem on edge, life treating you badly?“"
     show tsm nnormal
-    TSM "Nothing I can't handle."
+    TSM "“Nothing I can't handle.“"
     show tsm nsilent
-    MC "Well that’s good."
+    MC "“Well that’s good.“"
     show tsm nsdquestioning
-    TSM "Umm..I’ve got somethin to ask."
+    TSM "“Umm...I’ve got somethin to ask.“"
     show tsm nsilent
-    MC "Shoot."
+    MC "“Shoot“"
     show tsm nunsure
-    TSM "Did your friend move to our place? I’ve been seeing him around our place a lot."
+    TSM "“Did your friend move to our place? I’ve been seeing him around our place a lot.“"
     show tsm nsilent
-    MC "Yea he did."
+    MC "“Yea, he did.“"
     show tsm nnormal
-    TSM "Why? Kinda strange to move in just before the semester’s over."
+    TSM "“Why? Kinda strange to move in just before the semester’s over.“"
     show tsm nunsure
-    TSM "He’s not stalking you or anything, is he?"
+    TSM "“He’s not stalking you or anything, is he?“"
     show tsm nsilent
-    MC "Nah (probably). Remember the fire?"
+    MC "“Nah (probably). Remember the fire?“"
     show tsm nnormal
-    TSM "Oh, that."
+    TSM "“Oh, that.“"
     show tsm nuhsure
-    TSM "That was his room?"
+    TSM "“That was his room?“"
     show tsm nsilent
-    MC "Uh no, his room is unscathed but he got scared and asked to move in with me."
+    MC "“Uh no, his room is unscathed but he got scared and asked to move in with me.“"
     show tsm nhuh
-    TSM "You’re living together ?!!??"
+    TSM "“You’re living together?!!??“"
     show tsm nuhsure
-    TSM "Are you two..dating?"
+    TSM "“Are you two...dating?“"
     show tsm nsilent
-    MC "Well-"
+    MC "“Well-“"
     show ym nrhappy at right:
         linear 0.050 xoffset -10
         linear 0.050 xoffset +0
         linear 0.050 yoffset -10
         linear 0.050 yoffset +0
     show tsm nsilent at left
-    YM "[MC]!"
+    YM "“[MC]!“"
     
     "Suddenly, I was tackled into a hug by an overly excited Nix. Once he releases me from the hug, he continues his hugging spree and staked his claim on my arm."
     show ym nquestioning
-    YM "[MC], who is this?"
-    MC "That’s our downstairs neighbor."
+    YM "“[MC], who is this?“"
+    MC "“That’s our downstairs neighbor.“"
     show ym ngrin
-    YM "Nice to meet you. I’m Nix."
+    YM "“Nice to meet you. I’m Nix.“"
     "He smiles as sweetly as he always does, but this time the light doesn’t quite seem to reach his eyes."
     show tsm nsdquestioning
-    TSM "Uh yea, sure."
+    TSM "“Uh yea, sure.“"
     show tsm nangry:
         linear 0.050 xoffset +10
     "Like a cat sensing a threat, Rudy seems to instinctively back away from Nix, not bothering to hide his less than thrilled expression."
-    MC "(I guess he is kinda bad with strangers)"
+    MC "(I guess he is kinda bad with strangers.)"
     show ym nnormal
-    YM "What are you talking about with my [player_pronoun]? "
+    YM "“What are you talking about with my [player_pronoun]?“"
     show ym nsilent
     show tsm nnsdangy
-    TSM "Nothing, I’m about to leave anyway."
-    TSM "So I guess he is your boyfriend?"
+    TSM "“Nothing, I’m about to leave anyway.“"
+    TSM "“So I guess he is your boyfriend?“"
         menu:
             "Nix, quit messing around. We’re not together. +2 dp + ij":
-                    YM "[MC]...Don’t be like that, am I not enough for you? I can change..."
-                    MC "That’s not the issue here."
-                    YM "But [MC]..."
+                    YM "“[MC]...Don’t be like that, am I not enough for you? I can change...“"
+                    MC "“That’s not the issue here.“"
+                    YM "“But, [MC]...“"
                     "I yank my arm out of his embrace and he stumbles back from the force."
-                    MC "Don’t."
-                    YM "[MC]..!"
-                    TSM "Hey, if [MC] isn’t interested then fuck off."
-                    YM "Don’t put your words into [MC]’s mouth."
-                    "[MC]..won’t you tell him to back off?"
-                    MC "Well, he’s not wrong. I’m not exactly-"
-                    YM "[MC]!"
+                    MC "“Don’t.“"
+                    YM "“[MC]...!“"
+                    TSM "“Hey, if [MC] isn’t interested then fuck off.“"
+                    YM "“Don’t put your words into [MC]’s mouth.“"
+                    YM "“[MC]...won’t you tell him to back off?“"
+                    MC "“Well, he’s not wrong. I’m not exactly-“"
+                    YM "“[MC]!“"
                     "As Nix approaches me once more, Rudy quickly moves in front of me to strike a hit."
                     "#punch sfx"
                     "#sprite YM bloody nose"
-                    TSM "Shit, I’m sorry!"
+                    TSM "“Shit, I’m sorry!“"
                     "Not wanting to deal with Nix at the moment, I hurriedly follow behind Rudy as he runs away from the scene of the crime. "
                     "Once in a while, Rudy would look behind to see if I’m still there."
                     "Pretty sure we got a few odd looks, but by this point the adrenaline is getting to me."
                     scene campusd with fade
                     "By the time we reached somewhere more secluded I was tired as all hell."
-                    TSM "Are you okay?"
-                    MC "I’ll live."
-                    TSM "What’s up with him?"
-                    MC "I don't know, I’ve never seen him like this."
+                    TSM "“Are you okay?“"
+                    MC "“I’ll live.“"
+                    TSM "“What’s up with him?“"
+                    MC "“I don't know, I’ve never seen him like this.“"
                     
                     if dp == 10: 
-                        TSM "And you’re telling me you live with him?"
-                        "If you feel uncomfortable then kick him out! It’s not like he’ll go homeless if you do."
-                        MC "His things are in my room, I have class in 10 minutes and his finishes before mine."
-                        "It'll be harder to kick him out if all his belongings are with me."
+                        TSM "“And you’re telling me you live with him?“"
+                        TSM "“If you feel uncomfortable then kick him out! It’s not like he’ll go homeless if you do.“"
+                        MC "“His things are in my room, I have class in 10 minutes and his finishes before mine.“"
+                        MC "“It'll be harder to kick him out if all his belongings are with me.“"
                         "Rudy gives me a sigh before looking back at me."
-                        TSM "Tell you what, I’ll get rid of his things for you."
-                        MC "You’d do that for me? Don’t you have class?"
-                        TSM "It starts in 2 hours, I’ll be fine."
-                        MC "Why go this far for me?"
-                        TSM "It’s not for you. {b}I{/b} feel unsafe knowing he’s around."
-                        MC "He lives across the street though."
-                        TSM "FUCK."
-                        "Y’know what, fuck that. That’s a problem for later. For now, we gotta get him outta our place."
-                        "What do I need to get?"
-                        MC "Well.."
-                        "Scene campus with fade"
-                        MC "That’s about it."
-                        TSM "If I remember correctly, our rooms have the same layout right?"
-                        MC "Yep."
-                        TSM "Cool, I’ll try to help you out."
-                        MC "Thanks a lot man! You’re a lifesaver."
-                        TSM "Shut up, don’t make a big deal out of it."
-                        "See ya’"
-                        MC "Byee! And thanks!"
-                        "(Alright, time to get to class)"
+                        TSM "“Tell you what, I’ll get rid of his things for you.“"
+                        MC "“You’d do that for me? Don’t you have class?“"
+                        TSM "“It starts in 2 hours, I’ll be fine.“"
+                        MC "“Why go this far for me?“"
+                        TSM "“It’s not for you. {b}I{/b} feel unsafe knowing he’s around.“"
+                        MC "“He lives across the street though.“"
+                        TSM "“FUCK.“"
+                        TSM "“Y’know what, fuck that. That’s a problem for later. For now, we gotta get him outta our place.“"
+                        TSM "“What do I need to get?“"
+                        MC "“Well...“"
+                        Scene campus with fade
+                        MC "“That’s about it.“"
+                        TSM "“If I remember correctly, our rooms have the same layout right?“"
+                        MC "“Yep."
+                        TSM "“Cool, I’ll try to help you out.“"
+                        MC "“Thanks a lot man! You’re a lifesaver.“"
+                        TSM "“Shut up, don’t make a big deal out of it.“"
+                        TSM "“See ya’“"
+                        MC "“Byee! And thanks!“"
+                        MC "(Alright, time to get to class.)"
                     
                     else:
-                        MC "But he’s not usually like this."
-                        TSM "Do you want him out?"
-                        MC "No, he’s my friend and he’ll be out in a month anyway. He’s just staying with me because he’s afraid of another fire."
-                        TSM "If you say so."
-                        "You sure you’re okay?"
-                        MC "Yea, I’m sure."
-                        TSM "Okay then, need me to walk you to your building? Just in case he’s after you."
-                        "I’m sure taking down someone would be easier with 2 people."
-                        MC "Sure, although.."
-                        "Nix isn’t particularly strong."
-                        TSM "Wouldn't hurt to be safe though."
-                        MC "Alright, thanks for offering."
+                        MC "“But he’s not usually like this.“"
+                        TSM "“Do you want him out?“"
+                        MC "“No, he’s my friend and he’ll be out in a month anyway. He’s just staying with me because he’s afraid of another fire.“"
+                        TSM "“If you say so.“"
+                        TSM "“You sure you’re okay?“"
+                        MC "“Yea, I’m sure.“"
+                        TSM "“Okay then, need me to walk you to your building? Just in case he’s after you.“"
+                        TSM "“I’m sure taking down someone would be easier with 2 people.“"
+                        MC "“Sure, although...“"
+                        MC "“Nix isn’t particularly strong.“"
+                        TSM "“Wouldn't hurt to be safe though.“"
+                        MC "“Alright, thanks for offering.“"
     
             "Clingy isn’t he? Not that I mind.":
                     show ym nrhappy
-                    YM "Hehe"
-                    TSM "uh huh, whatever."
-                    TSM "See you some other time."
+                    YM "“Hehe.“"
+                    TSM "“Uh huh, whatever.“"
+                    TSM "“See you some other time.“"
                     hide tsm
                     show ym nnormal at center
-                    YM "Why were you talking to him [MC]?"
-                    MC "Because I saw him and I figured I’d say hi?"
+                    YM "“Why were you talking to him, [MC]?“"
+                    MC "“Because I saw him and I figured I’d say hi?“"
                     show ym nhuffy
-                    YM "Don’t.."
-                    MC "Why?"
+                    YM "“Don’t...“"
+                    MC "“Why?“"
                     show ym nmnormal
-                    YM "Because you’re with {b}me{/b}"
-                    MC "Uh Nix? You’re holding on a bit too tight there."
+                    YM "“Because you’re with {b}me{/b}.“"
+                    MC "“Uh Nix? You’re holding on a bit too tight there.“"
                     show ym napologetic
-                    YM "Oh! Sorry, is this better?"
-                    MC "Yea."
+                    YM "“Oh! Sorry, is this better?“"
+                    MC "“Yea."
                     show ym nhappy
-                    YM "Alright then, shall we go to class?"
-                    MC "Sure."
+                    YM "“Alright then, shall we go to class?“"
+                    MC "“Sure.“"
     
     scene road with fade
     MC "(Class is done!)"
-    MC "(Time to get back to my place and see Nix again)"
+    MC "(Time to get back to my place and see Nix again.)"
     if  YM_ij == 1 and YM_dp <= 9:
-        MC "(And maybe check on that bloody nose of his since I do feel a little bad)"
-        MC "(Just a little)"
+        MC "(And maybe check on that bloody nose of his since I do feel a little bad.)"
+        MC "(Just a little.)"
     else: 
-        MC "(And give him those cookies I got to mark his first week here)"
-        MC "(Might as well show a little appreciation for him)"
+        MC "(And give him those cookies I got to mark his first week here.)"
+        MC "(Might as well show a little appreciation for him.)"
         
     
     if dp == 10:
-        MC "(Dear lord, class is officially over)"
+        MC "(Dear lord, class is officially over.)"
         MC "(I genuinely don’t wanna deal with Nix while I’m this tired but what else can I do?)"
-        MC "(I’m just glad Rudy was there to help)"
-        MC "(Whatever, I’ll think about this when I get there)"
+        MC "(I’m just glad Rudy was there to help.)"
+        MC "(Whatever, I’ll think about this when I get there.)"
         scene black with fade"
         stop bg music
         #creaky door sfx"
-        MC "Nix? I’m back."
+        MC "“Nix? I’m back.“"
         MC "(It’s so dark, what is he even doing like this?)"
         scene insiden with fade
         MC "Nix?"
         "Show YM siluet with vpunch (ini zoom)"
         "#spray sfx"
-        MC "FUCK!!"
+        MC "“FUCK!!“"
         "#punch sfx"
         scene black
         "Fabric moving sfx"
-        YM "Sorry [MC], forgive me alright?"
+        YM "“Sorry, [MC]. Forgive me alright?“"
         MC "(My head hurts, what the fuck happened?)"
-        MC "(Shit, I’m losing consciousness..)"
-        YM "{size=-5} I’m sorry, I’m sorry, I’m sorry,I'm sorry I'm sorry I'm sorry im sorry im sorry {/size}"
+        MC "(Shit, I’m losing consciousness...)"
+        YM "{size=-5} “I’m sorry, I’m sorry, I’m sorry,I'm sorry I'm sorry I'm sorry im sorry im sorry“{/size}"
         MC "(?)"
-        YM "{size=-10} I’m sorry, I’m sorry, I’m sorry,I'm sorry I'm sorry I'm sorry im sorryim sorry {/size}"
+        YM "{size=-10} I’m sorry, I’m sorry, I’m sorry,I'm sorry I'm sorry I'm sorry im sorryim sorry“{/size}"
         "..."
-        "Pause 2s"
+        Pause 2s
         
-        GTWU "Hmm hm hmm hm~"
+        GTWU "“Hmm hm hmm hm~“"
         MC "(?)"
-        GTWU "Hmm hm hm hmm~"
+        GTWU "“Hmm hm hm hmm~“"
         scene insiden with fade
-        MC "(My head hurts..)"
-        YM "[MC]! You’re awake."
-        MC "(Is that…Nix? Still in the maid outfit..)"
+        MC "(My head hurts...)"
+        YM "“[MC]! You’re awake.“"
+        MC "(Is that...Nix? Still in the maid outfit...)"
         #make the outfit bloody"
         show ym ed1sorry
-        YM "Oh, please don’t struggle too much. You’ll hurt yourself."
-        "I try to get up from my position, but fail."
-        "As my consciousness returns, I realize that I’ve been buried under blankets and duct taped to my bed."
-        "When I struggle once more to get up, Nix quickly panics and frantically places himself on top of me, acting as an extra weight."
-        scene ed1ver2 with fade
-        YM "Please don’t do this to me [MC]...Stay with me.."
-        YM "I don’t wanna hurt you more than I have.."
-        MC "The fuck?"
-        YM "I’m sorry I have to do this [MC], but i’m scared you might leave me. And I can't let that happen."
-        YM "After all, I’ve worked so hard for this. I worked so hard for {I}you{/I}"
-        MC "(Why..? I thought Rudy was supposed to kick him out.)"
+        YM "“Oh, please don’t struggle too much. You’ll hurt yourself.“"
+        YM "“I try to get up from my position, but fail.“"
+        YM "“As my consciousness returns, I realize that I’ve been buried under blankets and duct taped to my bed.“"
+        YM "“When I struggle once more to get up, Nix quickly panics and frantically places himself on top of me, acting as an extra weight.“"
+        scene  ed1ver2 with fade
+        YM "“Please don’t do this to me, [MC]...Stay with me...“"
+        YM "“I don’t wanna hurt you more than I have...“"
+        MC "“The fuck?“"
+        YM "“I’m sorry I have to do this [MC], but i’m scared you might leave me. And I can't let that happen.“"
+        YM "“After all, I’ve worked so hard for this. I worked so hard for {I}you{/I}.“"
+        MC "(Why...? I thought Rudy was supposed to kick him out.)"
         MC "(Did he bail on me?)"
-        YM "Oh [MC], don’t look away from me. Keep your eyes on me and me alone."
-        YM "Don’t think for one second that I didn't know what he was about to do."
-        MC "What happened to Rudy?"
-        YM "{b} Don’t even say his name!{/b}"
-        YM "Woops, sorry for raising my voice at you. Please don’t do it again [MC], you know that it upsets me."
-        MC "{b}What happened?{/b}"
-        YM "{b}I SAID DON’T MENTION HIM {/b]"
-        YM "What do I need to do to get your mind off of him [MC]? Please tell me, I’ll do anything."
-        MC "Tell me. What. Happened. To. Rudy."
-        YM "ARRGHHH, Must you be so {b}stubborn{/b} !"
-        YM "You don’t need to know anything. All you need to know is that he won’t come between us anYMore, so don’t worry."
-        YM "I took care of everything, so please don’t even think about him anYMore."
-        YM "He’s in your past [MC]."
-        MC "What did you do?! "
-        YM "STOP…!!!"
-        "Something seems to snap even further in Nix as heavy tears start streaming down his face."
-        YM "PLEASE..JUST…LOOK AT {b}ME{/b}"
+        YM "“Oh [MC], don’t look away from me. Keep your eyes on me and me alone.“"
+        YM "“Don’t think for one second that I didn't know what he was about to do.“"
+        MC "“What happened to Rudy?“"
+        YM "{b} “Don’t even say his name!“{/b}"
+        YM "“Woops, sorry for raising my voice at you. Please don’t do it again [MC], you know that it upsets me.“"
+        MC "{b}“What happened?“{/b}"
+        YM "{b}“I SAID DON’T MENTION HIM“{/b}"
+        YM "“What do I need to do to get your mind off of him [MC]? Please tell me, I’ll do anything.“"
+        MC "“Tell me. What. Happened. To. Rudy.“"
+        YM "“ARRGHHH, Must you be so {b}stubborn{/b}!“"
+        YM "“You don’t need to know anything. All you need to know is that he won’t come between us anYMore, so don’t worry.“"
+        YM "“I took care of everything, so please don’t even think about him anymore.“"
+        YM "“He’s in your past, [MC].“"
+        MC "“What did you do?!“"
+        YM "“STOP...!!!“"
+        "Something seems to snap even further in Nix as heavy tears start streaming down his face.“"
+        YM "“PLEASE..JUST…LOOK AT {b}ME{/b}“"
         scene ed1ver1
-        YM "He’s dead, okay???! DEAD! He’s gone and all you have left is {b}me{/b}."
-        MC "You’re fucking lying. "
-        YM "See [MC], I’m stronger..! All I needed to do was continuously spray his face with mosquito repellent before stabbing him..!"
-        MC "(Guess that’s why the room smells like this)"
-        YM "Why can’t you please see who it is that truly wants you? It’s me."
-        MC "Want me? Or want me dead?"
-        YM "I wouldn’t do that..! I love you [MC], always have and always will."
-        YM "Please.. You have to believe me. You’re the only reason why I even chose this college."
-        YM "You’re the only reason why I chose my current place."
-        YM "All this is so that I could be close to you…!"
-        YM "And you still won’t even consider me!"
-        MC "If there’s 7 billion people in this world, I’m not going for you."
-        YM "Why won’t you just understand?"
-        YM "I love you."
-        "..."
-        YM "I know what to do..."
-        YM "I think I need to prove it to you. Then you’ll believe me, right?"
-        In an instant, he closes the distance between us and places his lips on mine. His hands desperately cupping my face while his tears fall down onto mine."
-        I try to get him off but he moves his other hand to hold me down to the bed."
-        YM "Do you get it now [MC]? "
-        "You’re mine you’re mine you’re mine you’re mine you’remine youremine youremine youremine youremine youremine"
-        MC "(Fuck, I should’ve known that I would attract someone crazy)"
+        YM "“He’s dead, okay???! DEAD! He’s gone and all you have left is {b}me{/b}.“"
+        MC "“You’re fucking lying.“"
+        YM "“See [MC], I’m stronger...! All I needed to do was continuously spray his face with mosquito repellent before stabbing him..!“"
+        MC "(Guess that’s why the room smells like this.)"
+        YM "“Why can’t you please see who it is that truly wants you? It’s me.“"
+        MC "“Want me? Or want me dead?“"
+        YM "“I wouldn’t do that..! I love you [MC], always have and always will.“"
+        YM "“Please...You have to believe me. You’re the only reason why I even chose this college.“"
+        YM "“You’re the only reason why I chose my current place.“"
+        YM "“All this is so that I could be close to you...!“"
+        YM "“And you still won’t even consider me!“"
+        MC "“If there’s 7 billion people in this world, I’m not going for you.“"
+        YM "“Why won’t you just understand?“"
+        YM "“I love you.“"
+        YM "..."
+        YM "“I know what to do...“"
+        YM "“I think I need to prove it to you. Then you’ll believe me, right?“"
+        "In an instant, he closes the distance between us and places his lips on mine. His hands desperately cupping my face while his tears fall down onto mine.“"
+        "I try to get him off but he moves his other hand to hold me down to the bed.“"
+        YM "“Do you get it now, [MC]?“"
+        YM "“You’re mine you’re mine you’re mine you’re mine you’remine youremine youremine youremine youremine youremine“"
+        MC "(Fuck, I should’ve known that I would attract someone crazy.)"
         "Ending 1 : You’re Mine."
         jump label endgame
         
     else:
         scene inside with fade
-        MC "Nix? I’m back."
+        MC "“Nix? I’m back.“"
         show ym mrhappy
-        YM "Welcome back [MC]! "
+        YM "“Welcome back, [MC]!“"
         
         if YM_ij == 1:
-            MC "How’s your..uhh..face? I have an ice pack around here somewhere."
+            MC "“How’s your...uhh...face? I have an ice pack around here somewhere.“"
             show ym mconcerned
-            YM "[MC]...It hurts…"
-            MC "Sorry. I’ll make it up to you now."
+            YM "“[MC]...It hurts...“"
+            MC "“Sorry. I’ll make it up to you now.“"
             show ym nworry
-            YM "That guy you were with, I don’t like him…"
-            MC "Again, sorry about that. I think he was just trying to help me out."
-            MC "I don’t appreciate you telling other people lies like that, y’know?"
+            YM "“That guy you were with, I don’t like him...“"
+            MC "“Again, sorry about that. I think he was just trying to help me out.“"
+            MC "“I don’t appreciate you telling other people lies like that, y’know?“"
             show ym mhuffy
-            YM "Hmph..fine…"
-            MC "Here, give me your hand."
+            YM "“Hmph...fine...“"
+            MC "“Here, give me your hand.“"
             show ym mwhine
-            YM "It’s colddd..!"
-            MC "It’s an ice pack, hold it up to where Rudy punched you earlier."
+            YM "“It’s colddd..!“"
+            MC "“It’s an ice pack, hold it up to where Rudy punched you earlier.“"
             show ym mnormal
-            YM "Okayyy"
+            YM "“Okayyy.“"
         
         else:
             show ym msmile
-            MC "So..boyfriend huh?"
+            MC "“So...boyfriend, huh?“"
             show ym mapologetic
-            YM "umm..sorry about that. You don’t mind, do you [MC]?"
+            YM "“Umm...sorry about that. You don’t mind, do you, [MC]?“"
             show ym mworry
-            YM "I just felt this tightness in my chest when I saw you with him..and I don’t know what to do about it.."
-            MC "So you got jealous?"
+            YM "“I just felt this tightness in my chest when I saw you with him..and I don’t know what to do about it...“"
+            MC "“So you got jealous?“"
             show ym mconcerned
-            YM "Please don’t hate me.."
-            MC "Chill, I don’t."
+            YM "“Please don’t hate me...“"
+            MC "“Chill, I don’t.“"
             show ym mapologetic
-            YM "That’s good."
+            YM "“That’s good.“"
 
     show ym mrhappy
-    YM " Anyway, I already made dinner!"
-    MC "Already? I haven’t even set up our picnic blanket yet."
+    YM "“Anyway, I already made dinner!“"
+    MC "“Already? I haven’t even set up our picnic blanket yet.“"
     show ym mhappy
-    YM "It’s okay, I still need to grab the food from the kitchen."
+    YM "“It’s okay, I still need to grab the food from the kitchen.“"
     show ym msmile
-    MC "Gotcha’ I’ll set it up for us while you do that."
+    MC "“Gotcha’, I’ll set it up for us while you do that.“"
     scene insidepd with fade
 
     show ym mhappy    
-    YM "[MC], you done?"
+    YM "“[MC], you done?“"
     show ym msmile
-    MC "I am, let’s dig in."
+    MC "“I am, let’s dig in.“"
     show ym mrhappy
-    YM "Okie, here you go!"
+    YM "“Okie, here you go!“"
     show ym msmile:
         parallel:
             ease .5 zoom 1.5
         parallel:
             yalign 0.0
             linear 0.0 yalign 0.0 xalign 0.5
-    "#sprite zoom"
-    MC "Y’know, I’m sorry for ever doubting you, I guess you are good at this!"
+    MC "“Y’know, I’m sorry for ever doubting you, I guess you are good at this!“"
     show ym mapologetic
-    YM "I’m glad you think so but.."
+    YM "“I’m glad you think so but...“"
     show ym mmad
-    YM "{b}Am I even better than the guy downstairs?{/b}"
-    MC "Huh?"
+    YM "{b}“Am I even better than the guy downstairs?“{/b}"
+    MC "“Huh?“"
     show ym mnormal
-    YM "I heard that he’s a good cook. I heard that you asked to taste his lunch at some point."
+    YM "“I heard that he’s a good cook. I heard that you asked to taste his lunch at some point.“"
     MC "(Where is this coming from?)"
-    MC "I wouldn’t know, I never got a taste of his cooking."
+    MC "“I wouldn’t know, I never got a taste of his cooking.“"
     show ym mmad
-    YM "I saw you walking to campus with him a week ago, why did you meet up with him?"
-    MC "I didn’t ‘meet up’ with him, I didn't plan anything."
-    MC "I saw my neighbour and figured we’d have a chat since we’re heading in the same direction."
+    YM "“I saw you walking to campus with him a week ago, why did you meet up with him?“"
+    MC "“I didn’t ‘meet up’ with him, I didn't plan anything.“"
+    MC "“I saw my neighbour and figured we’d have a chat since we’re heading in the same direction.“"
     MC "(Why is he making such a big deal out of me and my neighbor walking together? I haven’t even seen him in months at that point!)"
-    MC "How do you even know that? You weren’t there."
+    MC "“How do you even know that? You weren’t there.“"
     show ym mworry
-    YM "And you were with him again this afternoon.."
+    YM "“And you were with him again this afternoon...“"
     show ym mwhine
-    YM "You should’ve called me. I’m the one who’s closer to you!"
-    MC "For what? I’m just walking to class, we’re not hanging out or anything."
-    YM "Still-! Y-y..you-"
-    "#zoom lagi"
+    YM "“You should’ve called me. I’m the one who’s closer to you!“"
+    MC "“For what? I’m just walking to class, we’re not hanging out or anything.“"
+    YM "“Still-! Y-y...you-“"
     show ym mmcangry:
         parallel:
             ease .5 zoom 2.0
         parallel:
             yalign 0.0
             linear 0.0 yalign 0.0 xalign 0.5
-    YM "{b}You’re mine!{/b}"
+    YM "{b}“You’re mine!“{/b}"
     MC "(...)"
-    "#zoom out"
     show ym mhorrified:
         parallel:
             ease .5 zoom 1.5
@@ -3174,40 +3170,39 @@ label week_ym:
             yalign 0.0
             linear 0.0 yalign 0.0 xalign 0.5
     "Realizing his sudden outburst, he clams up and falls to his knees, seemingly horrified for raising his voice at me."
-    MC "(This is the first time I’ve seen him this upset over anything)"
+    MC "(This is the first time I’ve seen him this upset over anything.)"
     MC "(Scratch that, this is the first time I've seen him upset in general.)"
-    MC "Nix?"
+    MC "“Nix?“"
     show ym mwhine
-    YM "S-sorry, I-I don’t know what came over me.."
+    YM "“S-sorry, I-I don’t know what came over me...“"
         menu:
             "Are you okay? You seem on edge.":
                     show ym mconcerned
-                    YM "I-i’m sorry, I shouldn’t’ve yelled like that."
+                    YM "“I-I’m sorry, I shouldn’t’ve yelled like that.“"
             "You better be, You don’t get to be mad over who I interact with.":
-                    "#sprite nangis"
                     show ym mwhinecry
-                    YM "I’M SORRY-! Y-you probably hate me now d-don’t you?"
+                    YM "“I’M SORRY-! Y-you probably hate me now d-don’t you?“"
                     
-    MC "I hate to say this but you’ve been a bit weird for a while now. What's up?"
+    MC "“I hate to say this but you’ve been a bit weird for a while now. What's up?“"
     show ym mworry
-    YM "[MC]..I..I.."
+    YM "“[MC]...I...I...“"
     "He struggles to get the words out before suddenly snapping back to normal, if a little more unhinged than usual."
     #ganti bgm sini
     show ym mgrin
-    YM "Nothing’s wrong [MC] !"
-    YM "I’ve just been a little tired, maybe it’ll all be better if you let me cuddle up to you after this?"
-    YM "After all, I did do allll of this just for you."
-    MC "Why? Why go this far for me of all people? You're not acting like yourself"
+    YM "“Nothing’s wrong, [MC]!“"
+    YM "“I’ve just been a little tired, maybe it’ll all be better if you let me cuddle up to you after this?“"
+    YM "“After all, I did do allll of this just for you.“"
+    MC "“Why? Why go this far for me of all people? You're not acting like yourself.“"
     show ym mquestioning
-    YM "Why not? As far as I’m concerned you’re the only important person in the world."
-    MC "C’mon be real with me here. You’re pretty friendly, and you have lots of friends. Surely there are other people in your life that you care about?"
+    YM "“Why not? As far as I’m concerned you’re the only important person in the world.“"
+    MC "“C’mon be real with me here. You’re pretty friendly, and you have lots of friends. Surely there are other people in your life that you care about?“"
     show ym mnormal
-    YM "There aren’t, you’re the only one that matters."
+    YM "“There aren’t, you’re the only one that matters.“"
         menu: 
             "(Oh? I kinda like that)":
-                    MC "(I get that this is all a little much by conventional standards but I’m kinda into it)"
+                    MC "(I get that this is all a little much by conventional standards but I’m kinda into it.)"
             "(Yikes, what is wrong with him?)":
-                    MC "(That is NOT the Nix that I know)"
+                    MC "(That is NOT the Nix that I know.)"
 
     show ym mhappy
     YM "You’re the only person worth caring about.."
