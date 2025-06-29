@@ -3212,120 +3212,162 @@ label week_ym:
     YM "“Please?“"
         menu: 
             "Y’know what? I’m down. Set dp=0":
-                    show ym m
+                    show ym mbctouched
                     YM "“Is that a yes...?!“"
                     MC "“Yes sweetie, It is.“"
-                    show ym m
+                    show ym mbsqueal
                     "With that, I lean towards him and give him a little peck on his cheek. He jolts in surprise but soon lets out the most adorable little squeal."
                     "He then moves from his current position to my lap and nuzzles right into the crook of my neck as he wraps his arms around me."
-                    show ym m
+                    show ym mworry
                     YM "“So, you love me back right? I’m not just dreaming?“"
                     MC "“No, you’re not."
-                    show ym m
+                    show ym mrbhappy
                     "I give him a light squeeze in reassurance before gently patting his head."
                     MC "“I love you too, Nix.“"
-                    show ym m
+                    show ym mapologetic
                     YM "“Gosh, [MC], I can drop dead in your hands right this moment and I’ll still be happy...“"
                     MC "“Please don’t, I can’t let a cute boy like you die in my lap.“"
-                    show ym m
+                    show ym mconcerned
                     YM "“[MC], I’m really the only one for you right?“"
                     MC "“Yes sweetie, you are.“"
+                    show ym mquestioning
                     YM "“What about that guy downstairs?“"
                     MC "“He’s just my neighbor.“"
+                    show ym mconcerned
                     YM "“Still...“"
                     MC "“You don’t need to be so jealous of him. After all, you’re the one who’s sleeping with me.“"
+                    show ym mapologetic
                     YM "“Oh how long I’ve waited to hear you say that.“"
+                    show ym mcontent
                     YM "“I’ve waited so long for you to reciprocate my feelings.“"
                     YM "“To hold me in your arms like this.“"
+                    show ym mbtouched
                     YM "“Ever since I’ve met you, all I’ve ever wanted to be is yours.“"
                     MC "“And that’s what you’ll be from now on.“"
     
             "Okay stop that, give me some time. + 3 dp":
+                    show ym mconcerned
                     YM "“[MC]?“"
                     MC "“Give me some time okay? You can’t just spring all of this on me.“"
+                    show ym mwhine
                     YM "“[MC], you don’t understand...!“"
                     MC "“Nix, I care for you a lot but this is a bit much.“"
+                    show ym mwhinecry
                     YM "“‘It’s him, isn’t it?!“"
                     YM "“He’s the one you want ??!“"
                     MC "“No, it’s not about-“"
+                    show ym mwhinecry:
+                        linear 0.050 xoffset -10
+                        linear 0.050 xoffset +0
+                        linear 0.050 yoffset -10
+                        linear 0.050 yoffset +0
                     YM "“DON’T LIE TO ME!!“"
+                    show ym mhorrified
                     YM "“I see the way he looks at you, the way he can’t take his eyes off of you , he likes you!“"
                     MC "“You’re delusional.“"
+                    show ym mwhinecry
                     YM "“I’M NOT! You just don’t see it!“"
                     MC "“Even if that’s true, I don’t want to date him either.“"
                     MC "“I didn’t tell you to give me some time because I ‘had someone else in mind’.“"
+                    show ym mmad
                     YM "“Then.. what? What am I lacking? Why do I have to wait even longer to have you? To be yours?“"
+                    show ym mhorrified
                     MC "“Let’s stop here. We should eat, your hard work is getting cold.“"
                     MC "“As I said, give me some time.“"
+                    show ym mwhine
                     YM "“fine...“"
     
-    Scene insiden with fade
+    scene insiden with fade
     MC "(Today sure was wild.)"
     MC "(I think I tired myself enough. I mean Nix is already asleep by this this point.)"
     MC "(I’ll have to sleep too.)"
     MC "(Good night, Nix.)"
     
-    Scene highschooldream
+    scene highschooldream
+    show ym hsangry
     GTWU "“stupid teachers, can’t believe they think I can finish all this before the school closes down“"
-    GTWU "“I don’t get it“"
-    GTWU "“I hate this...“"
+    GTWU "“i don’t get it“"
+    GTWU "“i hate this...“"
     MC "“Is that for Mrs. Athens math class?“"
+    show ym hsnormal with vpunch
     GTWU "(!!)"
     MC "“Sorry, did I scare you?“"
     GTWU "“no“"
     MC "“Man, that’s a lot of math questions. Why are you doing them here?“"
     GTWU "“Mrs. Athens said I couldn’t go back unless I finish them all“"
     MC "“Damn that sucks.“"
+    show ym hsquestioning
     GTWU "“so why are you here?“"
     MC "“Group project, told my dad to pick me up at 5 but turns out we finished early.“"
     MC "“Now I have to wait.“"
+    show ym hsnormal
     GTWU"“hm“"
     MC "“Actually, can I look at the questions? I’m bored.“"
+    show ym hsquestioning
     GTWU "(what kinda sicko does math questions when they’re bored?)"
     GTWU "“sure?“"
     GTWU "(what [player_sb] [player_gender] doing?)"
     MC "“Wait a minute, I did these earlier!“"
+    show ym hsnormal
     GTWU "“oh“"
     MC "“You wanna look at the answers? I already confirmed with Mrs Athens that they were right.“"
+    show ym hsquestioning
     GTWU "“this isn’t a trick is it?“"
     MC "“No? I can teach you while we're at it, might as well review what I learned today.“"
+    show ym hsangry
     GTWU "([player_gender] [player_sb] too close!!)"
     GTWU "“why are you talking to me?“"
     MC "“Because I’m bored? Besides, don’t you want some help with those? You’ll never finish at this rate.“"
+    show ym hsnormal
     GTWU "“fine...“"
     
-    Scene hallwaydream with fade
+    scene hallwaydream with fade
+    show ym hsnormal
     GTWU "(I didn’t expect this but [player_gender] really stayed and helped me finish all this)"
     MC "“And we’re done!“"
     MC "“Thanks for letting me help you, I would’ve been bored out of my mind otherwise.“"
-    GTWU "(and {I}I’m{/I} the one being thanked for this?)"
+    show ym hsquestioning
+    GTWU "(and {i}I’m{/i} the one being thanked for this?)"
+    show ym hsnormal
     GTWU "“no, thankyou for helping me“"
     GTWU "([player_possessive] scent, it’s nice...)"
     MC "“No problem! It doubles as me studying for next week's test anyway.“"
     MC "“Since our math questions are the same, I’m guessing we’re in the same grade?“"
+    show ym hsquestioning
     GTWU "“maybe?“"
     MC "“I’m in class 2, you?“"
+    show ym hsnormal
     GTWU "(oh? I know [player_possesive] class now)"
     GTWU "“3“"
     MC "“Guess that explains why I’ve never seen you around.“"
     MC "“Oh shit, It’s 5. I’m gonna head out first, bye!“"
     "#footsteps sfx"
+    show ym hsquestioning
     GTWU "“bye? I guess“"
+    show ym hsangry
     GTWU "(why did I say that? stupidstupidstupid)"
     GTWU "(why am I like this?)"
     GTWU "(and I don’t even know [player_possessive] name...)"
+    show ym hsnormal
     GTWU "(I hope I meet [player_object] again)"
 
 label month_tsm:
     #TSM End of Month"
-    Scene black with fade
+    scene black with fade
     TSM "“Hey wake up.“"
     MC "(?)"
     TSM "“Wake up stupid, if ya don’t wake up now you’re gonna be late.“"
     TSM "“Geez, get an alarm or something.“"
     Scene insidepd with fade
     MC "“Mornin’“"
+    show tsm nnormal
     TSM "“Yea.“"
+    show tsm nsilent:
+        paralel:
+            ease .5 zoom 1.3
+        paralel:
+            yalign 0.0
+            linear 0.0 yalign 0.0 xalign 0.5
     "He gives me his hand and I grab it to steady myself, settling to our now familiar routine."
     "By this point, it’s almost the end of the month. In just a few days, we’ll be back to what we were like before."
     "And the worst part is I haven’t been able to make anYMore moves since we suddenly got busy due to finals."
@@ -3334,46 +3376,75 @@ label month_tsm:
     MC "(I’ve been Rudy deficient, and by extension, maid boy deficient.)"
     MC "(Oh how I miss the sight of him in that dress and apron combo.)"
     MC "(Curse you finals week!!)"
+    show tsm nuhsure
     TSM "“What’s with that look on your face?“"
     MC "“‘Oh come on, that’s just what I look like.“"
+    show tsm normal
     TSM "“No, that’s what you look like when somethings bothering you.“"
     TSM "“So what is it? I can stay for another 15 minutes.“"
     TSM "“I’ll listen while you eat breakfast.“"
+    show tsm nsilent
     MC "“You wanna hear the truth?“"
+    show tsm nnormal
     TSM "“Yea.“"
+    show tsm nsilent
     MC "“I miss seeing you in that maid outfit.“"
+    show tsm nhuh
     TSM "(!!)"
+    show tsm nnormal
     TSM "“Quit messin’ with me, you just woke up.“"
+    show tsm nsilent
     MC "“I’m not messing with you. You never believe me when I say you look cute.“"
+    show tsm nnormal
     TSM "“That’s cause I’m not.“"
+    show tsm nsilent
     MC "“Keep lying why dont 'cha.“"
+    show tsm nnormal
     TSM "“You’re weird.“"
+    show tsm nuhsure
     TSM "“Genuinely though, what's up?“"
+    show tsm nsilent
     MC "“I’m serious, I’m having a maid boy deficiency.“"
-    TSM "“My motivation is at an all time low right now and only you can help me.“"
+    MC "“My motivation is at an all time low right now and only you can help me.“"
+    show tsm nhuh
     TSM "“Are you serious?“"
     MC "“When am I ever unserious?“"
+    show tsm nnormal
     TSM "“All the time.“"
     MC "“Rude.“"
+    show tsm nsmirk
     TSM "“Whatever.“"
+    show tsm nsdnormal
     TSM "“Well, if you really wanted to...“"
     TSM "“I’m not too busy tonight.“"
     MC "“Oh?“"
+    show tsm nangy
     TSM "“Don’t ‘oh?’ me, ugh {size=-10}why did I say that? {/size}“"
+    show tsm ndeflecting
     TSM "“A-anyway, what time will you be back?“"
+    show tsm nsilent
     MC "“Hopefully before 6, I don’t think I have anything else today.“"
+    show tsm nhappy
     TSM "“Great, see you later. I’m gonna head out.“"
     MC "“See ya’.“"
     
-    Scene campus1d with fade
+    scene campus1d with fade
     MC "(Damn, I can’t believe the months almost over.)"
     MC "(And by extension, finals are approaching. This sucks.)"
     MC "(I used to be really studious, what the fuck happened to me?)"
+    show ls normal:
+         linear 0.050 xoffset -10
+         linear 0.050 xoffset +0
     LS "“OH HEY! [MC], right?“"
+    show ls normal at right
+    show fs normal at left
     FS "“Don’t yell so loud, you’ll scare [player_object] off.“"
     MC "“Sorry. Do I know you two?“"
     FS "“Oh shit yea, you might not remember us.“"
     FS "“We’re Rudy’s friends.“"
+   show ls normal:
+         linear 0.050 xoffset -10
+         linear 0.050 xoffset +0
     LS "“Yea! We’re part of the badminton club with him.“"
     LS "“You might’ve seen us sell cakes to fundraise for the club!“"
     MC "(Now that I think about it, I do remember something like that.)"
@@ -3387,18 +3458,27 @@ label month_tsm:
     "I turn around to see the source of the noise but see no one."
     MC "“Did you guys hear that?“"
     FS "“Hear what? I didn’t hear or see anyone.“"
+    show ls normal:
+         linear 0.050 xoffset -10
+         linear 0.050 xoffset +0
     LS "“Me neither!“"
     #bush noises
     "I turn around once more and finally spot Rudy, hiding in the bushes, looking as embarrassed as can be."
     MC "(I guess this is related to him, huh?)"
+   show fs normal:
+         linear 0.050 xoffset -10
+         linear 0.050 xoffset +0
     FS "“Hey, don’t turn around! There’s no one there we swear!“"
+   show ls normal:
+         linear 0.050 xoffset -10
+         linear 0.050 xoffset +0
     LS "“Yea, totally!“"
     MC "“Hmm.“"
     MC "(I guess I might as well play along.)"
-    MC "{I}“Oh boy, I guess you’re right! I didn’t see a single person there!“{/I}"
+    MC "{i}“Oh boy, I guess you’re right! I didn’t see a single person there!“{/i}"
     MC "“But still, the view on this side of the street is nicer to look at!“"
     FS "“So you don’t wanna turn around and face us?“"
-    MC "“Sorry guys, the view is fantastic. Definitely {I}not{/I} because I saw someone hiding in the bushes.“"
+    MC "“Sorry guys, the view is fantastic. Definitely {i}not{/i} because I saw someone hiding in the bushes.“"
     "After the words leave my mouth, Rudy peeks his head even further above the cover of the bushes, seeming vaguely pleased at himself."
     "I look back at his friends who grimaced in return and they soon rush to the other side of the street, where Rudy is. Perhaps hoping to cover my view of him."
     FS "“You’re sure you didn’t see anyone, right?“"
@@ -3414,59 +3494,110 @@ label month_tsm:
                     MC "“Sounds great! Does his name end with a ‘Y’ perhaps?“"
                     LS "“It does!“"
                     MC "“Does he play badminton?“"
+                   show lsnormal:
+                       linear 0.050 xoffset -10
+                       linear 0.050 xoffset +0
                     LS "“WOW! How did you know?“"
                     MC "“I had a feeling.“"
                     FS "{size=-10} “Well, that’s good news for Rudy.“{/size}"
                     LS "“I know!“"
                     FS "“Thanks for your answer, It’ll help our friend a lot!“"
                     MC "“Sure thing.“"
+                    hide ls
+                    hide fs
+                    show tsm nsilent
                     "When his friends eventually pass the bush, Rudy springs out of there, acting as nonchalantly as he could."
                     "He locks eyes with me and with a nudge from his friend, walks straight up to me."
+                    show tsm nsdnormal:
+                        paralel:
+                            ease .5 zoom 1.3
+                        paralel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.5
                     TSM "“Uh, hi.“"
                     TSM "“I definitely just got here.“"
+                    show tsm nsilent
                     MC "“Oh, I know that.“"
+                    show tsm nuhsure
                     TSM "“So...umm. You’re not busy tonight right?“"
                     MC "“I’ll make time.“"
+                    show tsm nhappy
                     TSM "“Cool.“"
+                    show tsm nsdquestioning
                     TSM "“D-don’t come back too late okay?“"
                     TSM "“I...uh-“"
                     TSM "“I’ll be waiting.“"
                     MC "“Alright then, can’t wait.“"
             "Someone cute and sweet. Always there to help me out. Dp +10"
                     "Rudy looks in horror at my statement, seemingly crushed by every word in my sentence."
+                    show fs normal:
+                         paralel:
+                         yalign 0.0
+                         linear 0.0 yalign 0.0 xalign 0.4
                     FS "“Cute and sweet?“"
                     FS "“Yikes, he’s gonna need to work on that.“"
                     MC "(Okay, we’re definitely talking about Rudy. They’re not even hiding it anymore.)"
+                    show ls normal:
+                         paralel:
+                         yalign 0.0
+                         linear 0.0 yalign 0.0 xalign 0.6
                     LS "“Cute is subjective! I believe in him.“"
                     FS "“Well, to start with, he needs to stop calling people ‘stupid’ to hide his embarrassment.“"
                     LS "“Maybe that’s cute to some people?“"
                     MC "“So,  mind telling me what this is about?“"
                     FS "“Oh, it’s nothing! Just-“"
+                    show ym nrhappy with vpunch:
+                        paralel:
+                            ease .5 zoom 1.5
+                        paralel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.25
+                    show fs normal:
+                         paralel:
+                         yalign 0.0
+                         linear 0.0 yalign 0.0 xalign 0.6
+                    show ls normal:
+                         paralel:
+                         yalign 0.0
+                         linear 0.0 yalign 0.0 xalign 0.8
                     YM "“Hey, [MC]!“"
                     "Nix runs and dives straight into my back, enveloping me in a tight back hug."
                     MC "“Whoa, what the fuck, Nix? You spooked me.“"
+                    show ym napologetic
                     YM "“Sorry.. I just wanted to see you...“"
                     FS "{size=-10}“Yikes, Rudy has some stiff competition.“{/size}"
                     LS "“Rest in Peace my guy.“"
+                    show ym nmtch
                     MC "“Again, mind telling me what this is about?“"
+                    show ym ngrin
                     FS "“It’s nothing! We’ll take our leave now.“"
                     LS "“Uh YEA! Bye, [MC]!“"
                     MC "“See you two some other time?“"
                     MC "“Oh, and say hi to Rudy for me!“"
                     LS "“Will do!“"
+                    hide ls
+                    hide fs
                     #Hide sprite
+                    show ym nnormal
                     YM "“[MC], who are those people? They were clearly hitting on you.“"
                     MC "“No they weren’t.“"
+                    show ym nhuffy
                     YM "“You don’t know that! There’s absolutely no reason for anyone to not like you!“"
                     MC "“Everyone has their own thing. Anyway, can you please not hug me?“"
+                    show ym napologetic
                     YM "“Sorry...I got excited when I saw you...“"
                     MC "“That’s fine, I’m just not a big fan of being hugged like that.“"
+                    show ym nrhappy
                     YM "“Oh gotcha!“"
+                    show ym nhappy
                     YM "“Anyway, you wanna walk together to class?“"
+                    show ym nsmile
                     "I look at the bushes where Rudy was before only to see that he’s not there anymore. He already ran off, far into the distance with his friends."
                     MC "(Guess I’ll be walking with Nix.)"
                     MC "Sure, same as usual, yea?“"
+                    show ym nhappy
                     YM "Yea.“"
+                    show ym nmnormal
                     YM "{size=-10}{b}“Same as usual.“{/b}{/size}"
     
     if YM_dp == 10:
