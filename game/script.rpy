@@ -2276,11 +2276,11 @@ label week_tsm:
     MC "“What’s up?“"
     show ym nhappy
     YM "“I saw you in the distance and figured I'd say hi. Wanna walk together?“"
-    show ym smile
+    show ym nnsmile
     MC "“Same as always huh?“"
     show ym rhappy
     YM "“Yep!“"
-    show ym smile
+    show ym nsmile
     MC "“Let’s go then.“"
 
     scene campusd with fade
@@ -2306,7 +2306,7 @@ label week_tsm:
     show ym nhappy
     YM "“I can start whenever you want me to.“"
     MC "“Yea, No. I’m fine without it dude.“"
-    show ym nhappyat right:
+    show ym nhappy at right:
                    parallel:
                            ease .5 zoom 1.75
                    parallel:
@@ -2321,7 +2321,12 @@ label week_tsm:
     show tsm nhuh
     "I wish I could say that he reciprocated but instead he stood there in shock and ran away without acknowledging it at all."
     hide tsm
-    show ym ngrin at center
+    show ym ngrin at center:
+                   parallel:
+                           ease .5 zoom 1.75
+                   parallel:
+                           yalign 0.0
+                           linear 0.0 yalign 0.0 xalign 0.5
     MC "(Ouch, I guess waving at him was the wrong call.)"
     MC "(Or even worse, maybe that wasn’t Rudy and I just waved at a complete stranger.)"
     show ym nquestioning
@@ -2344,7 +2349,7 @@ label week_tsm:
     scene supermarket with fade
     MC "(Alright! Where’s the pudding section?)"
     MC "(Pretty sure it’s over there...somewhere?)"
-    "#kalau bisa bg zoom in terus geser kiri kanan terus balik normal"
+   
     MC "(Aha! There it is.)"
     MC "(I got the chocolate pudding!)"
     MC "“I hold the cups high above my head as if I was a knight celebrating over a triumphant duel before suddenly remembering that I was in the middle of the grocery store.“"
@@ -2411,7 +2416,7 @@ label week_tsm:
     show tsm msilent
     MC "“I’m not up to anything!“"
     MC "(Well, nothing bad.)"
-    show tsm muhsure
+    show tsm munsure
     TSM "“Uh huh, that’s not very convincing...“"
     show tsm mnormal
     TSM "“I’m just gonna go cook dinner. You still have homework to finish, yea?“"
@@ -2453,7 +2458,7 @@ label week_tsm:
     MC "“Am I spot on?“"
     show tsm mbangy
     TSM "“No dumbass. That’s not it.“"
-    show tsm mbdeflecting
+    show tsm mdeflecting
     TSM "“A-and stop looking at me like that.“"
     MC "(Oh. OH. I feel like I should’ve noticed this last week too but does he..also, maybe, kinda, like me too??)"
     MC "(Is this a sign for me to make a move?)"
@@ -2580,10 +2585,10 @@ label week_tsm:
     show tsm mbsurprised
     MC "“Wait! It’s time for dessert!“"
     "He makes an undignified yelp, and stares at me like a deer caught in headlights."
-    show tsm mbdeflecting
+    show tsm mdeflecting
     TSM "“HUH?! Y-you can’t seriously be...!“"
     MC "“What’s wrong?“"
-    MC "(I was gonna bring out the puddings, but I’m guessing he thinks I want {I}him{/I} for dessert?)"
+    MC "(I was gonna bring out the puddings, but I’m guessing he thinks I want {i}him{/i} for dessert?)"
     MC "(Aww, that’s too cute.)"
     show tsm mbsdquestioning:
                    parallel:
@@ -2595,7 +2600,7 @@ label week_tsm:
     show tsm mbsdquestioning with vpunch
     TSM "“W-we can’t! You...a-and...me...we’re not...like...a-and the walls...“"
     MC "“But I want dessert, don’t you?“"
-    show tsm bdeflecting
+    show tsm deflecting
     TSM "“You gotta be joking..! W-with me?“"
     MC "“Yes with you, who else?“"
     TSM "“I-I don't know-“"
@@ -2690,15 +2695,15 @@ label week_tsm:
     MC "“G’night.“"
     show tsm snormal
     TSM "“G'night to you too.“"
-    show tsm silent
+    show tsm ssilent
     TSM "..."
     show tsm suhsure
     TSM "“That all?“"
-    show tsm silent
+    show tsm ssilent
     MC "“Oh I also wanted to say that I love you.“"
     show tsm ssmirk
     TSM "“Quit messin’ with me and go to bed dumbass.“"
-    show tsm spout
+    show tsm ssilent
     MC "“m’not though.“"
     show tsm snormal
     TSM "“You’re tired, go to bed.“"
@@ -2735,7 +2740,7 @@ label week_tsm:
     show tsm nhuh
     MC "(Maybe I shouldn’t’ve said that.)"
     GTWU "“Wha? Don’t sniff me jackass.“"
-    show tsm mnilent
+    show tsm mnsilent
     MC "“My bad, you smell like food. Where did you buy it?“"
     show tsm nnormal
     GTWU "“I didn’t buy it, I made it myself.“"
@@ -2746,7 +2751,7 @@ label week_tsm:
     GTWU "“And you’re still eyeing me like that?“"
     show tsm nnormal
     GTWU "“Whatever, I gotta go. I have this campus event in a bit so, sort that shit yourself.“"
-    show tsm n
+    show tsm nssilent
     MC "“Wait a sec, you go to Begonia’s Institute of Technology too?“"
     show tsm nhuh
     GTWU "“Shit, you too?“"
