@@ -1,5 +1,7 @@
 ﻿#stecustecu
 #brooo
+#hari ini kelar ayo bisa
+
 
 # The game starts here.
 define MC = Character ("[MC]")    
