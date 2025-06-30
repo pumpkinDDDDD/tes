@@ -16,19 +16,20 @@ define RP2 = Character ("Random Person 2")
 define LL = Character ("Land Lord")
 define GTWU = Character ("???")
 
-image ed1ver1 = "images/ed1ver1.png"
-image ed2ver1 = "images/ed2ver1.png"
-image ed3ver1 = "images/ed3ver1.png"
-image ed4ver1 = "images/ed4ver1.png"
-image ed5ver1 = "images/ed5ver1.png"
-image ed6ver1 = "images/ed6ver1.png"
+image ed1ver1 = "CGs/ed1ver1.png"
+image ed2ver1 = "CGs/ed2ver1.png"
+image ed3ver1 = "CGs/ed3ver1.png"
+image ed4ver1 = "CGs/ed4ver1.png"
+image ed5ver1 = "CGs/ed5ver1.png"
+image ed6ver1 = "CGs/ed6ver1.png"
 
-image ed1ver2 = "images/ed1ver2.png"
-image ed2ver2 = "images/ed2ver2.png"
-image ed3ver2 = "images/ed3ver2.png"
-image ed4ver2 = "images/ed4ver2.png"
-image ed5ver2 = "images/ed5ver2.png"
-image ed6ver2 = "images/ed6ver2.png"
+image ed1ver2 = "CGs/ed1ver2.png"
+image ed2ver2 = "CGs/ed2ver2.png"
+image ed3ver2 = "CGs/ed3ver2.png"
+image ed4ver2 = "CGs/ed4ver2.png"
+image ed5ver2 = "CGs/ed5ver2.png"
+image ed6ver2 = "CGs/ed6ver2.png"
+
 
 
 label start:
@@ -116,13 +117,13 @@ label start1:
     MC "(How much time do I have left?)"
     MC "(Okay, that’s not bad. With 20 minutes left, I don’t think I’d need to run to get to campus on time.)"
 
-    show tsm sdangy
+    show tsm nsdangy
     "Before I head out the gate, I notice my downstairs neighbor Rudy coming out the door as well. He stares at me for a brief moment before looking away, seeming unsure of himself. "
     "Since we already made eye contact, I decided to walk up to him and talk to him."
     "He seems well, or at least well enough. To me, he seems like the type of person who would fare well against the hardships of college."
     MC "(I took a peek inside his place before we headed out to the campus orientation together, it seemed super clean.)"
     MC "(The fact that he didn't have a lot of things in his room helped a lot, it made me reconsider my own room for a moment)"
-    show tsm silent:
+    show tsm nsilent:
         parallel:
             ease .5 zoom 1.3
         parallel:
@@ -132,7 +133,7 @@ label start1:
     MC "(Oh shit, did he not want me to come closer?)"
     MC "(Welp, too late now.)"
 
-    show tsm silent:
+    show tsm nsilent:
         parallel:
             ease .5 zoom 1.5
         parallel:
@@ -237,7 +238,7 @@ label start1:
     
     scene class with fade
     "As I walk into class, I quickly pull my phone out of my pocket so I can check the time."
-    "MC (Good thing I made it on time.)"
+    MC "(Good thing I made it on time.)"
     "In the distance I see my friend wave at me while pointing at the seat next to theirs, they swiftly remove their backpack from the table as I approach them."
     MC "(Good thing they saved a seat for me.)"
     MC "“Thanks.“"
@@ -277,7 +278,7 @@ label start1:
     MC "(Yea, that sounds good. I’d rather not starve.)"
     "Before I could even lift my foot towards the cafeteria, my phone started ringing."
     MC "(Who is it?)"
-    show phone nix
+    show phone ym
     "(Ah, it’s Nix.)"
     MC "(Nix was a friend I made back when I first got into college, apparently we went to the same highschool.)"
     MC "(Never met him before though, and none of my friends seemed to know anyone who matched my description of him.)"
@@ -597,7 +598,8 @@ label start1:
         play sound "audio/alarm.mp3"
         scene cg1 with vpunch    
         MC "(Fuck, I fell asleep on my desk.)"
-        MC "(Tha was a bad idea.)"   
+        MC "(That was a bad idea.)"  
+        play music "audio/scarybgm.mp3" 
         GTWU "“CALL THE FIRE DEPARTMENT!!“"
         MC "(!!)"
         MC "(What was that ?? The fire department??)"
@@ -624,6 +626,7 @@ label start1:
         hide ym
         "(Wait, I should be doing that too!)"
         "I swiftly rush near the line of people passing buckets to each other, offering my help."
+        play music "audio/normal.mp3"
         "Not long after, it seems the fire has died down. Despite the intensity of the night, I'm just glad it didn’t seem like the building sustained any major damages."
         
         show ym nhuffy
@@ -709,7 +712,8 @@ label start1:
         YM "“I will!“"
         
         hide ym
-        "And with that, he skips back over to the entrance of the slightly charred building, carefully looking around, presumably looking to grab a few of his things. By this point the crowds have dissipated, residents of my place have returned to their rooms while others went off somewhere else, perhaps a friend's place."
+        "And with that, he skips back over to the entrance of the slightly charred building, carefully looking around, presumably looking to grab a few of his things." 
+        "By this point the crowds have dissipated, residents of my place have returned to their rooms while others went off somewhere else, perhaps a friend's place."
         "After one final wave, he disappears inside."
         MC "(Well, I guess I’ll be having a roommate starting tomorrow.)"
         
@@ -1073,7 +1077,7 @@ label day1:
         
         show ym nrhappy
         YM "“I swear you won’t regret agreeing to let me stay! I’ll clean and cook everyday for you!“"
-        show ymsmile
+        show ym nsmile
         MC "(I feel like I should’ve realised this yesterday, but whatever the fuck he’s doing is starting to feel less than platonic to me.)"
         MC "(Does he like me or something? Even if he does, who the fuck goes this far for a simple crush?)"
         menu:
@@ -1129,7 +1133,7 @@ label day1:
                                 yalign 0.0
                                 linear 0.0 yalign 0.0 xalign 0.5
                     YM "“I’m glad to hear that!“"
-                    show tsm mbsurprised:
+                    show ym mbsurprised:
                             parallel:
                                 ease .5 zoom 1.0
                             parallel:
@@ -1183,8 +1187,8 @@ label day1:
             "By this point you feel more like a pet than a roommate, don't cha think?":
                     show ym mquestioning
                     YM "“Is that what you want? Then, I can be that too. I can be both.“"
-                    show ysm msmile
-                    MC "({I}Oh?{/I})"
+                    show ym msmile
+                    MC "({i}Oh?{/i})"
                     show ym mgrin
                     YM "“I’ll be your maid and your pet.“"
                     show ym mhappy
@@ -1199,7 +1203,7 @@ label day1:
                     "He buries his face even further into my lap and lets out a muffled noise that I can't quite make out."
                     MC "“Although, as much as I like having you kneeled next to me like this, I have work to do.“"
                     MC "“I’m sure you have some studying to do, no?“"
-                    show ym m worry
+                    show ym mworry
                     YM "“Can I study next to you while you work on your assignments?“"
                     MC "“Sure?“"
                     show ym mrhappy
@@ -1831,7 +1835,7 @@ label day2_ym:
     menu: 
         "Go talk to him":
                 MC "(Nothing to be ashamed of, he usually approaches whether I’m staring or not.)"
-                MC "“Hey man, what’s up?v"
+                MC "“Hey man, what’s up?“"
                 MC "“Breakfast was good by the way.“"
                 show ym nrhappy
                 show cs normal at left
@@ -1868,7 +1872,7 @@ label day2_ym:
                 YM "“I know! I’m glad I have [MC] in my life.“"
                 show ym nsmile
                 MC "(He’s not denying it. Guess I’ll play along?)"
-                MC "“Anything for you {I}love{/I}.“"
+                MC "“Anything for you, {i}love{/i}.“"
                 show ym nsqueal
                 "He freezes in his steps and gives out a strangled squeal, seemingly caught off guard by the sudden romantic pet name."
                 show ym nrhappy
@@ -1878,7 +1882,7 @@ label day2_ym:
                 MC "(Should I not have?)"
                 show ym nrhappy
                 YM "“I love you, I love you, I love you!!!“"
-                "He gives me a tight hug "
+                "He gives me a tight hug."
                 show ym nsmile
                 QM "“Gross.“"
                 CM "“Keep this up and we’re leaving you two behind.“"
@@ -1916,7 +1920,7 @@ label day2_ym:
                 MC "(Time to head straight to class!!!!)"
                 MC "“I quickly sprint to the side, taking another path than my usual to my building.“"
                 scene campusd with vpunch
-                MC "(Hopefully that wasn’t {I}too{/I} awkward.)"
+                MC "(Hopefully that wasn’t {i}too{/i} awkward.)"
                 MC "(Hopefully he didn’t run after me!)"
                 show tsm ndeflecting
                 TSM "!!!"
@@ -1999,7 +2003,8 @@ label day2_ym:
                    parallel:
                            yalign 0.0
                            linear 0.0 yalign 0.0 xalign 0.5
-    "We head over to grab the ingredients for the dish, carefully comparing prices between brands. Neither of us are particularly well practiced in getting the best deals possible, but with our 2 brain cells combined, we managed to make one competent human being!"
+    "We head over to grab the ingredients for the dish, carefully comparing prices between brands." 
+    "Neither of us are particularly well practiced in getting the best deals possible, but with our 2 brain cells combined, we managed to make one competent human being!"
     "Once we’ve grabbed everything we need, we head on over to the cashier and they start scanning our items."
     C "“So that’ll be this much. How would you like to pay?“"
     show ym napologetic
@@ -2021,7 +2026,7 @@ label day2_ym:
     C "“Thank you! Have a nice day!“"
     MC "“There! I finally got to pay for something!“"
     show ym nhappy
-    YM "“I guess I can let it slide this time. After all, I'll be paying you back {I}all{/I} month.“"
+    YM "“I guess I can let it slide this time. After all, I'll be paying you back {i}all{/i} month.“"
     show ym nsmile
     MC "“Shall we go back so you can start repaying me then?“"
     show ym nhappy
@@ -2792,6 +2797,7 @@ label week_tsm:
     MC "“Nice to meet you ! I’m [MC].“"
     show tsm nhappy
     TSM "“Alright.“"
+    jump month_tsm
 
 label week_ym:
     #YM Maid Week Later"
@@ -2859,11 +2865,11 @@ label week_ym:
                 MC "“What was that?“"
                 show ym nhappy
                 YM "“Nothing!“"
-                show ym rhappy
+                show ym nhappy
                 YM "“Okie then, byee!“"
                 MC "“Bye!“"
                 hide ym
-                if dp >= 4:
+                if YM_dp >= 4:
                     "Once he leaves, I breathe a sigh of relief."
                     MC "(I’m starting to hate him, immensely.)"
                 else:
@@ -2946,7 +2952,7 @@ label week_ym:
     show ym nnormal
     YM "“What are you talking about with my [player_pronoun]?“"
     show ym nsilent
-    show tsm nsdanrgy
+    show tsm nsdangry
     TSM "“Nothing, I’m about to leave anyway.“"
     TSM "“So I guess he is your boyfriend?“"
     menu:
@@ -2961,7 +2967,7 @@ label week_ym:
                 MC "“Don’t.“"
                 show ym nwhine
                 YM "“[MC]...!“"
-                show tsm sdangy
+                show tsm nsdangy
                 TSM "“Hey, if [MC] isn’t interested then fuck off.“"
                 show tsm nserious
                 show ym nmnormal
@@ -2988,7 +2994,7 @@ label week_ym:
                 TSM "“What’s up with him?“"
                 MC "“I don't know, I’ve never seen him like this.“"
                 
-                if dp == 10: 
+                if YM_dp == 10: 
                     TSM "“And you’re telling me you live with him?“"
                     TSM "“If you feel uncomfortable then kick him out! It’s not like he’ll go homeless if you do.“"
                     MC "“His things are in my room, I have class in 10 minutes and his finishes before mine.“"
@@ -3052,7 +3058,7 @@ label week_ym:
                 YM "“Alright then, shall we go to class?“"
                 MC "“Sure.“"
 
-    scene road with fade
+    scene roade with fade
     MC "(Class is done!)"
     MC "(Time to get back to my place and see Nix again.)"
     if  YM_ij == 1 and YM_dp <= 9:
@@ -3063,7 +3069,7 @@ label week_ym:
         MC "(Might as well show a little appreciation for him.)"
         
     
-    if dp == 10:
+    if YM_dp == 10:
         MC "(Dear lord, class is officially over.)"
         MC "(I genuinely don’t wanna deal with Nix while I’m this tired but what else can I do?)"
         MC "(I’m just glad Rudy was there to help.)"
@@ -3072,10 +3078,11 @@ label week_ym:
         #stop bg music
         play sound "audio/creakyed1.mp3"
         MC "“Nix? I’m back.“"
+        play music "audio/scarybgm.mp3"
         MC "(It’s so dark, what is he even doing like this?)"
         scene insiden with fade
         MC "Nix?"
-        show ym siluet with vpunch:
+        show ym msiluet with vpunch:
                     parallel:
                         ease .5 zoom 1.7
                     parallel:
@@ -3109,12 +3116,11 @@ label week_ym:
         YM "“As my consciousness returns, I realize that I’ve been buried under blankets and duct taped to my bed.“"
         YM "“When I struggle once more to get up, Nix quickly panics and frantically places himself on top of me, acting as an extra weight.“"
         show ed1ver2 with fade
-        $ persistent.ed1ver2_unlocked = True
         YM "“Please don’t do this to me, [MC]...Stay with me...“"
         YM "“I don’t wanna hurt you more than I have...“"
         MC "“The fuck?“"
         YM "“I’m sorry I have to do this [MC], but i’m scared you might leave me. And I can't let that happen.“"
-        YM "“After all, I’ve worked so hard for this. I worked so hard for {I}you{/I}.“"
+        YM "“After all, I’ve worked so hard for this. I worked so hard for {i}you{/i}.“"
         MC "(Why...? I thought Rudy was supposed to kick him out.)"
         MC "(Did he bail on me?)"
         YM "“Oh [MC], don’t look away from me. Keep your eyes on me and me alone.“"
@@ -3135,7 +3141,6 @@ label week_ym:
         "Something seems to snap even further in Nix as heavy tears start streaming down his face.“"
         YM "“PLEASE..JUST…LOOK AT {b}ME{/b}“"
         show ed1ver1
-        $ persistent.ed1ver1_unlocked = True
         YM "“He’s dead, okay???! DEAD! He’s gone and all you have left is {b}me{/b}.“"
         MC "“You’re fucking lying.“"
         YM "“See [MC], I’m stronger...! All I needed to do was continuously spray his face with mosquito repellent before stabbing him..!“"
@@ -3391,7 +3396,7 @@ label week_ym:
     MC "“Sorry, did I scare you?“"
     GTWU "“no“"
     MC "“Man, that’s a lot of math questions. Why are you doing them here?“"
-    GTWU "“Mrs. Athens said I couldn’t go back unless I finish them all“"
+    GTWU "“Mrs. Athens said I couldn’t go back unless i finish them all“"
     MC "“Damn that sucks.“"
     show ym hsquestioning
     GTWU "“so why are you here?“"
@@ -3434,7 +3439,7 @@ label week_ym:
     GTWU "“maybe?“"
     MC "“I’m in class 2, you?“"
     show ym hsnormal
-    GTWU "(oh? I know [player_possesive] class now)"
+    GTWU "(oh? I know [player_possessive] class now)"
     GTWU "“3“"
     MC "“Guess that explains why I’ve never seen you around.“"
     MC "“Oh shit, It’s 5. I’m gonna head out first, bye!“"
@@ -3476,7 +3481,7 @@ label month_tsm:
     show tsm nuhsure
     TSM "“What’s with that look on your face?“"
     MC "“‘Oh come on, that’s just what I look like.“"
-    show tsm normal
+    show tsm nnormal
     TSM "“No, that’s what you look like when somethings bothering you.“"
     TSM "“So what is it? I can stay for another 15 minutes.“"
     TSM "“I’ll listen while you eat breakfast.“"
@@ -3625,6 +3630,7 @@ label month_tsm:
                     TSM "“I...uh-“"
                     TSM "“I’ll be waiting.“"
                     MC "“Alright then, can’t wait.“"
+                    jump ending3
         "Someone cute and sweet. Always there to help me out.":
                     $ YM_dp +=10
                     "Rudy looks in horror at my statement, seemingly crushed by every word in my sentence."
@@ -3697,9 +3703,9 @@ label month_tsm:
                     YM "Yea.“"
                     show ym nmnormal
                     YM "{size=-10}{b}“Same as usual.“{/b}{/size}"
-    
-    if YM_dp == 10:
-        scene roadevening with fade
+                    jump ending2
+label ending2:  
+        scene roade with fade
         MC "(Ooh, I can’t wait to get back!)"
         MC "(Based on what he said this morning, I have a feeling Rudy has something planned tonight.)"
         MC "(I wonder what it is.)"
@@ -3708,11 +3714,12 @@ label month_tsm:
         MC "(Can't wait to just-)"
         play sound "audio/punch.mp3"
         pause
+        play music "audio/scarybgm.mp3"
         MC "(WHAT WAS THAT?!)"
         show tsm mdeflecting with moveinright
         TSM "“[MC]! Run!“"
         MC "“Holy shit! What’s going on?“"
-        show ymed2mad at right with moveinright
+        show ym ed2mad at right with moveinright
         show tsm mangry at left with move   
         YM "{b}“Don’t go with him, [MC].“{/b}"
         show ym ed2angry at right with vpunch
@@ -3731,7 +3738,7 @@ label month_tsm:
             linear 0.050 yoffset -10
             linear 0.050 yoffset +10
         YM "“OW!“"
-        show ym med2angry    
+        show ym ed2angry    
         YM "“You. {b}You{/b} Don’t get in my way!“"
         show tsm mdeflecting    
         TSM "“What way asshole?! You broke into the room and swung a knife at me!“"
@@ -3741,7 +3748,7 @@ label month_tsm:
         show tsm mangry    
         TSM "“Stay back!“"
         show ym ed2mad    
-        YM "“It’s not {I}fair{/I}. I’ve known [MC] since highschool and you just swooped in and took [player_object] away from me!“"
+        YM "“It’s not {i}fair{/i}. I’ve known [MC] since highschool and you just swooped in and took [player_object] away from me!“"
         YM "“It’s not fair..It’s not fair, not fair, not fair, notfair, notfair, notfair, notfair, notfairnotfairnotfairnotfair!“"
         play sound "audio/punch.mp3"
         show tsm mstopit:
@@ -3780,7 +3787,7 @@ label month_tsm:
                             ease .5 zoom 1.3
                         parallel:
                             yalign 0.0
-                            linear 0.0 yalign 0.0 xalign 0.25
+                            linear 0.0 yalign 0.0 xalign 0.15
                     "The moment I saw Nix trying to get up, my feet moved straight to put him back on the ground."
                     play sound "audio/punch.mp3"
                     show ym mwhine:
@@ -3801,7 +3808,13 @@ label month_tsm:
                     YM "“Hngh...! w..why..?“"
                     TSM "“I’ll call the police!“"
 
-        show ll normal with vpunch    
+        show ll normal with vpunch 
+        show ym mwhinecry at left:
+                parallel:
+                    ease .5 zoom 1.3
+                parallel:
+                    yalign 0.0
+                    linear 0.0 xalign -0.2
         LL "“What’s going on out here?!“"
         MC "(Oh shit, this looks really bad.)"
         show tsm mnormal    
@@ -3889,16 +3902,14 @@ label month_tsm:
         TSM "“Actually, I got one extra surprise for you.“"
         MC "“There’s more?“"
         #cg sini!!! wajib"
-        show ed2ver1 with fade    
-        $ persistent.ed2ver1_unlocked = True
+        scene ed2ver1 with fade  
         TSM "“Here...“"
         TSM "“Thought it would make you happy.“"
         "He pulls up his long skirt, finally revealing his legs and the stockings that were hidden under there. It’s certainly prettier than I thought, and the garter just made him look extra hot."
         MC "“Holy shit, you’re incredible.“"
         TSM "“R-really?“"
         MC  "“You’re so pretty!“"
-        show ed2ver2    
-        $ persistent.ed2ver2_unlocked = True
+        scene ed2ver2 
         TSM "“Y-you think so? I bought these for today. You were always raving about ‘cute boys in maid outfits’, so...I figured I’d provide extra service.“"
         TSM "“So, how is it...?“"
         MC "“10 out 10 that’s for sure!“"
@@ -3912,9 +3923,10 @@ label month_tsm:
         "With that I climbed on top of him to give him another kiss, our bodies pressed together for warmth. Unbelievably soft sounds escaping his lips."
         "Living together with him might have been temporary at first, but starting now it might be something for the future as well."
         "Ending 2: Pretty Boy"
+        return
         
-    else:
-        scene roadevening with fade
+label ending3:
+        scene roade with fade
         MC "(HE LIKES ME BACK!!!)"
         MC "(Or at least I’m pretty sure he does, judging from that awkwardly endearing interaction we had earlier at campus.)"
         MC "(I have a feeling he’s planning on doing something special though, maybe I should also get him something back?)"
@@ -4030,12 +4042,10 @@ label TSMafterloop2:
             #cg sini"
             play music "audio/romance.mp3" fadein 1.0
             show ed3ver2 with fade
-            $ persistent.ed3ver2_unlocked = True
             TSM "“Finally you’re back. Welcome home, [MC].“"
             "My eyes are immediately glued to Rudy. He’s sitting down on our picnic blanket with a few small candles around and his arms tied into a bow."
             "How he achieved that, is something that I’m not about to question."
             show ed3ver1
-            $ persistent.ed3ver1_unlocked = True
             TSM "“You know how this morning you said you wanted to see me in a maid outfit again?“"
             TSM "“W-well, here I am.“"
             scene ed3ver2
@@ -4085,6 +4095,7 @@ label TSMafterloop2:
             "He responds in kind, moving his arms around my back, holding me like a dream that might disappear any minute."
             "Luckily for him, I won’t. I’ll be here as long as he still loves me. And I’ll reassure him of my love whenever he needs it."
             "Ending 3: Candlelit Dinner"
+            return
 
 label ymlater:
     #YM Later"
@@ -4174,7 +4185,6 @@ label ymlater:
             "I tackle him to the ground, putting my weight on him so he won’t be able to get up."
             #kalau sempet cg"
             show ed4ver2 with vpunch
-            $ persistent.ed4ver2_unlocked = True
             YM "“[MC]?“"
             YM "“Please...[MC]... Am I that unlovable to you...?“"
             YM "“C-can you really not love me...?“"
@@ -4183,7 +4193,6 @@ label ymlater:
             MC "{b}“Don’t move.“{/b}"
             YM "{size=-10)“Ahh...shit.“(/size}"
             show ed4ver1 with vpunch
-            $ persistent.ed4ver1_unlocked = True
             YM "“ahahaha...HAHAHAHA“"
             MC "(?)"
             YM "“AHAhaha..ha.ha..“"
@@ -4414,12 +4423,10 @@ label ymlater:
             "I give him a little peck on his forehead while my hands reach for his own. Holding his hands in mine, I give them a tight squeeze, something to assure him that I still care about him.“"
             
             show ed5ver2 with fade
-            $ persistent.ed5ver2_unlocked = True
             YM "“D-does this mean that...you l-love me?“"
             MC "“Yes sweetie, as long as you follow my rules.“"
             MC "“You can do that for me, can’t you?“"
             show ed5ver1
-            $ persistent.ed5ver1_unlocked = True
             YM "“Yes, yes, yes! I’ll be the best boyfriend you’ll ever have!“"
             YM "“I’ll be good from now on.“"
             MC "“That’s all I need you to be.“"
@@ -4475,7 +4482,6 @@ label ymlater:
         "He pulls away slightly, enough that I can see his face again."
         
         show ed6ver1 with fade
-        $ persistent.ed6ver1_unlocked = True
         YM "“B-but I was so lame...I had no friends, I wasn’t smart, I wasn’t good at anything either...“"
         MC "“Doesn’t change the fact that you were cute.“"
         YM "“I did a lot of pathetic things back then...“"
@@ -4496,7 +4502,6 @@ label ymlater:
         MC "“It’s okay, I can just invite you to visit during summer break.“"
         MC "“I’m proud that you tried to get your life together in college.“"
         show ed6ver2 
-        $ persistent.ed6ver2_unlocked = True
         YM "“It was all for you, [MC]. All for you.“"
         YM "“I didn’t want you to be embarrassed by me...so I wanted to become someone more worthy of you.“"
         YM "“H-have I succeeded, [MC]?“"
