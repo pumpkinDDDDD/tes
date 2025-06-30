@@ -87,7 +87,7 @@ label start1:
     MC "(...)"                              
     MC "(Huh? Is...is the sun up?)"                            
                             
-    scene inside with fade
+    scene insidepr with fade
     play music "audio/normal.mp3" fadein 1.0
     MC "(I must’ve fallen asleep on my desk, I should probably save my progress from last night.)"                                
     MC "(Shit, it’s already 9?)"                           
@@ -107,7 +107,7 @@ label start1:
     MC "(Maybe even cook me a nice warm meal, that’d save me some time.)"                               
     MC "(Yea, having a maid sounds really nice.)"                            
     MC "(What if I sneak in some cleaning time this morning? I might have enough time to atleast take my laundry to the laundromat?)"
-    scene room with vpunch
+    scene insidepr with vpunch
     play sound "audio/alarm.mp3"
     MC "(Or not! That’s my 'late alarm' ringing!)"
     MC "(You can do this [MC], if you hurry you can still get to campus on time!)"
@@ -225,7 +225,7 @@ label start1:
     MC "“Thanks for walking with me, it was nice seeing you again.“"
     show tsm nangy
     TSM "“Don’t get sappy.“"
-    show tsm n smirk
+    show tsm nsmirk
     TSM "{size=-7} “But well, I guess it was kinda nice.“ {/size}"
     MC "See you... some other time then?“"
     show tsm nhappy
@@ -686,7 +686,7 @@ label start1:
                     YM "“I’ll be the cutest maid you’ll ever see.“"
                     MC "(I was NOT expecting that.)"
             "Of course I do, who wouldn’t want a cute maid around?":
-                    show ym nsqueal
+                    show ym nbsqueal
                     "He makes a noise that I could only describe as a combination of a strangled critter and high pitched squeak."
                     show ym  nhappy
                     YM "“You think I'm...cute?“"
@@ -1171,7 +1171,7 @@ label day1:
         menu: 
             "I think this is enough petting, no?":
                     $ YM_dp +=1
-                    show ysm mtch
+                    show ys mtch
                     YM "{size=-10}“tch “{/size}"
                     show ym mhappy
                     YM "“Okayy, how was it? I’m soft, no?“"
@@ -1208,7 +1208,7 @@ label day1:
         MC "(I guess this is my life with Nix now, time to get back to work.)"
         hide ym
 
-        scene insided with fade
+        scene inside with fade
         show ym squestioning
         YM "“Hey, [MC]?“"
         YM "“Aren’t you gonna sleep now? You’ve been working nonstop.“"
@@ -1224,7 +1224,7 @@ label day1:
         show ym shappy
         YM "“Good night [MC]...“"
         
-        scene insidenwith fade
+        scene insiden with fade
         MC "(I know I said ‘Just this one part’, but I ended up doing more than expected.)"
         "I peek at Nix, sleeping peacefully while huddled up inside my spare blanket. He just looks so...cozy."
         MC "(I guess that settles it, I’m going to bed.)"
@@ -1239,6 +1239,7 @@ label day1:
             YM "“Why do you not want me? P-please tell me...“"
             YM "(...)"
             YM "(I’ll keep trying tomorrow [MC], you will love me. There can’t be any other choice.)"
+            jump day2_ym
         else:
             jump day2_ym
 
@@ -1264,7 +1265,7 @@ label day2_tsm:
     show tsm nsilent
     "Looking around my room, I noticed that it was miraculously shinier than before. Definitely Rudy’s doing."
     MC "“What got you yelling up so early?“"
-    show tsm sdeflecting
+    show tsm ndeflecting
     TSM "“It was nothing!“"
     MC "“Okay?“"
     menu: 
@@ -1278,7 +1279,7 @@ label day2_tsm:
                 MC "“Okay then, byee!“"
                 hide tsm
         "Are you sure though?":
-                show tsm n angy
+                show tsm nangy
                 TSM "“I said it was nothing.“"
                 MC "“Really?“"
                 show tsm nbdeflecting
@@ -1378,7 +1379,7 @@ label day2_tsm:
     show ym nhappy
     YM "“I saw you from afar and figured i’d talk to you. Our next class is in the same building, right?“"
     show ym nsmile
-    MC "“Man, you know my schedule so well. {I}Too {/I} well actually.“"
+    MC "“Man, you know my schedule so well. {i}Too {/i} well actually.“"
     show ym nrhappy
     YM "“Of course I do! I'm your closest friend, right?“"
     show ym nsmile
@@ -1533,7 +1534,7 @@ label next:
     show tsm nsurprised
     "Rudy turns to look at me, completely frozen. The words completely stuck in his mouth, something in his eyes tells me that he wants me to say something for him."
     menu:
-        "We do, don’t we, {I}darling{/I}?":
+        "We do, don’t we, {i}darling{/i}?":
                 show tsm nsdquestioning
                 TSM "“[MC]...“"
                 show tsm npout
@@ -1555,7 +1556,7 @@ label next:
                 C "“I’m so sorry!“"
                 MC "“It’s okay, thanks anyway.“"
     
-    scene road with fade
+    scene roadn with fade
     show tsm nsdbangy
     TSM "“I don’t think I'll ever be able to step foot in that store ever again.“"
     MC "“Oh come on, it’s not that bad.“"
@@ -1576,7 +1577,7 @@ label next:
     show tsm msilent
     "As he enters the room with food in his hands, my mouth starts to water in anticipation as the smell wafts around the room."
     MC "(What did I do in my past life to deserve this?)"
-    MC "(Warm food and a cute boy in a maid outfit, what else can a [player_ds} want?)"
+    MC "(Warm food and a cute boy in a maid outfit, what else can a [player_ds] want?)"
     show tsm munsure
     TSM "“What’s with that look on your face?“"
     show tsm msilent
