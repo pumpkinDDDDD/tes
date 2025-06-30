@@ -84,7 +84,8 @@ label start1:
     MC "(...)"                              
     MC "(Huh? Is...is the sun up?)"                            
                             
-    scene inside with fade                            
+    scene inside with fade
+    play music normalbgm with fadein 1.0
     MC "(I must’ve fallen asleep on my desk, I should probably save my progress from last night.)"                                
     MC "(Shit, it’s already 9?)"                           
     MC "(I overslept! I have class in an hour!)"                               
@@ -455,8 +456,10 @@ label start1:
     if TSM_route >= 2:
         MC "(Actually, now that I think about it... That maid kinda reminds me of Rudy.)"
         MC "(I guess I do find him kinda cute.)"
-        "*stuff tumbling sfx"
-        scene laptop with fade
+        "*alarm sfx"
+        scene laptop with vpunch
+        MC "(Shit, I must've fallen asleep at my desk)"
+        MC "(My back hurts..)
         GTWU "“Wait, please let me stay here!“"
         MC "(What’s going on?)"
         GTWU "“No please! I’ll pay up by the end of the week.“"
@@ -588,8 +591,10 @@ label start1:
     else:
         "(Actually, now that I think about it, that maid kinda reminds me of Nix.)"
         "(Do I like him now??)"
-        "*stuff tumbling sfx"
-        scene laptop with fade
+        "*alarm sfx"
+        scene laptop with vpunch    
+        MC "(Fuck, I fell asleep on my desk.)
+        MC "(Tha was a bad idea.)    
         GTWU "“CALL THE FIRE DEPARTMENT!!“"
         MC "(!!)"
         MC "(What was that ?? The fire department??)"
@@ -2699,6 +2704,8 @@ label week_tsm:
     scene black with fade
     MC "..."
     scene kosdream with fade
+    play music ed6 with fadein 1.0 
+    #yg buat mimpi bgm yg music box ini
     MC "(Shit, am I late?)"
     "I pull out my phone to check the time, it seems like I still have plenty to spare."
     MC "(That’s good, wouldn't wanna be late this early in the semester.)"
@@ -3361,6 +3368,8 @@ label week_ym:
     MC "(Good night, Nix.)"
     
     scene highschooldream
+    play music ed6 with fadein 1.0 
+    #yg buat mimpi bgm yg music box ini
     show ym hsangry
     GTWU "“stupid teachers, can’t believe they think I can finish all this before the school closes down“"
     GTWU "“i don’t get it“"
@@ -3418,7 +3427,6 @@ label week_ym:
     GTWU "“3“"
     MC "“Guess that explains why I’ve never seen you around.“"
     MC "“Oh shit, It’s 5. I’m gonna head out first, bye!“"
-    "#footsteps sfx"
     show ym hsquestioning
     GTWU "“bye? I guess“"
     show ym hsangry
@@ -3798,6 +3806,7 @@ label month_tsm:
         "We decided to head straight back to the room, not wanting to deal with any more nonsense tonight."
         
         scene insidepd with fade
+        play music romancebgm with fadein 1.0
         show tsm msdangry    
         TSM "“Well shit, that was not how I expected the night to go.“"
         MC "“Me neither.“"
@@ -4006,6 +4015,7 @@ label TSMafterloop2:
             MC "Rudy, I’m back.“"
             MC "“Rudy?“"
             #cg sini"
+            play music romancebgm with fadein 1.0
             scene ed3ver2 withfade
             TSM "“Finally you’re back. Welcome home, [MC].“"
             "My eyes are immediately glued to Rudy. He’s sitting down on our picnic blanket with a few small candles around and his arms tied into a bow."
@@ -4136,7 +4146,8 @@ label ymlater:
             LL "“What’s going on here?!“"
             MC "“Call the police! Or at least an ambulance! Just check the security footage later!“"
             LL "“Uhh....okay!“"
-            show ym scpleading:
+            hide ll
+            show ym scpleading at center:
                     linear 0.050 yoffset -10
                     linear 0.050 yoffset +10
             YM "“[MC]..please...!!“"
