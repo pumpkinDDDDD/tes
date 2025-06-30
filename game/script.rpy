@@ -4283,11 +4283,19 @@ label ymlater:
             #slap sfx"
             #sprite nangis"
             show ym stear:
+                    linear 0.050 xoffset -10
+                    linear 0.050 xoffset +0
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
 
             YM "“Okay okay okay, I’ll tell you...!“"
             YM "“W-when you’re not around...I-I grab one of your shirts from the dirty laundry pile and sniff them b-because I miss you...“"
             #slap sfx."
             show ym scwhine:
+                    linear 0.050 xoffset -10
+                    linear 0.050 xoffset +0
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0                        
 
             YM "“Hngh..!“"
             MC "“Keep going.“"
@@ -4295,6 +4303,10 @@ label ymlater:
             YM "“I-I didn’t bite you or anything...! I swear I didn’t do anything else! I-I didn’t wanna wake you up...“"
             #slap sfx"
             show ym stear:
+                    linear 0.050 xoffset -10
+                    linear 0.050 xoffset +0
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
 
             YM "“Ow..! [MC]...why? I’m telling you everything...“"
             MC "“So, you don’t think your actions have consequences?“"
@@ -4305,6 +4317,10 @@ label ymlater:
             YM "“Umm well, y-you had an album full of maid outfits, s-so I assumed...“"
             #slap sfx"
             show ym schurt:
+                    linear 0.050 xoffset -10
+                    linear 0.050 xoffset +0
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
 
             MC "“Bold, aren’t you?“"
             YM "“Hngh...!“"
@@ -4314,6 +4330,10 @@ label ymlater:
             MC "“Don’t tell me you caused the fire too?“"
             YM "“W-well-“"
             show ym schurts:
+                    linear 0.050 xoffset -10
+                    linear 0.050 xoffset +0
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
 
             #slap sfx"
             show ym sdesperate
@@ -4328,10 +4348,17 @@ label ymlater:
             YM "“M-maybe?“"
             show ym stear
             #slap sfx"
-            show ym sdesperate
+            show ym sdesperate:
+                    linear 0.050 xoffset -10
+                    linear 0.050 xoffset +0
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
             YM "“[MC]...please...!! That’s all really...That’s really the end of it...“"
             show ym stear:
-
+                    linear 0.050 xoffset -10
+                    linear 0.050 xoffset +0
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
             #slap sfx"
             show ym scwhine
             YM "“Really-! Everything else I just fantasize about doing...!“"
