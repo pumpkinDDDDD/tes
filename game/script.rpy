@@ -20,19 +20,19 @@ define RP2 = Character ("Random Person 2")
 define LL = Character ("Land Lord")
 define GTWU = Character ("???")
 
-image ed1ver1 = "images/ed1ver1.jpg"
-image ed2ver1 = "images/ed2ver1.jpg"
-image ed3ver1 = "images/ed3ver1.jpg"
-image ed4ver1 = "images/ed4ver1.jpg"
-image ed5ver1 = "images/ed5ver1.jpg"
-image ed6ver1 = "images/ed6ver1.jpg"
+image ed1ver1 = "images/ed1ver1.png"
+image ed2ver1 = "images/ed2ver1.png"
+image ed3ver1 = "images/ed3ver1.png"
+image ed4ver1 = "images/ed4ver1.png"
+image ed5ver1 = "images/ed5ver1.png"
+image ed6ver1 = "images/ed6ver1.png"
 
-image ed1ver2 = "images/ed1ver2.jpg"
-image ed2ver2 = "images/ed2ver2.jpg"
-image ed3ver2 = "images/ed3ver2.jpg"
-image ed4ver2 = "images/ed4ver2.jpg"
-image ed5ver2 = "images/ed5ver2.jpg"
-image ed6ver2 = "images/ed6ver2.jpg"
+image ed1ver2 = "images/ed1ver2.png"
+image ed2ver2 = "images/ed2ver2.png"
+image ed3ver2 = "images/ed3ver2.png"
+image ed4ver2 = "images/ed4ver2.png"
+image ed5ver2 = "images/ed5ver2.png"
+image ed6ver2 = "images/ed6ver2.png"
 
 
 label start:
@@ -86,7 +86,7 @@ label start1:
     MC "(Huh? Is...is the sun up?)"                            
                             
     scene inside with fade
-    play music "audio/normal.mp3" with fadein 1.0
+    play music "audio/normal.mp3" fadein 1.0
     MC "(I must’ve fallen asleep on my desk, I should probably save my progress from last night.)"                                
     MC "(Shit, it’s already 9?)"                           
     MC "(I overslept! I have class in an hour!)"                               
@@ -2705,7 +2705,7 @@ label week_tsm:
     scene black with fade
     MC "..."
     scene kosdream with fade
-    play music "audio/ed6.mp3" with fadein 1.0 
+    play music "audio/ed6.mp3" fadein 1.0 
     #yg buat mimpi bgm yg music box ini
     MC "(Shit, am I late?)"
     "I pull out my phone to check the time, it seems like I still have plenty to spare."
@@ -3369,7 +3369,7 @@ label week_ym:
     MC "(Good night, Nix.)"
     
     scene highschooldream
-    play music "audio/ed6.mp3" with fadein 1.0 
+    play music "audio/ed6.mp3" fadein 1.0 
     #yg buat mimpi bgm yg music box ini
     show ym hsangry
     GTWU "“stupid teachers, can’t believe they think I can finish all this before the school closes down“"
@@ -3807,7 +3807,7 @@ label month_tsm:
         "We decided to head straight back to the room, not wanting to deal with any more nonsense tonight."
         
         scene insidepd with fade
-        play music "audio/romance.mp3" with fadein 1.0
+        play music "audio/romance.mp3" fadein 1.0
         show tsm msdangry    
         TSM "“Well shit, that was not how I expected the night to go.“"
         MC "“Me neither.“"
@@ -4016,7 +4016,7 @@ label TSMafterloop2:
             MC "Rudy, I’m back.“"
             MC "“Rudy?“"
             #cg sini"
-            play music "audio/romance.mp3" with fadein 1.0
+            play music "audio/romance.mp3" fadein 1.0
             scene ed3ver2 withfade
             TSM "“Finally you’re back. Welcome home, [MC].“"
             "My eyes are immediately glued to Rudy. He’s sitting down on our picnic blanket with a few small candles around and his arms tied into a bow."
