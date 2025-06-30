@@ -3651,15 +3651,19 @@ label month_tsm:
         MC "(Ooh, I can’t wait to get back!)"
         MC "(Based on what he said this morning, I have a feeling Rudy has something planned tonight.)"
         MC "(I wonder what it is.)"
-        scene outside with fade
+        scene kose with fade
         MC "(I’m back bitch!)"
         MC "(Can't wait to just-)"
         #punch sfx"
         #Pause 1s
         MC "(WHAT WAS THAT?!)"
+        show tsm mangry with moveinright
         TSM "“[MC]! Run!“"
         MC "“Holy shit! What’s going on?“"
+        show ymed2angry with moveinright at right
+        show tsm mangry with move at left    
         YM "{b}“Don’t go with him, [MC].“{/b}"
+        show ym ed2angry with vpunch    
         MC "“NIX??“"
         MC "(What’s going on? Why is he also in a maid outfit? And what’s with the knife?!)"
         YM "“Don’t you dare come between me and [MC]! {b}I’m{/b} the one who’s supposed to be living with [player_object].“"
