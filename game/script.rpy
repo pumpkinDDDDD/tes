@@ -2799,7 +2799,7 @@ label week_ym:
     MC "(And so, my first week with Nix passes.)"
     MC "(I don’t know what I was expecting when I first agreed but in some ways he did improve my life.)"
     MC "(Mostly surrounding cooking and other housework, if nothing else my place is the cleanest it’s been in weeks.)"
-    if dp >= 5:
+    if YM_dp >= 5:
         MC "(Honestly though, I can’t wait for the month to be over.)"
         MC "(Shit thing to say about living with your friend but I don’t know, the more I know about him the more I sense the bad vibes.)"
         
