@@ -86,7 +86,7 @@ label start1:
     MC "(Huh? Is...is the sun up?)"                            
                             
     scene inside with fade
-    play music normalbgm with fadein 1.0
+    play music "audio/normal.mp3" with fadein 1.0
     MC "(I must’ve fallen asleep on my desk, I should probably save my progress from last night.)"                                
     MC "(Shit, it’s already 9?)"                           
     MC "(I overslept! I have class in an hour!)"                               
@@ -457,10 +457,10 @@ label start1:
     if TSM_route >= 2:
         MC "(Actually, now that I think about it... That maid kinda reminds me of Rudy.)"
         MC "(I guess I do find him kinda cute.)"
-        "*alarm sfx"
+        play sound "audio/alarm.mp3"
         scene laptop with vpunch
         MC "(Shit, I must've fallen asleep at my desk)"
-        MC "(My back hurts..)
+        MC "(My back hurts..)"
         GTWU "“Wait, please let me stay here!“"
         MC "(What’s going on?)"
         GTWU "“No please! I’ll pay up by the end of the week.“"
@@ -592,10 +592,10 @@ label start1:
     else:
         "(Actually, now that I think about it, that maid kinda reminds me of Nix.)"
         "(Do I like him now??)"
-        "*alarm sfx"
+        play sound "audio/alarm.mp3"
         scene laptop with vpunch    
-        MC "(Fuck, I fell asleep on my desk.)
-        MC "(Tha was a bad idea.)    
+        MC "(Fuck, I fell asleep on my desk.)"
+        MC "(Tha was a bad idea.)"   
         GTWU "“CALL THE FIRE DEPARTMENT!!“"
         MC "(!!)"
         MC "(What was that ?? The fire department??)"
@@ -740,7 +740,7 @@ label day1:
         MC "(I cleared up some room for him by shoving my stuff into the closet, hopefully it’s enough.)"
         MC "(The maid outfit I ordered also arrived this morning in one piece, i’m so glad instant delivery exists!)"
         MC "(I ended up going with the long skirt and apron for him, I sure hope it fits!)"
-        "*knock sfx"
+        play sound "audio/knock.mp3"
         MC "“Coming!“"
         "When I opened the other, I came face to face with Rudy who’s carrying a huge box in his hands. His shoulders and arms are also occupied by bags that are filled with a variety of things, ranging from blankets, books, cooking utensils to what I can only assume is a portable stove."
         show tsm nuhsure
@@ -917,7 +917,7 @@ label day1:
         show tsm mbstopit
         TSM "“‘Okay that’s enough!“"
         MC "(!)"
-        "*tumble sfx"
+        play sound "audio/thud.mp3"
         show tsm mbsurprised:
            parallel:
                ease .5 zoom 2.0
@@ -1002,7 +1002,7 @@ label day1:
         MC "(Is this enough space for his things? I sure hope so.)"
         "I check my phone to see any news from Nix, he did say he’ll be arriving in a bit and he lives right across the street."
         MC "(I wonder when he’ll arrive.)"
-        "*knock sfx"
+        play sound "audio/knock.mp3"
         YM "“[MC], I’m here!“"
         MC "“Coming!“"
         show ym nsmile
@@ -1282,7 +1282,7 @@ label day2_tsm:
                 show tsm nbdeflecting
                 TSM "“Yes! Now go have breakfast, I’m going for a run!“"
                 hide tsm
-                "*door sfx"
+                play sound "audio/doorop.mp3"
                 MC "(Woops, I must’ve scared him off.)"
                     
     scene campus1d with fade
@@ -1408,7 +1408,7 @@ label day2_tsm:
     F "“Damn lucky, I still have something after this.“"
     F "Well, see you tomorrow.“"
     MC "“Byee!“"
-    #*notif sfx"
+    play sound "audio/notifhp.mp3"
     MC "(Huh? Wonder who’s that from? Is it Nix?)"
     "(Well usually it is.)"
     show phone tsm
@@ -1940,7 +1940,7 @@ label day2_ym:
     MC "“Good luck!“"
     F "“Thanks. See you tomorrow!“"
     MC "“Byee!“"
-    "*phone ringing sfx"
+    play sound "audio/notifhp.mp3"
     MC "(Is it Nix?)"
     show phone ym
     MC "(Yep, it is.)"
@@ -2363,7 +2363,7 @@ label week_tsm:
     MC "(20 minutes left till 6, let’s go!)"
     
     scene inside with fade
-    play sound doorop
+    play sound "audio/doorop.mp3"
     MC "(Is he back yet?)"
     "I unlock the doors to my place and peek inside, since the lights are off I can only assume Rudy isn’t here yet."
     MC "(Good, now I just gotta hide these in the fridge and wait for him to get back.)"
@@ -2376,10 +2376,10 @@ label week_tsm:
     scene cg1 with fade
     play sound "audio/typing.mp3"
     "..."
-    "#knock sfx"
+    play sound "audio/knock.mp3"
     GTWU "{size=-10}“[MC], I’m back.“{/size}"
     MC "(Damn, how do I do this part?)"
-    "#knock sfx"
+    play sound "audio/knock.mp3"
     TSM "“[MC]?“"
     MC "(?)"
     TSM "“Shit, [player_sb] [player_gender] not back?“"
@@ -2705,7 +2705,7 @@ label week_tsm:
     scene black with fade
     MC "..."
     scene kosdream with fade
-    play music ed6 with fadein 1.0 
+    play music "audio/ed6.mp3" with fadein 1.0 
     #yg buat mimpi bgm yg music box ini
     MC "(Shit, am I late?)"
     "I pull out my phone to check the time, it seems like I still have plenty to spare."
@@ -2965,7 +2965,7 @@ label week_ym:
                 YM "“[MC]!“"
                 show tsm ndeflecting
                 "As Nix approaches me once more, Rudy quickly moves in front of me to strike a hit."
-                "#punch sfx"
+                play sound "audio/punch.mp3"
                 show ym nblnose
                 TSM "“Shit, I’m sorry!“"
                 show tsm nserious at center
@@ -3062,7 +3062,7 @@ label week_ym:
         MC "(Whatever, I’ll think about this when I get there.)"
         scene black with fade
         #stop bg music
-        #creaky door sfx"
+        play sound "audio/creakyed1.mp3"
         MC "“Nix? I’m back.“"
         MC "(It’s so dark, what is he even doing like this?)"
         scene insiden with fade
@@ -3075,7 +3075,7 @@ label week_ym:
                         linear 0.0 yalign 0.0 xalign 0.0
         play sound "audio/spray.mp3"
         MC "“FUCK!!“"
-        "#punch sfx"
+        play sound "audio/punch.mp3"
         scene black
         play sound "audio/fabric.mp3"
         YM "“Sorry, [MC]. Forgive me alright?“"
@@ -3369,7 +3369,7 @@ label week_ym:
     MC "(Good night, Nix.)"
     
     scene highschooldream
-    play music ed6 with fadein 1.0 
+    play music "audio/ed6.mp3" with fadein 1.0 
     #yg buat mimpi bgm yg music box ini
     show ym hsangry
     GTWU "“stupid teachers, can’t believe they think I can finish all this before the school closes down“"
@@ -3696,8 +3696,8 @@ label month_tsm:
         scene kose with fade
         MC "(I’m back bitch!)"
         MC "(Can't wait to just-)"
-        #punch sfx"
-        #Pause 1s
+        play sound "audio/punch.mp3"
+        pause
         MC "(WHAT WAS THAT?!)"
         show tsm mdeflecting with moveinright
         TSM "“[MC]! Run!“"
@@ -3714,7 +3714,7 @@ label month_tsm:
         YM "“Don’t you dare come between me and [MC]! {b}I’m{/b} the one who’s supposed to be living with [player_object].“"
         show tsm mnormal    
         TSM "“Fuck you.“"
-        #pot breaking sfx"
+        play sound "audio/potbreak.mp3"
         show ym ed2hurt:
             linear 0.050 xoffset -10
             linear 0.050 xoffset +10
@@ -3733,7 +3733,7 @@ label month_tsm:
         show ym ed2mad    
         YM "“It’s not {I}fair{/I}. I’ve known [MC] since highschool and you just swooped in and took [player_object] away from me!“"
         YM "“It’s not fair..It’s not fair, not fair, not fair, notfair, notfair, notfair, notfair, notfairnotfairnotfairnotfair!“"
-        #punch sfx"
+        play sound "audio/punch.mp3"
         show tsm mstopit:
               linear 0.050 yoffset -10
               linear 0.050 yoffset +10
@@ -3753,7 +3753,7 @@ label month_tsm:
                     "On instinct, I head straight for the knife. Letting Rudy be the one to handle Nix while he’s down."
                     "Nix isn’t particularly strong but he was definitely scary when he had that knife."
                     "I can’t let my guard down around him."
-                    #punch sfx"
+                    play sound "audio/punch.mp3"
                     show ym mwhine:
                                 linear 0.050 xoffset -10 
                                 linear 0.050 xoffset +0 
@@ -3772,7 +3772,7 @@ label month_tsm:
                             yalign 0.0
                             linear 0.0 yalign 0.0 xalign 0.25
                     "The moment I saw Nix trying to get up, my feet moved straight to put him back on the ground."
-                    #punch sfx"
+                    play sound "audio/punch.mp3"
                     show ym mwhine:
                                 linear 0.050 xoffset -10 
                                 linear 0.050 xoffset +0 
@@ -3807,7 +3807,7 @@ label month_tsm:
         "We decided to head straight back to the room, not wanting to deal with any more nonsense tonight."
         
         scene insidepd with fade
-        play music romancebgm with fadein 1.0
+        play music "audio/romance.mp3" with fadein 1.0
         show tsm msdangry    
         TSM "“Well shit, that was not how I expected the night to go.“"
         MC "“Me neither.“"
@@ -4016,7 +4016,7 @@ label TSMafterloop2:
             MC "Rudy, I’m back.“"
             MC "“Rudy?“"
             #cg sini"
-            play music romancebgm with fadein 1.0
+            play music "audio/romance.mp3" with fadein 1.0
             scene ed3ver2 withfade
             TSM "“Finally you’re back. Welcome home, [MC].“"
             "My eyes are immediately glued to Rudy. He’s sitting down on our picnic blanket with a few small candles around and his arms tied into a bow."
@@ -4283,11 +4283,21 @@ label ymlater:
             #slap sfx"
             #sprite nangis"
             show ym stear:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
 
             YM "“Okay okay okay, I’ll tell you...!“"
             YM "“W-when you’re not around...I-I grab one of your shirts from the dirty laundry pile and sniff them b-because I miss you...“"
             #slap sfx."
             show ym scwhine:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
 
             YM "“Hngh..!“"
             MC "“Keep going.“"
@@ -4295,6 +4305,11 @@ label ymlater:
             YM "“I-I didn’t bite you or anything...! I swear I didn’t do anything else! I-I didn’t wanna wake you up...“"
             #slap sfx"
             show ym stear:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
 
             YM "“Ow..! [MC]...why? I’m telling you everything...“"
             MC "“So, you don’t think your actions have consequences?“"
@@ -4305,6 +4320,11 @@ label ymlater:
             YM "“Umm well, y-you had an album full of maid outfits, s-so I assumed...“"
             #slap sfx"
             show ym schurt:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
 
             MC "“Bold, aren’t you?“"
             YM "“Hngh...!“"
@@ -4314,6 +4334,11 @@ label ymlater:
             MC "“Don’t tell me you caused the fire too?“"
             YM "“W-well-“"
             show ym schurts:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
 
             #slap sfx"
             show ym sdesperate
@@ -4331,6 +4356,11 @@ label ymlater:
             show ym sdesperate
             YM "“[MC]...please...!! That’s all really...That’s really the end of it...“"
             show ym stear:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
 
             #slap sfx"
             show ym scwhine
@@ -4400,6 +4430,11 @@ label ymlater:
         MC "“Poor thing, come over here.“"
         #zoom sprite"
         show ym ssmile:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
 
         "We were already laying side by side before but now we were wrapped in a tight embrace, sharing warmth under the blanket."
         MC "“Is this better?“"
