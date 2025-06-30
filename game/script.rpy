@@ -19,6 +19,21 @@ define RP2 = Character ("Random Person 2")
 define LL = Character ("Land Lord")
 define GTWU = Character ("???")
 
+image ed1ver1 = "images/ed1ver1.jpg"
+image ed2ver1 = "images/ed2ver1.jpg"
+image ed3ver1 = "images/ed3ver1.jpg"
+image ed4ver1 = "images/ed4ver1.jpg"
+image ed5ver1 = "images/ed5ver1.jpg"
+image ed6ver1 = "images/ed6ver1.jpg"
+
+image ed1ver2 = "images/ed1ver2.jpg"
+image ed2ver2 = "images/ed2ver2.jpg"
+image ed3ver2 = "images/ed3ver2.jpg"
+image ed4ver2 = "images/ed4ver2.jpg"
+image ed5ver2 = "images/ed5ver2.jpg"
+image ed6ver2 = "images/ed6ver2.jpg"
+
+
 label start:
 
 "Choose your pronoun."
@@ -3062,7 +3077,7 @@ label week_ym:
         MC "(?)"
         YM "{size=-10} I’m sorry, I’m sorry, I’m sorry,I'm sorry I'm sorry I'm sorry im sorryim sorry“{/size}"
         "..."
-        pause 2s
+        pause
         
         GTWU "“Hmm hm hmm hm~“"
         MC "(?)"
@@ -3678,10 +3693,10 @@ label month_tsm:
         show tsm mdeflecting with moveinright
         TSM "“[MC]! Run!“"
         MC "“Holy shit! What’s going on?“"
-        show ymed2mad with moveinright at right
-        show tsm mangry with move at left    
+        show ymed2mad at right with moveinright
+        show tsm mangry at left with move   
         YM "{b}“Don’t go with him, [MC].“{/b}"
-        show ym ed2angry with vpunch at right   
+        show ym ed2angry at right with vpunch
         MC "“NIX??“"
         MC "(What’s going on? Why is he also in a maid outfit? And what’s with the knife?!)"
         show ym ed2angry:
