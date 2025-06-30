@@ -1599,7 +1599,7 @@ label next:
                 TSM "(!)"
                 show tsm mbangy
                 TSM "“Shut up and eat already!“"
-                MC "“Eat what? The cehf or the food?v"
+                MC "“Eat what? The chef or the food?"
                 show tsm mdeflecting
                 TSM "“THE FOOD!“"
                 show tsm mangy
@@ -1613,14 +1613,14 @@ label next:
     TSM "..."
     MC "(I feel kinda awkward if we’re just eating in total silence, maybe I can strike up a conversation?)"
     MC "“So... how was your day?“"
-    MC "(Yea, that’s a {I}great{/I} way to start, [MC])"
+    MC "(Yea, that’s a {i}great{/i} way to start, [MC])"
     show tsm mnormal
     TSM "“‘s fine.“"
     TSM "“You?“"
     show tsm msilent
     MC "“Better than a few days ago that’s for sure.“"
     show tsm mnormal
-    TSM "vOh, good.“"
+    TSM "“Oh, good.“"
     show tsm msilent
     TSM "(...)"
     MC "(What else?)"
@@ -1662,7 +1662,7 @@ label next:
     show tsm msure
     TSM "“Well, I guess that’s one of your good traits...“"
     MC "“Oh?“"
-    show tsm mahppy
+    show tsm mhappy
     TSM "“I don’t see you often, but whenever I do, you’re.. oddly well prepared.“"
     show tsm msilent
     MC "“It’s just an umbrella.“"
@@ -1692,7 +1692,7 @@ label next:
     TSM "“Same here, I feel like that should’ve been a basic pick.“"
     TSM "“We have a club for diving and we don’t even live near the ocean.“"
     show tsm msilent
-    MC "“You think they travel for hours just to do their club activities?v"
+    MC "“You think they travel for hours just to do their club activities?“"
     show tsm mhappy
     TSM "“Nah, I bet they just practice at the pool unless some special event happens.“"
     show tsm msilent
@@ -2243,7 +2243,7 @@ label week_tsm:
     MC "(I kinda need an estimate so I can keep the pudding a surprise.)"
     show tsm nhuh
     TSM "“W-why d’ya wanna know?“"
-    MC "(Here we go [mc], do NOT respond with ‘Cause i’ll miss you’, I promised not to tease him too much)"
+    MC "(Here we go [MC], do NOT respond with ‘Cause i’ll miss you’, I promised not to tease him too much)"
     MC "“Just wanted to make sure I’m not already asleep by the time.“"
     show tsm nnormal
     TSM "“No way, I’ll be back before 6:30.“"
@@ -2267,7 +2267,7 @@ label week_tsm:
     MC "(Vanilla perhaps? If they have any.)"
     YM "{size=-5}“[MC]!“{/size}"
     MC "(What if they don’t?)"
-    YM "{size =-7} “Hey, [MC]?“{/size}"
+    YM "{size=-7} “Hey, [MC]?“{/size}"
     MC "(I guess I’ll stick to chocolate...)"
     YM "“[MC]!“"
     scene campusd with vpunch
