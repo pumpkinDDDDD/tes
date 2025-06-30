@@ -1,4 +1,4 @@
-#plssemogaselsai
+﻿#plssemogaselsai
 
 # The game starts here.
 define MC = Character ("[MC]")    
@@ -67,12 +67,18 @@ label start1:
 
     scene cg1 with fade
     MC  "(I can do this, just a bit more...)"                                
-    "*blink?"                               
+    scene black with fade
+    pause 0.5 
+    scene cg1 with fade                              
     MC "(What time is it...? I can barely tell anymore.)"                             
-    "*blink"                                
+    scene black with fade
+    pause 0.5 
+    scene cg1 with fade                              
     MC "(I sure hope the sun isn’t coming up... Not yet please...)"                                
     MC "(I don’t think I'm even halfway done with this..)"                              
-    "*blink"                                
+    scene black with fade
+    pause 0.5 
+    scene cg1 with fade                               
     MC "(I gotta pull through, I have too much to do.)"                              
     MC "(Must... continue.)"                             
     scene black with fade                            
@@ -3096,7 +3102,8 @@ label week_ym:
         YM "“I try to get up from my position, but fail.“"
         YM "“As my consciousness returns, I realize that I’ve been buried under blankets and duct taped to my bed.“"
         YM "“When I struggle once more to get up, Nix quickly panics and frantically places himself on top of me, acting as an extra weight.“"
-        scene  ed1ver2 with fade
+        show ed1ver2 with fade
+        $ persistent.ed1ver2_unlocked = True
         YM "“Please don’t do this to me, [MC]...Stay with me...“"
         YM "“I don’t wanna hurt you more than I have...“"
         MC "“The fuck?“"
@@ -3121,7 +3128,8 @@ label week_ym:
         YM "“STOP...!!!“"
         "Something seems to snap even further in Nix as heavy tears start streaming down his face.“"
         YM "“PLEASE..JUST…LOOK AT {b}ME{/b}“"
-        scene ed1ver1
+        show ed1ver1
+        $ persistent.ed1ver1_unlocked = True
         YM "“He’s dead, okay???! DEAD! He’s gone and all you have left is {b}me{/b}.“"
         MC "“You’re fucking lying.“"
         YM "“See [MC], I’m stronger...! All I needed to do was continuously spray his face with mosquito repellent before stabbing him..!“"
@@ -3875,7 +3883,8 @@ label month_tsm:
         TSM "“Actually, I got one extra surprise for you.“"
         MC "“There’s more?“"
         #cg sini!!! wajib"
-        scene ed2ver1 with fade    
+        show ed2ver1 with fade    
+        $ persistent.ed2ver1_unlocked = True
         TSM "“Here...“"
         TSM "“Thought it would make you happy.“"
         "He pulls up his long skirt, finally revealing his legs and the stockings that were hidden under there. It’s certainly prettier than I thought, and the garter just made him look extra hot."
@@ -3883,6 +3892,7 @@ label month_tsm:
         TSM "“R-really?“"
         MC  "“You’re so pretty!“"
         show ed2ver2    
+        $ persistent.ed2ver2_unlocked = True
         TSM "“Y-you think so? I bought these for today. You were always raving about ‘cute boys in maid outfits’, so...I figured I’d provide extra service.“"
         TSM "“So, how is it...?“"
         MC "“10 out 10 that’s for sure!“"
@@ -4013,11 +4023,13 @@ label TSMafterloop2:
             MC "“Rudy?“"
             #cg sini"
             play music "audio/romance.mp3" fadein 1.0
-            scene ed3ver2 withfade
+            show ed3ver2 with fade
+            $ persistent.ed3ver2_unlocked = True
             TSM "“Finally you’re back. Welcome home, [MC].“"
             "My eyes are immediately glued to Rudy. He’s sitting down on our picnic blanket with a few small candles around and his arms tied into a bow."
             "How he achieved that, is something that I’m not about to question."
-            scene ed3ver1
+            show ed3ver1
+            $ persistent.ed3ver1_unlocked = True
             TSM "“You know how this morning you said you wanted to see me in a maid outfit again?“"
             TSM "“W-well, here I am.“"
             scene ed3ver2
@@ -4074,9 +4086,9 @@ label ymlater:
         scene black with fade
         MC "(Was that...Nix? Back in highschool?)"
         MC "(Shit, not only is he living rent free at my place, he’s also living rent free in my head as well.)"
-        #rustling sfx"
+        play sound "audio/fabric.mp3"
         MC "(?)"
-        #rusling sfx"
+        play sound "audio/slap.mp3"
         scene insiden with fade
         MC "(What’s going on? It’s not a ghost is it?)"
         "A little spooked by the noise, I decided to squint my eyes open and check out the source of the noise."
@@ -4090,14 +4102,14 @@ label ymlater:
         MC "(Guess I gotta follow him.)"
         
         if YM_dp >= 5:
-            #banging sfx"
+            play sound "audio/banging.mp3"
             MC "(OKAY, THAT’S NOT GOOD!!)"
             scene hallwayn with fade
             MC "(What happened?)"
-            #banging sfx"
+            play sound "audio/banging.mp3"
             show ym smad
             "As soon as I ran downstairs, I saw Nix with a baseball bat, swinging it like a madman at Rudy’s door. It’s not doing much to the door but it is making a fuck ton of noise."
-            #sfx"
+            play sound "audio/banging.mp3"
             MC "(Is he trying to break it down?!)"
             show ym sdesperate
             MC "“Nix what the fuck?!“"
@@ -4137,7 +4149,7 @@ label ymlater:
             show ym scmdesperate
             YM "“Don’t root for him [MC]! You’re mine!“"
             "Nix lunges at me, trying to gain some control of the situation. Now armed with the bat, I give him a taste of his own doing with a sharp whack."
-            #sfx"
+            play sound "audio/banging.mp3"
             show ll at right
             show ym smad
             LL "“What’s going on here?!“"
@@ -4155,15 +4167,17 @@ label ymlater:
             MC "“No.“"
             "I tackle him to the ground, putting my weight on him so he won’t be able to get up."
             #kalau sempet cg"
-            scene ed4ver2 with vpunch
+            show ed4ver2 with vpunch
+            $ persistent.ed4ver2_unlocked = True
             YM "“[MC]?“"
             YM "“Please...[MC]... Am I that unlovable to you...?“"
             YM "“C-can you really not love me...?“"
             scene ed4ver2 with vpunch
-            #slap sfx"
+            play sound "audio/slap.mp3"
             MC "{b}“Don’t move.“{/b}"
             YM "{size=-10)“Ahh...shit.“(/size}"
-            scene ed4ver1 with vpunch
+            show ed4ver1 with vpunch
+            $ persistent.ed4ver1_unlocked = True
             YM "“ahahaha...HAHAHAHA“"
             MC "(?)"
             YM "“AHAhaha..ha.ha..“"
@@ -4276,7 +4290,7 @@ label ymlater:
             "Whatever character he usually puts on is long gone, those cheerful smiles and infinite pep in his step."
             "The boy in front of me is a little more broken than that, shaking from either the cold or the fear of being hated even more."
             MC "“I don’t believe you.“"
-            #slap sfx"
+            play sound "audio/slap.mp3"
             #sprite nangis"
             show ym stear:
                     linear 0.050 xoffset -10
@@ -4286,7 +4300,7 @@ label ymlater:
 
             YM "“Okay okay okay, I’ll tell you...!“"
             YM "“W-when you’re not around...I-I grab one of your shirts from the dirty laundry pile and sniff them b-because I miss you...“"
-            #slap sfx."
+            play sound "audio/slap.mp3"
             show ym scwhine:
                     linear 0.050 xoffset -10
                     linear 0.050 xoffset +0
@@ -4297,7 +4311,7 @@ label ymlater:
             MC "“Keep going.“"
             YM "“W-hen you’re asleep, I-I lay next to you and I-I kiss you...“"
             YM "“I-I didn’t bite you or anything...! I swear I didn’t do anything else! I-I didn’t wanna wake you up...“"
-            #slap sfx"
+            play sound "audio/slap.mp3"
             show ym stear:
                     linear 0.050 xoffset -10
                     linear 0.050 xoffset +0
@@ -4311,7 +4325,7 @@ label ymlater:
             show ym scpleading
             YM "“Sometimes, I-I go through your phone a-and go through your searches so I can be what you like...“"
             YM "“Umm well, y-you had an album full of maid outfits, s-so I assumed...“"
-            #slap sfx"
+            play sound "audio/slap.mp3"
             show ym schurt:
                     linear 0.050 xoffset -10
                     linear 0.050 xoffset +0
@@ -4331,7 +4345,7 @@ label ymlater:
                     linear 0.050 yoffset -10
                     linear 0.050 yoffset +0
 
-            #slap sfx"
+            play sound "audio/slap.mp3"
             show ym sdesperate
             YM "“Not directly! I swear!“"
             YM "“I just...convince a housemate to throw a candlelit dinner in his room for his girlfriend.“"
@@ -4343,7 +4357,7 @@ label ymlater:
             MC "“And so the fire started?“"
             YM "“M-maybe?“"
             show ym stear
-            #slap sfx"
+            play sound "audio/slap.mp3"
             show ym sdesperate:
                     linear 0.050 xoffset -10
                     linear 0.050 xoffset +0
@@ -4355,7 +4369,7 @@ label ymlater:
                     linear 0.050 xoffset +0
                     linear 0.050 yoffset -10
                     linear 0.050 yoffset +0
-            #slap sfx"
+            play sound "audio/slap.mp3"
             show ym scwhine
             YM "“Really-! Everything else I just fantasize about doing...!“"
             YM "“I-I m sorry...! I really am! I’m sorry..I’m sorry I’m sorry“"
@@ -4393,11 +4407,13 @@ label ymlater:
             MC "“Good boy.“"
             "I give him a little peck on his forehead while my hands reach for his own. Holding his hands in mine, I give them a tight squeeze, something to assure him that I still care about him.“"
             
-            scene ed5ver2 with fade
+            show ed5ver2 with fade
+            $ persistent.ed5ver2_unlocked = True
             YM "“D-does this mean that...you l-love me?“"
             MC "“Yes sweetie, as long as you follow my rules.“"
             MC "“You can do that for me, can’t you?“"
-            scene ed5ver1
+            show ed5ver1
+            $ persistent.ed5ver1_unlocked = True
             YM "“Yes, yes, yes! I’ll be the best boyfriend you’ll ever have!“"
             YM "“I’ll be good from now on.“"
             MC "“That’s all I need you to be.“"
@@ -4421,7 +4437,6 @@ label ymlater:
         MC "“Yea. What's up?“"
         YM "“I-I couldn’t sleep.“"
         MC "“Poor thing, come over here.“"
-        #zoom sprite"
         show ym ssmile:
                         parallel:
                             ease .5 zoom 1.5
@@ -4453,7 +4468,8 @@ label ymlater:
         YM "“Was I...?“"
         "He pulls away slightly, enough that I can see his face again."
         
-        scene ed6ver1 with fade
+        show ed6ver1 with fade
+        $ persistent.ed6ver1_unlocked = True
         YM "“B-but I was so lame...I had no friends, I wasn’t smart, I wasn’t good at anything either...“"
         MC "“Doesn’t change the fact that you were cute.“"
         YM "“I did a lot of pathetic things back then...“"
@@ -4473,7 +4489,8 @@ label ymlater:
         YM "“N-no...! I didn’t go that far..! I wouldn’t want to upset you...“"
         MC "“It’s okay, I can just invite you to visit during summer break.“"
         MC "“I’m proud that you tried to get your life together in college.“"
-        scene ed6ver2
+        show ed6ver2 
+        $ persistent.ed6ver2_unlocked = True
         YM "“It was all for you, [MC]. All for you.“"
         YM "“I didn’t want you to be embarrassed by me...so I wanted to become someone more worthy of you.“"
         YM "“H-have I succeeded, [MC]?“"
