@@ -1,8 +1,4 @@
-﻿#stecustecu
-#brooo
-#hari ini kelar ayo bisa
-#cobates
-
+#plssemogaselsai
 
 # The game starts here.
 define MC = Character ("[MC]")    
@@ -99,7 +95,7 @@ label start1:
     MC "(Reasonably, I know I should have a set a specific date and time to just do all this but I just never ended up doing it.)"                               
     MC "(The lack of deadlines with housework doesn't help either.)"                              
                             
-    scene maidcg                               
+                            
     MC "(I almost wish I had a maid to do all the basic housework that I haven’t bothered to do.)"                             
     MC "(It’d be nice to have someone sweep the floor or clean the bathroom while I struggle to type in front of my laptop.)"                                
     MC "(Maybe even cook me a nice warm meal, that’d save me some time.)"                               
@@ -270,7 +266,7 @@ label start1:
     MC "“Thanks, see you tomorrow!“"
     MC "(Time to walk back so I can finish up that assignment)"
     
-    scene campus with fade 
+    scene campusd with fade 
     MC "(Maybe I should drop by the cafeteria so I can buy lunch?)"
     MC "(Yea, that sounds good. I’d rather not starve.)"
     "Before I could even lift my foot towards the cafeteria, my phone started ringing."
@@ -458,7 +454,7 @@ label start1:
         MC "(Actually, now that I think about it... That maid kinda reminds me of Rudy.)"
         MC "(I guess I do find him kinda cute.)"
         play sound "audio/alarm.mp3"
-        scene laptop with vpunch
+        scene cg1 with vpunch
         MC "(Shit, I must've fallen asleep at my desk)"
         MC "(My back hurts..)"
         GTWU "“Wait, please let me stay here!“"
@@ -483,7 +479,7 @@ label start1:
         show tsm serious
         LL "“Again, I'm sorry to hear that. But you’ll have to move out by tomorrow.“"
         hide ll normal
-        show tsm nsdangry
+        show tsm nsdangry at center
         TSM "“Shit.“"
         show tsm nserious
         
@@ -593,7 +589,7 @@ label start1:
         "(Actually, now that I think about it, that maid kinda reminds me of Nix.)"
         "(Do I like him now??)"
         play sound "audio/alarm.mp3"
-        scene laptop with vpunch    
+        scene cg1 with vpunch    
         MC "(Fuck, I fell asleep on my desk.)"
         MC "(Tha was a bad idea.)"   
         GTWU "“CALL THE FIRE DEPARTMENT!!“"
@@ -660,7 +656,7 @@ label start1:
         MC "“You were doing a great job helping put out the fire earlier?“"
         show ym nworry
         YM "“I’m glad you think so but...“"
-        YM "“[MC]. I don’t feel safe in there anYMore, can I.. live with you instead?“"
+        YM "“[MC]. I don’t feel safe in there anymore, can I.. live with you instead?“"
         MC "“Huh? Why?“"
         show ym nwhine
         YM "“I don't think I can stay there for much longer, I just get reminded of all the smoke and fire that I saw. Besides, I'm sure they need to do some repairs.“"
