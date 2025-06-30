@@ -3825,20 +3825,25 @@ label month_tsm:
         "Feeling like he finally reciprocated my feelings, I don’t pull back and instead, I pull him even closer to me by his waist as he makes the cutest little whimpers."
         "Only when I’m out of breath do I finally stop."
         scene inside with fade
+        show tsm msdcsure
         TSM "“[MC]...So you really do like me?“"
         TSM "“Y-you’re not just.. teasing me or anything, right?“"
         MC "“Of course not.“"
+        show tsm mbsure
         TSM "“Shit, you make me so happy...“"
         MC "“You do too.“"
+        show tsm mbsdquestioning
         TSM "“Actually, I got one extra surprise for you.“"
         MC "“There’s more?“"
         #cg sini!!! wajib"
+        scene ed2ver1 with fade    
         TSM "“Here...“"
         TSM "“Thought it would make you happy.“"
         "He pulls up his long skirt, finally revealing his legs and the stockings that were hidden under there. It’s certainly prettier than I thought, and the garter just made him look extra hot."
         MC "“Holy shit, you’re incredible.“"
         TSM "“R-really?“"
         MC  "“You’re so pretty!“"
+        show ed2ver2    
         TSM "“Y-you think so? I bought these for today. You were always raving about ‘cute boys in maid outfits’, so...I figured I’d provide extra service.“"
         TSM "“So, how is it...?“"
         MC "“10 out 10 that’s for sure!“"
@@ -3861,6 +3866,8 @@ label month_tsm:
         MC "(But what?)"
         GTWU "“Hey, Is that, [MC]?“"
         MC "“Huh?“"
+        show ls normal at right
+        show fs normal at left    
         "Turning around, I see his two friends for the second time today."
         MC "“Oh, hi! What’s up?“"
         FS "“We’re walking home.“"
@@ -3878,6 +3885,8 @@ label month_tsm:
         LS "“Alright, bye future friend-in-law!“"
         FS "“Bye, [MC].“"
         MC "“Yea, byee.“"
+        hide ls
+        hide fs    
         MC "(What the fuck do I buy him on such short notice?)"
         MC "(Wait I got it!)"
         MC "(I can make a little kit for him with things he might need. After all, I think I’ve gotten to know him better by living him.)"
@@ -3956,25 +3965,29 @@ label TSMafterloop2:
             C "Thanks for shopping here.“"
             MC "“‘Sure thing.“"
             
-            scene roadevening with fade
+            scene roade with fade
             MC "(Now, time to rush back.)"
-            scene outside with fade
+            scene kose with fade
             MC "(I’m here.)"
             scene insidecandlelit with fade
             MC "Rudy, I’m back.“"
             MC "“Rudy?“"
             #cg sini"
+            scene ed3ver2 withfade
             TSM "“Finally you’re back. Welcome home, [MC].“"
             "My eyes are immediately glued to Rudy. He’s sitting down on our picnic blanket with a few small candles around and his arms tied into a bow."
             "How he achieved that, is something that I’m not about to question."
+            scene ed3ver1
             TSM "“You know how this morning you said you wanted to see me in a maid outfit again?“"
             TSM "“W-well, here I am.“"
+            scene ed3ver2
             TSM "“All in a little bow, just for you.“"
             MC "“Holy shit... Rudy...“"
             "I quickly put away my belongings and headed straight on top of him. He doesn’t try to pull away, instead eagerly squirming under me."
             MC "“Is this all for me?“"
             TSM "“‘Yea, all for you, [MC].“"
             TSM "“B-because, I love you a-and I-“"
+            scene ed3ver2
             TSM "“S-shit, I’m crying.“"
             MC "“It’s okay, shh. Take your time, I won’t leave.“"
             TSM "“O-okay, umm...“"
@@ -3982,14 +3995,17 @@ label TSMafterloop2:
             TSM "“But...I heard what you said earlier at campus.“"
             MC "(Oh, when he was hiding in the bushes?)"
             MC "“So you heard that?“"
+            scene ed3ver2
             TSM "“Y-yea. And it suddenly clicked that maybe..you teasing me wasn’t a cruel form of punishment but instead...because you liked me?“"
             TSM "“Like, maybe you actually thought I was cute and stuff. You weren’t just lying to my face.“"
             MC "“I wouldn’t lie about that.“"
+            scene ed3ver1
             TSM "“I know that now but...I had a hard time believing it this past month.“"
             TSM "“And it was torture, the [player_ds] I liked is right there in front of me and I had to continuously convince myself to not get my hopes up.“"
             TSM "“Especially when I’d see you at campus with your other friend. I couldn’t help but think that he was into you too or something.“"
             TSM "“I-I know that’s kind of a shitty thing to think about someone, but I w-was jealous.“"
             TSM "“Especially when I heard that you usually walk around with him.“"
+            scene ed3ver2
             TSM "“So umm, despite all my shitiness, do you still want me? Are you really okay with someone like me?“"
             MC "“Rudy, there’s no one else I’d rather be with.“"
             scene black with fade
@@ -4006,6 +4022,7 @@ label TSMafterloop2:
             "Gently, I unwrap all the bow, layer by layer, freeing his arms from its temporary shackle."
             "He gestures at my thigh, as if asking for permission to place his hand there. I nod and he shakily caresses my thigh."
             MC "(He’s too cute.)"
+            scene black with fade
             "Finally, I pull him back into another kiss, wrapping my arms around his shoulder."
             "He responds in kind, moving his arms around my back, holding me like a dream that might disappear any minute."
             "Luckily for him, I won’t. I’ll be here as long as he still loves me. And I’ll reassure him of my love whenever he needs it."
@@ -4038,38 +4055,57 @@ label ymlater:
             scene hallwayn with fade
             MC "(What happened?)"
             #banging sfx"
+            show ym smad
             "As soon as I ran downstairs, I saw Nix with a baseball bat, swinging it like a madman at Rudy’s door. It’s not doing much to the door but it is making a fuck ton of noise."
             #sfx"
             MC "(Is he trying to break it down?!)"
+            show ym s
             MC "“Nix what the fuck?!“"
             YM "“[MC]?!“"
+            show ym scpleading
             YM "“N-no I swear, It’s not what it looks like!“"
             MC "“You’re swinging a baseball bat at someone’s door in the middle of the night!“"
             MC "“What is wrong with you?!“"
+            show ym swhine
             YM "“Y-you don’t understand! He’s in my way!  I need to get rid of him so we can be together.“"
             MC "“No stupid, you need to stop this right now!“"
+            show ym swhine at left
+            show tsm suhsure at right
             TSM "“What the fuck is going on?!“"
             MC "“Rudy! Watch out!“"
             "Nix swings the baseball bat right at Rudy’s head, knocking him straight to the ground."
+            show ym scwhine
             YM "{b}“Stay back!“{/b}"
+            show ym smad at center
             TSM "“Agh..shit!“"
             MC "“Rudy!“"
             hide TSM
             "Seeing him on the ground like that made my heartbeat speed up like never before. It really dawned on me that Nix, the boy I’ve considered a good friend ‘till now, might be a threat to my life."
+            show ym smad:
+                    linear 0.050 xoffset -10 
+                    linear 0.050 xoffset +0 
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
             "Acting on snap decisions, I ran up to him and kicked the bat out of his hands. He falls back, now weaponless if only momentarily."
-            YM "“[MC]?! What are you doing...? Please don’t stop me here. I {I}need{/I} to do this...!“"
+            show ym scpleading
+            YM "“[MC]?! What are you doing...? Please don’t stop me here. I {i}need{/i} to do this...!“"
             "I don’t listen, I immediately run over to grab the bat."
             YM "“PLEASE..!It’s for US! [MC]...“"
             "From the corner of my eye, I see Rudy wobbling back up before falling to his knees again."
             MC "“Rudy, run while you can!“"
+            show ym s
             YM "“Don’t root for him [MC]! You’re mine!“"
             "Nix lunges at me, trying to gain some control of the situation. Now armed with the bat, I give him a taste of his own doing with a sharp whack."
             #sfx"
             LL "“What’s going on here?!“"
             MC "“Call the police! Or at least an ambulance! Just check the security footage later!“"
             LL "“Uhh....okay!“"
+            show ym scpleading:
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +10
             YM "“[MC]..please...!!“"
             "He’s bleeding but his determination knows no bounds. He’s desperate enough that he rises back once more, trying to get the bat back."
+            show ym swhine
             YM "“PLEASE, PLEASE...JUST LOVE ME AND I’LL STOP!!!“"
             YM "“I just need to be yours...!!“"
             MC "“No.“"
@@ -4110,72 +4146,107 @@ label ymlater:
             "Lacking any sense of danger, I approached closer and leaned down behind him to see what he’s watching."
             MC "(It’s a tutorial on picking locks?)"
             MC "“Nix, what the fuck?“"
+            show ym s
             YM "(!!!)"
+            show ym s
             YM "“[MC]...?“"
             YM "“N-no, you weren’t supposed to see this.“"
             MC "“What are you doing here?“"
+            show ym s
             YM "“Nothing...!“"
             MC "“Are you trying to break into the room?“"
+            show ym s
             YM "“N-no! I would never.“"
             "I look over at his other hand where I see a bobby pin that is crudely fashioned into a lock picking tool."
             MC "“You’re not getting out of this.“"
             MC "“You’re fucking stupid, y’know that?“"
+            show ym scpleading
             YM "“Hngh...![MC]...please...“"
             MC "“No, go back to my room.“"
+            show ym scwhine
             YM "“B-but...!“"
             YM "“P-please...I just wanted to be a good boy for you...H-he was in the way...!“"
             MC "“Well you’re not being very ‘good’ right now, in fact I’d say you've been bad.“"
             YM "(!!)"
             MC "“{b}Go back. {/b} We’ll talk later unless you want me to hate you prolifically?“"
+            show ym spleading
             YM "“No..! I’ll be good.“"
             MC "“That’s what I thought, now hurry up.“"
             
             scene inside night with fade
             MC "“So. mind explaining what you were trying to do?“"
+            show ym s:
+                        parallel:
+                            ease .5 zoom 1.5
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.0
             YM "“W-well, It’s really not what you think-“"
             MC "{b}“Don’t lie.“{/b}"
+            show ym s
             YM "“Eek!“"
+            show ym scpleading
             YM "“I’m sorry, okay?I really am.“"
             YM "“You were right, I was trying to get rid of him.“"
+            show ym s
             MC "“How did you even know that was his room?“"
             YM "“Um I..I-“"
+            show ym s
             MC "“What?“"
+            show ym s
             YM "“I saw it by checking the security cameras in your place.“"
+            show ym s
             MC "“You got access to where it is?“"
             MC "(Even I don’t know how to, It’s almost impressive if he wasn’t using the knowledge to do shit like this.)"
+            show ym s
             YM "“Uh yea. It’s on the web. Anyone can access it.“"
             MC "“WHAT.“"
+            show ym scwhine
             YM "“I’m sorry i’m sorry i’m sorry imsorry imsorry!!“"
             YM "“There’s this website that uploads footage from unprotected security cameras.“"
             YM "“If the camera’s password isn’t changed from the default, then It’ll show up there.“"
             YM "“Y-you can take it down if you ask!“"
             YM "“But most people don’t know it...“"
+            show ym s
             MC "“So you’re telling me, that the activity inside the halls of this place can be viewed by random strangers on the internet??"
+            show ym s
             YM "“Just the halls and the outside! Your room is safe.“"
+            show ym sapologetic
             YM "“As much as I wanted to, I can't watch you 24/7.“"
-            MC "“And {I}that{/I} is supposed to make me feel better?“"
+            MC "“And {i}that{/i} is supposed to make me feel better?“"
+            show ym s
             YM "“W-well...“"
             MC "“Is this why our schedule tends to line up so well?“"
             MC "“Because you’ve been watching me?“"
+            show ym s
             YM "(!!)"
             MC "“Spot on aren’t I?"
+            show ym s
             YM "“I-I’m sorry...“"
+            show ym s
             MC "“You should be.“"
             MC "“Anything else I should know about?“"
+            show ym s
             YM "“No-! T-that’s really it...“"
+            show ym s
             "Whatever character he usually puts on is long gone, those cheerful smiles and infinite pep in his step."
             "The boy in front of me is a little more broken than that, shaking from either the cold or the fear of being hated even more."
             MC "“I don’t believe you.“"
             #slap sfx"
             #sprite nangis"
+            show ym s
             YM "“Okay okay okay, I’ll tell you...!“"
             YM "“W-when you’re not around...I-I grab one of your shirts from the dirty laundry pile and sniff them b-because I miss you...“"
             #slap sfx."
+            show ym s:
+
             YM "“Hngh..!“"
             MC "“Keep going.“"
             YM "“W-hen you’re asleep, I-I lay next to you and I-I kiss you...“"
             YM "“I-I didn’t bite you or anything...! I swear I didn’t do anything else! I-I didn’t wanna wake you up...“"
             #slap sfx"
+            show ym s:
+
             YM "“Ow..! [MC]...why? I’m telling you everything...“"
             MC "“So, you don’t think your actions have consequences?“"
             MC "“Shouldn’t you be grateful that I’m even hearing you out?“"
@@ -4183,12 +4254,16 @@ label ymlater:
             YM "“Sometimes, I-I go through your phone a-and go through your searches so I can be what you like...“"
             YM "“Umm well, y-you had an album full of maid outfits, s-so I assumed...“"
             #slap sfx"
+            show ym s:
+
             MC "“Bold, aren’t you?“"
             YM "“Hngh...!“"
             MC "“What else?“"
             YM "“I...I lied about being scared of the fire so you’d let me stay with you...“"
             MC "“Don’t tell me you caused the fire too?“"
             YM "“W-well-“"
+            show ym s:
+
             #slap sfx"
             YM "“Not directly! I swear!“"
             YM "“I just...convince a housemate to throw a candlelit dinner in his room for his girlfriend.“"
@@ -4198,13 +4273,17 @@ label ymlater:
             YM "“Some probably got knocked down whenever anyone opened the door.“"
             MC "“And so the fire started?“"
             YM "“M-maybe?“"
+            show ym s
             #slap sfx"
             YM "“[MC]...please...!! That’s all really...That’s really the end of it...“"
+            show ym s:
+
             #slap sfx"
             YM "“Really-! Everything else I just fantasize about doing...!“"
             YM "“I-I m sorry...! I really am! I’m sorry..I’m sorry I’m sorry“"
             "By this point, his tears have evolved to loud sobs, the teardrops falling down like a waterfall. His hands placed on his mouth in an attempt to silence himself."
             MC "“Is that all?“"
+            show ym s
             YM "“Y-yes. I swear...“"
             MC "“Alright then, good boy.“"
             "Satisfied with what I pulled out of him, I relent and I sat down to his level and gave him a nice big hug."
@@ -4220,11 +4299,15 @@ label ymlater:
             MC "“We can date but I have a few rules for you.“"
             MC "“Number one being that you can’t infringe on my privacy like this, that means no going through my phone and no looking at me through security cameras.“"
             MC "“Can you understand that?“"
+            show ym s
             YM "“Y-yes, [MC].“"
             MC "“Number two, you can’t attack or harass people just because you think they’re interested in me.“"
+            show ym s
             YM "“O-okay...“"
+            show ym s
             MC "“Last but not least. You have to communicate with me. Don’t lie to me.“"
             MC "“You got that? No hiding things from me.“"
+            show ym s
             YM "“Yes, [MC]“."
             MC "“Good boy.“"
             "I give him a little peck on his forehead while my hands reach for his own. Holding his hands in mine, I give them a tight squeeze, something to assure him that I still care about him.“"
