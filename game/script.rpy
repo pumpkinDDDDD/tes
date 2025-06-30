@@ -1126,7 +1126,7 @@ label day1:
                     YM "“Am I the cutest maid you have?“"
                     MC "“Nix, aren’t you my only maid?“"
                     "Hearing that, he squeals in delight and hugs me tight, burying his face deep in my chest."
-                    show ym msqueal:
+                    show ym mbsqueal:
                             parallel:
                                 ease .5 zoom 2.0
                             parallel:
@@ -1175,7 +1175,7 @@ label day1:
         menu: 
             "I think this is enough petting, no?":
                     $ YM_dp +=1
-                    show ys mtch
+                    show ym mmtch
                     YM "{size=-10}“tch “{/size}"
                     show ym mhappy
                     YM "“Okayy, how was it? I’m soft, no?“"
@@ -1873,7 +1873,7 @@ label day2_ym:
                 show ym nsmile
                 MC "(He’s not denying it. Guess I’ll play along?)"
                 MC "“Anything for you, {i}love{/i}.“"
-                show ym nsqueal
+                show ym nbsqueal
                 "He freezes in his steps and gives out a strangled squeal, seemingly caught off guard by the sudden romantic pet name."
                 show ym nrhappy
                 YM "“You called me ‘love’!!“"
@@ -1884,14 +1884,14 @@ label day2_ym:
                 YM "“I love you, I love you, I love you!!!“"
                 "He gives me a tight hug."
                 show ym nsmile
-                QM "“Gross.“"
-                CM "“Keep this up and we’re leaving you two behind.“"
-                QM "“No. We’re leaving now.“"
+                QS "“Gross.“"
+                CS "“Keep this up and we’re leaving you two behind.“"
+                QS "“No. We’re leaving now.“"
                 show qs at offscreenright with easeout
                 "With that, the quiet one sprints ahead leaving the rest of us behind."
                 hide qs
-                CM "“Well, I'm not gonna be a third wheel so...“"
-                CM "“Byee!“"
+                CS "“Well, I'm not gonna be a third wheel so...“"
+                CS "“Byee!“"
                 show cs at offscreenright with easeout
                 "After a short wave, he soon follows and sprints in the direction of his next class."
                 hide cs
@@ -1959,7 +1959,7 @@ label day2_ym:
     MC "“Are you sure?“"
     YM "“Absolutely! In fact, I'm actually outside your class!“"
     hide phone
-    show ym n
+    show ym nrhappy
     "I peek at the door and find Nix, eagerly waving at me through the door as if he’s been waiting for me this whole time."
     MC "“Damn, I guess we’ll have to go grocery shopping huh?“"
     show ym nhappy
@@ -2017,7 +2017,7 @@ label day2_ym:
     MC "(He’s sneaky, I’ll give him that.)"
     show ym nworry
     YM "“But-“"
-    show ym nsqueal
+    show ym nbsqueal
     "I shove my free hand to cover his mouth so he can’t protest any further. He immediately shuts up, staring at me wide-eyed."
     MC "“No, we need to split it.“"
     show ym nrhappy
@@ -2912,7 +2912,7 @@ label week_ym:
     MC "“Yea, he did.“"
     show tsm nnormal
     TSM "“Why? Kinda strange to move in just before the semester’s over.“"
-    show tsm nunsure
+    show tsm nuhsure
     TSM "“He’s not stalking you or anything, is he?“"
     show tsm nsilent
     MC "“Nah (probably). Remember the fire?“"
@@ -3010,7 +3010,7 @@ label week_ym:
                     TSM "“Y’know what, fuck that. That’s a problem for later. For now, we gotta get him outta our place.“"
                     TSM "“What do I need to get?“"
                     MC "“Well...“"
-                    scene campus with fade
+                    scene campusd with fade
                     MC "“That’s about it.“"
                     TSM "“If I remember correctly, our rooms have the same layout right?“"
                     MC "“Yep."
@@ -4036,7 +4036,7 @@ label TSMafterloop2:
             MC "(Now, time to rush back.)"
             scene kose with fade
             MC "(I’m here.)"
-            scene insidecandlelit with fade
+            scene insideed3 with fade
             MC "Rudy, I’m back.“"
             MC "“Rudy?“"
             #cg sini"
