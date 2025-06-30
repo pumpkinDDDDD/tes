@@ -459,7 +459,7 @@ label start1:
         MC "(Actually, now that I think about it... That maid kinda reminds me of Rudy.)"
         MC "(I guess I do find him kinda cute.)"
         play sound "audio/alarm.mp3"
-        scene laptop with vpunch
+        scene cg1 with vpunch
         MC "(Shit, I must've fallen asleep at my desk)"
         MC "(My back hurts..)"
         GTWU "“Wait, please let me stay here!“"
@@ -594,7 +594,7 @@ label start1:
         "(Actually, now that I think about it, that maid kinda reminds me of Nix.)"
         "(Do I like him now??)"
         play sound "audio/alarm.mp3"
-        scene laptop with vpunch    
+        scene cg1 with vpunch    
         MC "(Fuck, I fell asleep on my desk.)"
         MC "(Tha was a bad idea.)"   
         GTWU "“CALL THE FIRE DEPARTMENT!!“"
