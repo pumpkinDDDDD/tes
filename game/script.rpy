@@ -3657,28 +3657,54 @@ label month_tsm:
         #punch sfx"
         #Pause 1s
         MC "(WHAT WAS THAT?!)"
-        show tsm mangry with moveinright
+        show tsm mdeflecting with moveinright
         TSM "“[MC]! Run!“"
         MC "“Holy shit! What’s going on?“"
-        show ymed2angry with moveinright at right
+        show ymed2mad with moveinright at right
         show tsm mangry with move at left    
         YM "{b}“Don’t go with him, [MC].“{/b}"
-        show ym ed2angry with vpunch    
+        show ym ed2angry with vpunch at right   
         MC "“NIX??“"
         MC "(What’s going on? Why is he also in a maid outfit? And what’s with the knife?!)"
+        show ym ed2angry:
+            linear 0.050 yoffset -10
+            linear 0.050 yoffset +10
         YM "“Don’t you dare come between me and [MC]! {b}I’m{/b} the one who’s supposed to be living with [player_object].“"
+        show tsm mnormal    
         TSM "“Fuck you.“"
         #pot breaking sfx"
+        show ym ed2hurt:
+            linear 0.050 xoffset -10
+            linear 0.050 xoffset +10
+            linear 0.050 yoffset -10
+            linear 0.050 yoffset +10
         YM "“OW!“"
+        show ym med2angry    
         YM "“You. {b}You{/b} Don’t get in my way!“"
+        show tsm mdeflecting    
         TSM "“What way asshole?! You broke into the room and swung a knife at me!“"
+        show tsm msilent at right with move
+        show ym ed2angry at left with move    
         YM "“[MC]’s mine!“"
+        show tsm mangry    
         TSM "“Stay back!“"
+        show ym ed2mad    
         YM "“It’s not {I}fair{/I}. I’ve known [MC] since highschool and you just swooped in and took [player_object] away from me!“"
         YM "“It’s not fair..It’s not fair, not fair, not fair, notfair, notfair, notfair, notfair, notfairnotfairnotfairnotfair!“"
         #punch sfx"
+        show tsm mstopit:
+              linear 0.050 yoffset -10
+              linear 0.050 yoffset +10
+       
         YM "“S-shit!“"
+        show ym ed2hurt:
+                    linear 0.050 xoffset -10 
+                    linear 0.050 xoffset +0 
+                    linear 0.050 yoffset -10
+                    linear 0.050 yoffset +0
         "Nix fell backwards landing on his back, his knife flung out of his arms right near me."
+        show tsm mdeflecting 
+        show ym mhorrified    
         TSM "[MC]!"
         menu:
             "Grab the knife.":
@@ -3686,25 +3712,51 @@ label month_tsm:
                     "Nix isn’t particularly strong but he was definitely scary when he had that knife."
                     "I can’t let my guard down around him."
                     #punch sfx"
+                    show ym mwhine:
+                                linear 0.050 xoffset -10 
+                                linear 0.050 xoffset +0 
+                                linear 0.050 yoffset -10
+                                linear 0.050 yoffset +0
                     YM "“AGH!“"
+                    show tsm mangry    
                     TSM "“Don’t move asshole.“"
                     MC "“I got the knife!“"
                     TSM "“Good, now call the police!“"
             "Kick Nix while he’s down.":
+                    show ym ed2hurt:
+                        parallel:
+                            ease .5 zoom 1.3
+                        parallel:
+                            yalign 0.0
+                            linear 0.0 yalign 0.0 xalign 0.25
                     "The moment I saw Nix trying to get up, my feet moved straight to put him back on the ground."
                     #punch sfx"
+                    show ym mwhine:
+                                linear 0.050 xoffset -10 
+                                linear 0.050 xoffset +0 
+                                linear 0.050 yoffset -10
+                                linear 0.050 yoffset +0
                     YM "“Agh...! Ow...“"
+                    show ym mhorrified    
+                    show tsm msmirk:    
+                          linear 0.050 yoffset -10
+                          linear 0.050 yoffset +10
                     TSM "“DAMN! Fuck it up, [MC]!“"
+                    show ym mwhinecry    
                     YM "“[MC]...you too...?“"
                     YM "“D-do I really...not have a c-chance?“"
                     MC "“Don’t even think about reaching for that knife.“"
                     YM "“Hngh...! w..why..?“"
                     TSM "“I’ll call the police!“"
-        
+
+        show ll normal with vpunch    
         LL "“What’s going on out here?!“"
         MC "(Oh shit, this looks really bad.)"
+        show tsm mnormal    
         TSM "“He had a knife.“"
+        show tsm msilent
         "With no hesitation, he points at Nix who is pinned on the ground, devastatingly close to sobbing his heart out."
+        show tsm mnormal
         TSM "“Check the camera footage. You’ll see him breaking into one of the rooms while carrying a knife.“"
         TSM "“Also, we gotta call the police or something. I don’t feel safe with this guy around.“"
         
@@ -3713,45 +3765,58 @@ label month_tsm:
         "We decided to head straight back to the room, not wanting to deal with any more nonsense tonight."
         
         scene insidepd with fade
+        show tsm msdangry    
         TSM "“Well shit, that was not how I expected the night to go.“"
         MC "“Me neither.“"
+        show tsm msdnormal
         TSM "“And uh, sorry for getting the guy you like arrested...“"
         MC "“Huh? Where is this coming from?“"
         TSM "“I heard you like guys that are cute and sweet and always around, and I guess that guy fits the description.“"
+        show tsm mnormal
         TSM "“Until he tried to kill me that is.“"
         MC "“Hey, I’m not into Nix.“"
+        show tsm mhappy
         TSM "“Yea, I can see why now.“"
         MC "“No, even before that. I was into someone else.“"
+        show tsm munsure
         TSM "“W-who?“"
         MC "“You silly.“"
         MC "“It was always you.“"
+        show tsm msdnormal
         TSM "“You don’t have to lie y’know? I’m not hurt if you just tell the truth.“"
         MC "“I’m not lying.“"
+        show tsm mstopit
         TSM "“D-don’t lie. Just like with this maid dress you made me wear, you were lying when you said I looked cute in it.“"
         MC "“I would NOT lie about that!“"
         MC "“You are fucking cute!“"
-        TSM "“D-don’t {I}lie{/I} and get my hopes up!“"
+        show tsm mangry
+        TSM "“D-don’t {i}lie{/i} and get my hopes up!“"
         MC "“I’m not!“"
         #mulai nangis"
+        show tsm msdcquestioning
         TSM "“You are! You just wanna tease me and make me look even stupider than I already do in front of you.“"
         MC "(...)"
         TSM "“All those nice things you said when I first wore the outfit, they made me...happy.“"
         TSM "“B-but I know I’m not someone who fits that description...“"
         TSM "“Shit,  I just wanted to do a few nice things for you before I move out and this is what happens...“"
+        show tsm msad
         "I look around the room and see what he was planning on doing before Nix attacked. Our usual picnic table was set up with a few unlit candles decorating it. "
         "He made extra side dishes and I see a small plate of cookies as dessert."
         MC "(And all this...is for me?)"
         MC "“Rudy, I don’t know who lied to you before. But I do think you’re cute, and you are very sweet.“"
         MC "“I mean, look at all this. You set this up for me.“"
         MC "“I don’t deserve this.“"
+        show tsm msdcquestioning
         TSM "“You do though. I’m just paying you back. You befriended me back when college started even when I was kinda rude to you.“"
         TSM "“You weren’t mad at me when I led us to the wrong hall for the orientation.“"
         TSM "“You gave me that stomach medicine when I was keeled over in pain.“"
         TSM "“You even let me stay with you for free...“"
-        TSM "“You’re just...{I}nice{/I}“"
+        show tsm msdcsure
+        TSM "“You’re just...{i}nice{/i}“"
         TSM "“And I-I love you...“"
         MC "“Rudy...“"
         MC "“I love you too.“"
+        show tsm msdcquestioning
         TSM "“N-no way.“"
         MC "(Oh come on.)"
 
