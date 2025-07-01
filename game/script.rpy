@@ -1,4 +1,5 @@
 ﻿#plssemogaselsai
+#bgm ed1 ed 2fight ed6 blum dimasukin
 
 # The game starts here.
 define MC = Character ("[MC]")    
