@@ -1887,12 +1887,12 @@ label day2_ym:
                 QS "“Gross.“"
                 CS "“Keep this up and we’re leaving you two behind.“"
                 QS "“No. We’re leaving now.“"
-                show qs at offscreenright with easeout
+                show qs at offscreenright with easeoutright
                 "With that, the quiet one sprints ahead leaving the rest of us behind."
                 hide qs
                 CS "“Well, I'm not gonna be a third wheel so...“"
                 CS "“Byee!“"
-                show cs at offscreenright with easeout
+                show cs at offscreenright with easeoutright
                 "After a short wave, he soon follows and sprints in the direction of his next class."
                 hide cs
                 show ym nrhappy
@@ -4122,6 +4122,7 @@ label ymlater:
             play sound "audio/banging.mp3"
             MC "(OKAY, THAT’S NOT GOOD!!)"
             scene hallwayn with fade
+            play music "audio/scarybgm.mp3"
             MC "(What happened?)"
             play sound "audio/banging.mp3"
             show ym smad
@@ -4167,7 +4168,7 @@ label ymlater:
             YM "“Don’t root for him [MC]! You’re mine!“"
             "Nix lunges at me, trying to gain some control of the situation. Now armed with the bat, I give him a taste of his own doing with a sharp whack."
             play sound "audio/banging.mp3"
-            show ll at right
+            show ll normal at left
             show ym smad
             LL "“What’s going on here?!“"
             MC "“Call the police! Or at least an ambulance! Just check the security footage later!“"
@@ -4191,7 +4192,7 @@ label ymlater:
             scene ed4ver2 with vpunch
             play sound "audio/slap.mp3"
             MC "{b}“Don’t move.“{/b}"
-            YM "{size=-10)“Ahh...shit.“(/size}"
+            YM "{size=-10}“Ahh...shit.“{/size}"
             show ed4ver1 with vpunch
             YM "“ahahaha...HAHAHAHA“"
             MC "(?)"
@@ -4247,7 +4248,7 @@ label ymlater:
             YM "“No..! I’ll be good.“"
             MC "“That’s what I thought, now hurry up.“"
             
-            scene inside night with fade
+            scene insiden with fade
             MC "“So. mind explaining what you were trying to do?“"
             show ym sworry:
                         parallel:
@@ -4432,9 +4433,10 @@ label ymlater:
             MC "“That’s all I need you to be.“"
             scene black with fade
             "Finally, I seal the deal with a kiss to his lips. He hungrily accepts like a death row inmate who’s been starved for some time."
-            "And it feels {I}right{/I}."
+            "And it feels {i}right{/i}."
             "I can’t say for sure that I made the most rational decision tonight, but I know that it’s one I wouldn’t forget for the rest of my life..."
             "Ending 5  : Good Boy."
+            return
     
     else:
         scene black with fade
