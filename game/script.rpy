@@ -4251,7 +4251,7 @@ label ymlater:
             
             scene insiden with fade
             MC "“So. mind explaining what you were trying to do?“"
-            show ym sworry:
+            show ym sworry at center:
                         parallel:
                             ease .5 zoom 1.5
                         parallel:
@@ -4392,8 +4392,7 @@ label ymlater:
             YM "“I-I m sorry...! I really am! I’m sorry..I’m sorry I’m sorry“"
             "By this point, his tears have evolved to loud sobs, the teardrops falling down like a waterfall. His hands placed on his mouth in an attempt to silence himself."
             MC "“Is that all?“"
-            show ym s
-            show ym spleading
+            show ym scpleading
             YM "“Y-yes. I swear...“"
             MC "“Alright then, good boy.“"
             "Satisfied with what I pulled out of him, I relent and I sat down to his level and gave him a nice big hug."
