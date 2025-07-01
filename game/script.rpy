@@ -3423,7 +3423,7 @@ label week_ym:
     show ym hsnormal
     GTWU "“fine...“"
     
-    scene hallwaydream with fade
+    scene highschooldream with fade
     show ym hsnormal
     GTWU "(I didn’t expect this but [player_gender] really stayed and helped me finish all this)"
     MC "“And we’re done!“"
@@ -4136,10 +4136,10 @@ label ymlater:
             YM "“N-no I swear, It’s not what it looks like!“"
             MC "“You’re swinging a baseball bat at someone’s door in the middle of the night!“"
             MC "“What is wrong with you?!“"
-            show ym swhine
+            show ym scwhine
             YM "“Y-you don’t understand! He’s in my way!  I need to get rid of him so we can be together.“"
             MC "“No stupid, you need to stop this right now!“"
-            show ym swhine at left
+            show ym scwhine at left
             show tsm suhsure at right
             TSM "“What the fuck is going on?!“"
             MC "“Rudy! Watch out!“"
@@ -4150,6 +4150,7 @@ label ymlater:
             TSM "“Agh..shit!“"
             MC "“Rudy!“"
             hide TSM
+
             "Seeing him on the ground like that made my heartbeat speed up like never before. It really dawned on me that Nix, the boy I’ve considered a good friend ‘till now, might be a threat to my life."
             show ym smad:
                     linear 0.050 xoffset -10 
@@ -4160,7 +4161,7 @@ label ymlater:
             show ym scmdesperate
             YM "“[MC]?! What are you doing...? Please don’t stop me here. I {i}need{/i} to do this...!“"
             "I don’t listen, I immediately run over to grab the bat."
-            show ym smcwhine
+            show ym scwhine
             YM "“PLEASE..!It’s for US! [MC]...“"
             "From the corner of my eye, I see Rudy wobbling back up before falling to his knees again."
             MC "“Rudy, run while you can!“"
@@ -4244,7 +4245,7 @@ label ymlater:
             MC "“Well you’re not being very ‘good’ right now, in fact I’d say you've been bad.“"
             YM "(!!)"
             MC "“{b}Go back. {/b} We’ll talk later unless you want me to hate you prolifically?“"
-            show ym spleading
+            show ym scpleading
             YM "“No..! I’ll be good.“"
             MC "“That’s what I thought, now hurry up.“"
             
