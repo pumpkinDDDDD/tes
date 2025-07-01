@@ -3107,6 +3107,7 @@ label week_ym:
         MC "(?)"
         GTWU "“Hmm hm hm hmm~“"
         scene insiden with fade
+            #bgm ed1
         MC "(My head hurts...)"
         YM "“[MC]! You’re awake.“"
         MC "(Is that...Nix? Still in the maid outfit...)"
